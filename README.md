@@ -95,7 +95,7 @@ A fuller example is in [`examples/load_sample.py`](examples/load_sample.py).
 
 ## License
 
-- **Sample data & docs in this repo:** MIT (see [`LICENSE`](LICENSE)).
+- **Sample data & docs in this repo:** CC-BY-NC-4.0 — free to use with attribution, non-commercial (see [`LICENSE`](LICENSE)).
 - **Full dataset:** commercial license, available at [roasterdb.net](https://roasterdb.net). Distributed as derived factual attributes with source attribution.
 
 Are you a roaster and want a record corrected or removed? Email **[RoasterDB@proton.me](mailto:RoasterDB@proton.me)**.
