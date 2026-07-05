@@ -1,0 +1,38 @@
+{
+  "title": "RoasterDB — Specialty Coffee Dataset (Sample)",
+  "subtitle": "100 specialty coffees from 72 roasters, mapped to the SCA Flavor Wheel",
+  "id": "ahtiticheamine/roasterdb-specialty-coffee-sample",
+  "licenses": [{"name": "CC-BY-NC-4.0"}],
+  "keywords": ["food", "beverages", "business", "nlp", "retail and shopping"],
+  "description": "# RoasterDB — Specialty Coffee Dataset (Free Sample)\n\nA structured dataset of **specialty-coffee products** scraped from the direct storefronts of curated artisan roasters worldwide, with tasting notes normalized to the **Specialty Coffee Association (SCA) Flavor Wheel** and a **source URL on every record** so any fact can be re-verified.\n\nThis Kaggle dataset is the **free 100-row sample** (72 roasters). The full dataset — **8,086 products from 278 roasters across 22 countries**, with **11,838 SCA flavor mappings** — is available at [roasterdb.net](https://roasterdb.net).\n\n## What makes it useful\n\n- **SCA flavor mapping** — free-text tasting notes normalized to the SCA 3-tier wheel (`Category > Subcategory > Descriptor`), e.g. `Fruity > Berry > Blueberry`.\n- **Provenance on every row** — `source_url` + `retrieved_at` let you trace and re-verify each record against the original listing.\n- **Sanitized pricing** — retail prices cleaned to a plausible band ($3–$150 USD).\n- **Honest, uneven coverage** — storefronts don't all publish farm-level data, so origin/altitude/process are partial. Use `quality_flag = good` for the verified tier.\n\n## Field coverage (full dataset)\n\n| Field | Coverage | | Field | Coverage |\n| :--- | ---: | --- | :--- | ---: |\n| Title / product ID | 100% | | Process method | 45% |\n| Weight | 100% | | Roast level | 32% |\n| Price (sanitized) | 88% | | Varietals | 30% |\n| Origin country | 58% | | Origin region | 20% |\n| ≥1 SCA flavor node | 55% | | Altitude | 17% |\n\n## Columns\n\nSee the column descriptions tab — every field is documented. A starter notebook demonstrating loading, tabular preview, flavor analysis, and price distribution is attached.\n\n## Use cases\n\n- Coffee subscription & recommendation apps\n- Flavor-based search / discovery on the SCA graph\n- ML / RAG corpora over specialty coffee\n- Market & assortment research across roasters, origins, and price bands\n\n## License & attribution\n\nThe **sample** is shared under **CC-BY-NC-4.0** (attribution, non-commercial). The **full commercial dataset** is licensed separately via [roasterdb.net](https://roasterdb.net). Are you a roaster and want a record corrected or removed? Email RoasterDB@proton.me.\n\n**Full dataset & updates:** https://roasterdb.net",
+  "resources": [
+    {
+      "path": "roasterdb_sample.csv",
+      "description": "100 verified-tier specialty-coffee products across 72 roasters. One row per coffee product listing, with origin, process, roast, pricing, SCA flavor mapping, and full provenance.",
+      "schema": {
+        "fields": [
+          {"name": "product_id", "type": "string", "description": "Roaster's Shopify product ID (identifier for the listing)."},
+          {"name": "source_roaster", "type": "string", "description": "Roaster brand name."},
+          {"name": "title", "type": "string", "description": "Coffee / product name exactly as listed on the storefront."},
+          {"name": "origin_country", "type": "string", "description": "Producing country, where stated or inferred (58% populated in full dataset)."},
+          {"name": "origin_region", "type": "string", "description": "Producing region within the country, where stated (20% populated)."},
+          {"name": "altitude_min_meters", "type": "number", "description": "Minimum growing elevation in metres above sea level, where stated (17% populated)."},
+          {"name": "altitude_max_meters", "type": "number", "description": "Maximum growing elevation in metres above sea level, where stated (17% populated)."},
+          {"name": "process_method", "type": "string", "description": "Post-harvest processing: Washed, Natural, Honey, Anaerobic, or Other (Other when not stated)."},
+          {"name": "roast_level", "type": "string", "description": "Roast level: Light, Medium, Dark (and split levels), or Unknown where not stated (32% specific)."},
+          {"name": "varietals", "type": "string", "description": "Comma-separated coffee varietals, e.g. 'Gesha, SL28' (30% populated)."},
+          {"name": "weight_grams", "type": "number", "description": "Net weight of the listed unit, in grams."},
+          {"name": "price_currency", "type": "string", "description": "ISO currency code of the price (typically USD)."},
+          {"name": "price_value", "type": "number", "description": "Retail price, sanitized to a plausible band ($3-$150). 88% populated."},
+          {"name": "tasting_notes_sca_nodes", "type": "string", "description": "'; '-separated SCA Flavor Wheel paths, e.g. 'Fruity > Berry > Blueberry'. Normalized from free-text tasting notes."},
+          {"name": "tasting_notes_confidence", "type": "number", "description": "Confidence (0-1) of the flavor-note normalization."},
+          {"name": "quality_flag", "type": "string", "description": "'good' = verified tier (origin + sanitized price + SCA mapping, QA-passed); 'questionable' otherwise."},
+          {"name": "source_platform", "type": "string", "description": "Source channel the record was extracted from (shopify)."},
+          {"name": "source_url", "type": "string", "description": "Exact product page URL the record was extracted from (re-verifiable provenance)."},
+          {"name": "retrieved_at", "type": "datetime", "description": "Crawl timestamp — when the fact was true."},
+          {"name": "dataset_version", "type": "string", "description": "Snapshot identifier, e.g. 2026.07."}
+        ]
+      }
+    }
+  ]
+}
