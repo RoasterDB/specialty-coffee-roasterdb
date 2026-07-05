@@ -9,9 +9,9 @@
 [![Sample: 100 rows](https://img.shields.io/badge/Free%20Sample-100%20rows-brightgreen.svg)](samples/roasterdb_sample.csv)
 [![Roasters: 278](https://img.shields.io/badge/Roasters-278-8a5a44.svg)](#whats-inside)
 [![Snapshot: 2026.07](https://img.shields.io/badge/Snapshot-2026.07-blue.svg)](CHANGELOG.md)
-[![Get the data](https://img.shields.io/badge/Get%20the%20data-roasterdb.net-ff6b4a.svg)](https://roasterdb.net)
+[![Get the data](https://img.shields.io/badge/Get%20the%20data-roasterdb.net-ff6b4a.svg)](https://specialty-coffee-roasterdb.pages.dev)
 
-**[→ Get the full dataset at roasterdb.net](https://roasterdb.net)**
+**[→ Get the full dataset at roasterdb.net](https://specialty-coffee-roasterdb.pages.dev)**
 
 </div>
 
@@ -31,7 +31,7 @@ This is a **storefront catalog + flavor-mapping** dataset — strong on roaster 
 | SCA flavor mappings | **11,838** | ~250 |
 | Formats | SQLite · CSV · JSON | CSV |
 
-The free [`samples/roasterdb_sample.csv`](samples/roasterdb_sample.csv) is 100 verified-tier records across 72 roasters — a real taste of the schema and quality. The full dataset is available at **[roasterdb.net](https://roasterdb.net)**.
+The free [`samples/roasterdb_sample.csv`](samples/roasterdb_sample.csv) is 100 verified-tier records across 72 roasters — a real taste of the schema and quality. The full dataset is available at **[roasterdb.net](https://specialty-coffee-roasterdb.pages.dev)**.
 
 ## Field coverage (the honest numbers)
 
@@ -75,7 +75,7 @@ See [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) for every field.
 | **Snapshot** | Full 8,086 records · SQLite + CSV + JSON | **$99** one-time |
 | **Custom & Fresh** | Your target roasters · recurring refreshes · API | **$1,000+** |
 
-**[→ Get it at roasterdb.net](https://roasterdb.net)** · or email **[RoasterDB@proton.me](mailto:RoasterDB@proton.me)** for custom work.
+**[→ Get it at roasterdb.net](https://specialty-coffee-roasterdb.pages.dev)** · or email **[RoasterDB@proton.me](mailto:RoasterDB@proton.me)** for custom work.
 
 ## Use cases
 
@@ -98,6 +98,6 @@ A fuller example is in [`examples/load_sample.py`](examples/load_sample.py).
 ## License
 
 - **Sample data & docs in this repo:** CC-BY-NC-4.0 — free to use with attribution, non-commercial (see [`LICENSE`](LICENSE)).
-- **Full dataset:** commercial license, available at [roasterdb.net](https://roasterdb.net). Distributed as derived factual attributes with source attribution.
+- **Full dataset:** commercial license, available at [roasterdb.net](https://specialty-coffee-roasterdb.pages.dev). Distributed as derived factual attributes with source attribution.
 
 Are you a roaster and want a record corrected or removed? Email **[RoasterDB@proton.me](mailto:RoasterDB@proton.me)**.

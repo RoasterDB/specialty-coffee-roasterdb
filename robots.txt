@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://roasterdb.net/sitemap.xml
+Sitemap: https://specialty-coffee-roasterdb.pages.dev/sitemap.xml

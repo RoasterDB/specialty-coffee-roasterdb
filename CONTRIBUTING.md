@@ -42,4 +42,4 @@ By contributing, you agree that your contributions to the sample and docs are
 licensed under **CC-BY-NC-4.0**, the same license as this repository (see
 [`LICENSE`](LICENSE)).
 
-Questions? **RoasterDB@proton.me** · full dataset: [roasterdb.net](https://roasterdb.net)
+Questions? **RoasterDB@proton.me** · full dataset: [roasterdb.net](https://specialty-coffee-roasterdb.pages.dev)

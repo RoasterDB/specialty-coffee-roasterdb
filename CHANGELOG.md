@@ -11,4 +11,4 @@ All notable changes to the RoasterDB dataset snapshots.
 - Per-record provenance: `source_url`, `retrieved_at`, `dataset_version`.
 - Prices sanitized to a plausible retail band.
 
-Full dataset & updates: [roasterdb.net](https://roasterdb.net)
+Full dataset & updates: [roasterdb.net](https://specialty-coffee-roasterdb.pages.dev)
