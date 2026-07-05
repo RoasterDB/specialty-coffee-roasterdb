@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoasterDB — Specialty Coffee Dataset & SCA Flavor Taxonomy</title>
+  <meta name="description" content="Structured specialty coffee dataset: 8,086 products from 278 artisan roasters across 22 countries, tasting notes mapped to the SCA Flavor Wheel, with a source URL on every record." />
+  <meta name="keywords" content="specialty coffee database, coffee dataset, artisan roasters, SCA flavor wheel, flavor nodes taxonomy, origin parsing, altitude masl, coffee provenance, B2B coffee dataset" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://roasterdb.net/" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="RoasterDB — Specialty Coffee Dataset & SCA Flavor Taxonomy" />
+  <meta property="og:description" content="Structured specialty coffee data: 8,086 coffees from 278 roasters across 22 countries, mapped to the SCA Flavor Wheel, with full source provenance." />
+  <meta property="og:url" content="https://roasterdb.net/" />
+  <meta property="og:site_name" content="RoasterDB Specialty Coffee Dataset" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://roasterdb.net/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RoasterDB — Specialty Coffee Dataset & SCA Flavor Taxonomy" />
+  <meta name="twitter:description" content="Download structured specialty coffee data mapped to the SCA Flavor Wheel." />
+  <meta name="twitter:image" content="https://roasterdb.net/og-image.png" />
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RoasterDB",
+    "url": "https://roasterdb.net",
+    "email": "RoasterDB@proton.me",
+    "description": "Specialty coffee dataset and SCA flavor taxonomy provider."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RoasterDB Specialty Coffee Dataset",
+    "url": "https://roasterdb.net",
+    "description": "Structured specialty coffee dataset: 8,086 products from 278 roasters across 22 countries, mapped to SCA flavor nodes with source provenance.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://roasterdb.net/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "RoasterDB Specialty Coffee Dataset — Full Snapshot",
+    "description": "Structured specialty coffee dataset: 8,086 products from 278 artisan roasters across 22 countries, with tasting notes mapped to the SCA Flavor Wheel and full source provenance. Relational SQLite plus CSV and JSON.",
+    "brand": {
+      "@type": "Brand",
+      "name": "RoasterDB"
+    },
+    "category": "Software > Data & Databases",
+    "offers": {
+      "@type": "Offer",
+      "price": "99.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://roasterdb.net/#pricing"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DataCatalog",
+    "name": "RoasterDB Specialty Coffee DataCatalog",
+    "description": "Specialty coffee dataset mapped to the SCA 3-tier Flavor Wheel, with origin, process, and price attributes and a source URL on every record.",
+    "url": "https://roasterdb.net",
+    "license": "https://opensource.org/licenses/MIT",
+    "keywords": [
+      "specialty coffee database",
+      "SCA flavor wheel",
+      "coffee dataset",
+      "coffee flavor notes",
+      "artisan roasters"
+    ],
+    "creator": {
+      "@type": "Organization",
+      "name": "RoasterDB"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-paper: #f8f7f4;
+      --bg-paper-2: #efede7;
+      --text-ink: #181715;
+      --text-muted: #66635e;
+      --rule-color: rgba(24, 23, 21, 0.15);
+      --rule-dim: rgba(24, 23, 21, 0.08);
+      --accent: #d94e34;
+      --card-bg: #ffffff;
+      --card-border: #181715;
+    }
+
+    html.dark {
+      --bg-paper: #0e0d0c;
+      --bg-paper-2: #141311;
+      --text-ink: #f0eee9;
+      --text-muted: #9c9891;
+      --rule-color: rgba(240, 238, 233, 0.18);
+      --rule-dim: rgba(240, 238, 233, 0.08);
+      --accent: #ff6b4a;
+      --card-bg: #181715;
+      --card-border: #f0eee9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-paper);
+      color: var(--text-ink);
+      font-family: 'JetBrains Mono', monospace;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-paper);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule-color);
+    }
+
+    .header-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 32px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-tag {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.6;
+      border-left: 1px solid var(--rule-color);
+      padding-left: 16px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--rule-color);
+      color: var(--text-ink);
+      padding: 6px 12px;
+      font-family: inherit;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .section {
+      border-bottom: 1px solid var(--rule-color);
+      padding: 72px 32px;
+    }
+
+    .section-alt {
+      background-color: var(--bg-paper-2);
+    }
+
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      opacity: 0.75;
+      margin-bottom: 36px;
+    }
+
+    .section-diamond {
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent);
+      transform: rotate(45deg);
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background-color: var(--rule-dim);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+      line-height: 0.98;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-abstract {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      max-width: 600px;
+    }
+
+    .abstract-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.55;
+      padding-top: 4px;
+    }
+
+    .abstract-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .cta-group {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      font-family: inherit;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border: 1px solid var(--text-ink);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--text-ink);
+      color: var(--bg-paper);
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-ink);
+    }
+
+    .btn-outline:hover {
+      background: var(--rule-dim);
+    }
+
+    .stat-card {
+      border: 1px solid var(--rule-color);
+      background: var(--bg-paper-2);
+      padding: 40px;
+      position: relative;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px;
+      border-top: 1px solid var(--rule-color);
+      padding-top: 28px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.85;
+    }
+
+    .form-input, .form-select {
+      width: 100%;
+      padding: 14px 16px;
+      background: var(--bg-paper);
+      border: 1px solid var(--rule-color);
+      color: var(--text-ink);
+      font-family: inherit;
+      font-size: 0.85rem;
+      transition: border-color 0.2s;
+    }
+
+    .form-input:focus, .form-select:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+
+    .stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.7;
+      margin-top: 12px;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .pricing-container {
+      max-width: 720px;
+      margin: 0 auto;
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      padding: 56px;
+      position: relative;
+      box-shadow: 12px 12px 0px rgba(0,0,0,0.25);
+    }
+
+    html.dark .pricing-container {
+      box-shadow: 12px 12px 0px rgba(255, 107, 74, 0.15);
+    }
+
+    .pricing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--rule-color);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .price-amount {
+      font-family: 'Outfit', sans-serif;
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+      font-size: 0.85rem;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .feature-list li::before {
+      content: "✦";
+      color: var(--accent);
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--rule-color);
+      margin-top: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--rule-dim);
+    }
+
+    th {
+      background: var(--bg-paper-2);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.75;
+    }
+
+    tr:hover {
+      background: var(--rule-dim);
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 14px 20px;
+      background: transparent;
+      border: 1px solid var(--rule-color);
+      color: var(--text-ink);
+      font-family: inherit;
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    footer {
+      border-top: 1px solid var(--rule-color);
+      padding: 48px 32px;
+      font-size: 0.75rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="#" class="brand font-display">
+        ROASTERDB
+        <span class="brand-tag">Specialty Coffee Dataset</span>
+      </a>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#metrics">Headline Metrics</a>
+        <a href="#explorer">Live Explorer</a>
+        <a href="#pricing">Pricing</a>
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span id="theme-label">Light Mode</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-diamond"></span>
+        <span>§ 00 · Cross-Source Pipeline & Flavor Mapping</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="hero-grid">
+        <div>
+          <h1 class="font-display">
+            Direct Roaster<br/>Storefronts,<br/>
+            <em style="font-style: italic; font-weight: 300;">normalized</em><span style="color: var(--accent)">.</span>
+          </h1>
+
+          <div class="hero-abstract">
+            <span class="abstract-label">Abstract</span>
+            <p class="abstract-text">
+              A structured catalog of 8,086 specialty-coffee products from 278 curated artisan roasters across 22 countries. RoasterDB reads each roaster's live storefront and maps its tasting notes deterministically to standard hierarchical SCA Flavor Wheel nodes — with a source URL on every record so any fact can be re-verified.
+            </p>
+          </div>
+
+          <div class="cta-group">
+            <a href="#pricing" class="btn btn-primary">
+              <span>Get the Dataset</span>
+              <span style="font-size: 1.2rem;">↗</span>
+            </a>
+            <a href="#explorer" class="btn btn-outline">
+              <span>↓ Sample Explorer</span>
+              <span>8,086 rows</span>
+            </a>
+          </div>
+          <p style="margin-top: 16px; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.55;">
+            One-time purchase · Instant CSV / SQLite download · Zero recurring fees
+          </p>
+        </div>
+
+        <div>
+          <div class="stat-card">
+            <div class="stat-number">8,086</div>
+            <div class="stat-label">Specialty Coffees · 278 Roasters · 22 Countries</div>
+            <div style="margin: 24px 0; height: 1px; background: var(--rule-color);"></div>
+            <div class="stat-number" style="font-size: 2.2rem;">3,422</div>
+            <div class="stat-label">Verified-Tier Records (origin + price + SCA flavor, QA-passed)</div>
+            <div style="margin: 24px 0; height: 1px; background: var(--rule-color);"></div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">
+              <strong>Coverage:</strong> Price 88% · Origin 58% · SCA flavor mapping 55% (11,838 links) · Source URL on every record. Catalog-depth dataset — see field coverage before you buy.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="metrics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-diamond"></span>
+        <span>§ 01 · Headline Metrics · Relational Integrity</span>
+        <div class="section-line"></div>
+        <span>4 Tables</span>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="stat-card" style="background: var(--bg-paper);">
+          <div class="stat-number" style="font-size: 2.4rem;">Shopify API</div>
+          <div class="stat-label">Storefront Ingestion Engine</div>
+          <p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">
+            Direct automated extraction across `/products.json` and `/sitemap.xml` feeds without browser rendering latency.
+          </p>
+        </div>
+        <div class="stat-card" style="background: var(--bg-paper);">
+          <div class="stat-number" style="font-size: 2.4rem;">SCA Wheel</div>
+          <div class="stat-label">3-Tier Hierarchical Taxonomy</div>
+          <p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">
+            Poetic terms (`"Grandma's peach cobbler"`) mapped directly to hierarchical paths (`Fruity > Other Fruit > Peach`).
+          </p>
+        </div>
+        <div class="stat-card" style="background: var(--bg-paper);">
+          <div class="stat-number" style="font-size: 2.4rem;">Bean-Only</div>
+          <div class="stat-label">Non-Bean Filtering</div>
+          <p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">
+            Multi-layer keyword and product-type boundaries filter out mugs, grinders, apparel, gift cards, subscriptions, and merchandise.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="explorer">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-diamond"></span>
+        <span>§ 02 · Live Catalog Explorer Preview</span>
+        <div class="section-line"></div>
+        <span>Open Source Snapshot</span>
+      </div>
+
+      <input type="text" id="searchBox" class="search-input" placeholder="Filter by roaster, origin, or flavor note (e.g. Onyx, Colombia, Peach)..." onkeyup="filterTable()" />
+
+      <div class="table-wrapper">
+        <table id="coffeeTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Roaster</th>
+              <th>Coffee Title</th>
+              <th>Origin</th>
+              <th>Elevation (masl)</th>
+              <th>Process</th>
+              <th>SCA Flavor Wheel Nodes</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td>7704499585122</td>
+              <td><strong>Onyx Coffee Lab</strong></td>
+              <td>Monarch - Cafes Only</td>
+              <td>Colombia / Ethiopia</td>
+              <td>1,650 - 2,100m</td>
+              <td>Natural</td>
+              <td><code>Nutty/Cocoa > Cocoa > Dark Chocolate</code></td>
+              <td><span style="color: var(--accent); font-weight: bold;">92.5</span></td>
+            </tr>
+            <tr>
+              <td>bean_2078</td>
+              <td><strong>Verve Coffee Roasters</strong></td>
+              <td>Streetlevel</td>
+              <td>Guatemala / Colombia</td>
+              <td>1,500 - 1,850m</td>
+              <td>Washed</td>
+              <td><code>Sweet > Brown Sugar > Caramel</code>, <code>Fruity > Citrus > Orange</code></td>
+              <td><span style="color: var(--accent); font-weight: bold;">91.0</span></td>
+            </tr>
+            <tr>
+              <td>9142729113913</td>
+              <td><strong>Black & White</strong></td>
+              <td>Edwin Noreña - Fruity Flowers</td>
+              <td>Colombia (Quindio)</td>
+              <td>1,600 - 1,750m</td>
+              <td>Anaerobic</td>
+              <td><code>Fruity > Berry > Strawberry</code>, <code>Floral > Floral > Jasmine</code></td>
+              <td><span style="color: var(--accent); font-weight: bold;">94.0</span></td>
+            </tr>
+            <tr>
+              <td>882194011</td>
+              <td><strong>Passenger Coffee</strong></td>
+              <td>Divino Niño 2024</td>
+              <td>Colombia (Huila)</td>
+              <td>1,800m</td>
+              <td>Washed</td>
+              <td><code>Fruity > Stone Fruit > Peach</code>, <code>Sweet > Honey > Honey</code></td>
+              <td><span style="color: var(--accent); font-weight: bold;">93.5</span></td>
+            </tr>
+            <tr>
+              <td>664192018</td>
+              <td><strong>The Barn</strong></td>
+              <td>Volcan Azul Geisha</td>
+              <td>Costa Rica</td>
+              <td>1,700m</td>
+              <td>Natural Anaerobic</td>
+              <td><code>Floral > Floral > Rose</code>, <code>Fruity > Tropical > Passion Fruit</code></td>
+              <td><span style="color: var(--accent); font-weight: bold;">95.0</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-diamond"></span>
+        <span>§ 03 · Two Ways to Get the Data</span>
+        <div class="section-line"></div>
+        <span>Snapshot + Custom</span>
+      </div>
+
+      <div class="pricing-container">
+        <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 700; margin-bottom: 10px;">Tier 1 · Self-Serve Snapshot</div>
+        <div class="pricing-header">
+          <div>
+            <h2 class="font-display" style="font-size: 2rem;">Full Snapshot Dataset</h2>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">One-time download · 8,086 records · Snapshot 2026.07</p>
+          </div>
+          <div class="price-amount"><span class="js-snapshot-price">$79</span></div>
+        </div>
+
+        <ul class="feature-list">
+          <li><strong>8,086 specialty coffees</strong> from 278 curated artisan roasters across 22 countries.</li>
+          <li><strong>Relational SQLite + CSV + JSON:</strong> normalized tables (`roasters`, `coffee_beans`, `sca_flavor_nodes`, `bean_flavors`), ready for ML, recommendation engines, and B2B apps.</li>
+          <li><strong>SCA Flavor Wheel mapping:</strong> 11,838 bean→flavor links as 3-tier paths (`Category > Subcategory > Descriptor`).</li>
+          <li><strong>Full provenance:</strong> every record carries its source roaster, source URL, and crawl timestamp — traceable and re-verifiable.</li>
+          <li><strong>Verified tier included:</strong> 3,422 QA-passed records (origin + sanitized price + flavor) alongside the full catalog.</li>
+          <li><strong>Snapshot 2026.07</strong> · one-time purchase, no recurring fees. Distributed as derived factual attributes with attribution.</li>
+        </ul>
+
+        <form id="checkoutForm" action="https://formsubmit.co/RoasterDB@proton.me" method="POST" class="contact-form" onsubmit="handleCheckout(event)">
+          <input type="hidden" name="_subject" value="New RoasterDB Snapshot Dataset Request" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+
+          <div style="font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent);">
+            Request the Full Snapshot Dataset
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="userName">Full Name / Organization *</label>
+            <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. Acme Coffee Corp or Jane Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="userEmail">Delivery Email Address *</label>
+            <input type="email" id="userEmail" name="email" class="form-input" placeholder="you@organization.com (Dataset link sent here)" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="payMethod">Preferred Payment Method *</label>
+            <select id="payMethod" name="payment_method" class="form-select" required>
+              <option value="Card (invoice link)">Credit / Debit Card (invoice link emailed)</option>
+              <option value="Crypto (USDT / ETH / BTC)">Cryptocurrency (USDT / ETH / BTC)</option>
+              <option value="Company Invoice Request">Company Purchase Order / Invoice Request</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="useCase">Intended Use Case</label>
+            <input type="text" id="useCase" name="use_case" class="form-input" placeholder="e.g. AI Recommendation Engine, B2B SaaS, Academic" />
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 0.9rem; padding: 22px; margin-top: 8px;">
+            <span>Request Snapshot Access · <span class="js-snapshot-price">$79</span> →</span>
+          </button>
+        </form>
+
+        <div id="checkoutSuccess" style="display: none; margin-top: 24px; padding: 32px; border: 1px solid var(--accent); background: var(--bg-paper);">
+          <div style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--accent);">
+            ✦ Order Request Sent Successfully!
+          </div>
+          <p style="margin-top: 12px; font-size: 0.85rem; line-height: 1.6;">
+            Your request has been sent to our desk (<code>RoasterDB@proton.me</code>). We'll email <strong id="sentEmailText" style="color: var(--accent);">your inbox</strong> with the download and payment details shortly.
+          </p>
+          <p style="margin-top: 12px; font-size: 0.75rem; opacity: 0.7;">
+            If you do not see our email within 5 minutes, please contact our desk directly at <a href="mailto:RoasterDB@proton.me" style="text-decoration: underline; color: var(--accent);">RoasterDB@proton.me</a>.
+          </p>
+        </div>
+
+        <div style="margin-top: 20px; text-align: center; font-size: 0.7rem; color: var(--text-muted);">
+          Card, invoice, or crypto (USDT / ETH / BTC) · Fulfilled manually within 1 business day · Direct desk: <a href="mailto:RoasterDB@proton.me" style="text-decoration: underline;">RoasterDB@proton.me</a>
+        </div>
+      </div>
+
+      <div class="pricing-container" style="margin-top: 32px;">
+        <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 700; margin-bottom: 10px;">Tier 2 · Custom & Fresh Data</div>
+        <div class="pricing-header">
+          <div>
+            <h2 class="font-display" style="font-size: 2rem;">Custom & Enterprise</h2>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Built to your spec · quoted per engagement</p>
+          </div>
+          <div class="price-amount" style="font-size: 1.6rem;">$1,000+</div>
+        </div>
+        <ul class="feature-list">
+          <li><strong>Custom roaster lists:</strong> we crawl the specific storefronts, origins, or regions you care about.</li>
+          <li><strong>Recurring fresh snapshots:</strong> monthly or quarterly refreshes so the data doesn't go stale — a static snapshot ages fast.</li>
+          <li><strong>Delivery your way:</strong> flat files, a hosted API endpoint, or a schema mapped to your product.</li>
+          <li><strong>Commercial terms & support:</strong> invoicing, licensing scoped to your use, and integration help.</li>
+        </ul>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">
+          This is where most of the value is — a fresh, curated feed built to your requirements, not a one-off snapshot of public data.
+        </p>
+        <a href="#support" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 22px;">
+          <span>Request a Custom Quote →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // ── Snapshot price lives here (single source of truth). If you change it,
+    //    also update the JSON-LD Product offer "price" near the top of this file. ──
+    const SNAPSHOT_PRICE = "$99";
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".js-snapshot-price").forEach(function (el) {
+        el.textContent = SNAPSHOT_PRICE;
+      });
+    });
+  </script>
+
+  <section class="section" id="support">
+    <div class="container" style="max-width: 720px; text-align: center;">
+      <div class="section-header" style="justify-content: center;">
+        <span class="section-diamond"></span>
+        <span>§ 04 · Direct Engineering & Dataset Support</span>
+        <div class="section-line"></div>
+      </div>
+      <h3 class="font-display" style="font-size: 1.8rem;">Have Questions or Need Custom Data?</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;">
+        Whether you need custom schema formats, API access, or enterprise invoicing, reach out directly to our desk at <code>RoasterDB@proton.me</code>.
+      </p>
+
+      <button type="button" class="btn btn-outline" style="margin-top: 24px; padding: 16px 32px; font-weight: 600;" onclick="toggleSupportForm()">
+        <span id="supportBtnText">💬 Open Support Contact Form</span>
+      </button>
+
+      <div id="supportFormContainer" style="display: none; margin-top: 32px; text-align: left; border: 1px solid var(--rule-color); background: var(--bg-paper-2); padding: 40px;">
+        <form id="supportForm" action="https://formsubmit.co/RoasterDB@proton.me" method="POST" class="contact-form" style="margin-top: 0; border-top: none; padding-top: 0;" onsubmit="handleSupport(event)">
+          <input type="hidden" name="_subject" value="New Support Inquiry for RoasterDB!" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+
+          <div class="form-group">
+            <label class="form-label" for="suppName">Your Name / Company *</label>
+            <input type="text" id="suppName" name="name" class="form-input" placeholder="e.g. Alex Smith" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="suppEmail">Your Email Address *</label>
+            <input type="email" id="suppEmail" name="email" class="form-input" placeholder="alex@company.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="suppTopic">Topic *</label>
+            <select id="suppTopic" name="topic" class="form-select" required>
+              <option value="Dataset Question / Sample Inquiry">Dataset Question / Sample Inquiry</option>
+              <option value="Payment / Crypto / Invoicing Support">Payment / Crypto / Invoicing Support</option>
+              <option value="Custom Scraping / Enterprise Integration">Custom Scraping / Enterprise Integration</option>
+              <option value="Bug Report / Data Quality Feedback">Bug Report / Data Quality Feedback</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="suppMsg">Message *</label>
+            <textarea id="suppMsg" name="message" class="form-input" rows="4" placeholder="Describe your question or custom requirement..." required style="resize: vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 18px; margin-top: 8px;">
+            <span>Send Message to RoasterDB@proton.me ➔</span>
+          </button>
+        </form>
+
+        <div id="supportSuccess" style="display: none; padding: 24px; border: 1px solid var(--accent); background: var(--bg-paper); text-align: center;">
+          <div style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--accent);">
+            ✦ Support Inquiry Dispatched!
+          </div>
+          <p style="margin-top: 8px; font-size: 0.85rem;">
+            Your message has been sent directly to <code>RoasterDB@proton.me</code>. Our team typically responds within 2–4 business hours.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <strong>ROASTERDB.NET</strong> — Specialty Coffee Dataset © 2026
+      </div>
+      <div>
+        <a href="https://github.com/Ichlibitiche/specialty-coffee-roasterdb" style="text-decoration: underline;">GitHub Repository</a> · 
+        <a href="#overview">Documentation</a> · 
+        <a href="#pricing">Pricing</a> ·
+        <a href="#support">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const label = document.getElementById('theme-label');
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        label.innerText = 'Dark Mode';
+      } else {
+        html.classList.add('dark');
+        label.innerText = 'Light Mode';
+      }
+    }
+
+    function filterTable() {
+      const input = document.getElementById('searchBox');
+      const filter = input.value.toUpperCase();
+      const table = document.getElementById('coffeeTable');
+      const tr = table.getElementsByTagName('tr');
+
+      for (let i = 1; i < tr.length; i++) {
+        const rowText = tr[i].textContent || tr[i].innerText;
+        if (rowText.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = '';
+        } else {
+          tr[i].style.display = 'none';
+        }
+      }
+    }
+
+    function handleCheckout(event) {
+      event.preventDefault();
+      const form = document.getElementById('checkoutForm');
+      const email = document.getElementById('userEmail').value;
+      const name = document.getElementById('userName').value;
+      const payMethod = document.getElementById('payMethod').value;
+      const useCase = document.getElementById('useCase').value;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch('https://formsubmit.co/ajax/RoasterDB@proton.me', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: 'New RoasterDB Snapshot Dataset Request: ' + name,
+          Name: name,
+          Email: email,
+          PaymentMethod: payMethod,
+          UseCase: useCase
+        })
+      }).then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
+      })
+      .then(data => {
+        form.style.display = 'none';
+        document.getElementById('sentEmailText').innerText = email;
+        document.getElementById('checkoutSuccess').style.display = 'block';
+      })
+      .catch(err => {
+        console.warn('FormSubmit AJAX error:', err);
+        if (submitBtn) submitBtn.disabled = false;
+        alert('Something went wrong submitting your request. Please try again or email RoasterDB@proton.me directly.');
+      });
+    }
+
+    function toggleSupportForm() {
+      const container = document.getElementById('supportFormContainer');
+      const btnText = document.getElementById('supportBtnText');
+      if (container.style.display === 'none') {
+        container.style.display = 'block';
+        btnText.innerText = '✕ Close Support Contact Form';
+        container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        container.style.display = 'none';
+        btnText.innerText = '💬 Open Support Contact Form';
+      }
+    }
+
+    function handleSupport(event) {
+      event.preventDefault();
+      const form = document.getElementById('supportForm');
+      const name = document.getElementById('suppName').value;
+      const email = document.getElementById('suppEmail').value;
+      const topic = document.getElementById('suppTopic').value;
+      const message = document.getElementById('suppMsg').value;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch('https://formsubmit.co/ajax/RoasterDB@proton.me', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: 'RoasterDB Support: ' + topic + ' (' + name + ')',
+          Name: name,
+          Email: email,
+          Topic: topic,
+          Message: message
+        })
+      }).then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
+      })
+      .then(data => {
+        form.style.display = 'none';
+        document.getElementById('supportSuccess').style.display = 'block';
+      })
+      .catch(err => {
+        console.warn('FormSubmit AJAX error:', err);
+        if (submitBtn) submitBtn.disabled = false;
+        alert('Could not send your message. Please email RoasterDB@proton.me directly.');
+      });
+    }
+  </script>
+</body>
+</html>
