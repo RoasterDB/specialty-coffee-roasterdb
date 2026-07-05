@@ -548,7 +548,7 @@
           </div>
 
           <div class="cta-group">
-            <a href="#pricing" class="btn btn-primary">
+            <a href="#pricing" class="btn btn-primary" onclick="resetCheckout()">
               <span>Get the Dataset</span>
               <span style="font-size: 1.2rem;">↗</span>
             </a>
@@ -772,6 +772,9 @@
           <p style="margin-top: 12px; font-size: 0.75rem; opacity: 0.7;">
             If you do not see our email within 5 minutes, please contact our desk directly at <a href="mailto:RoasterDB@proton.me" style="text-decoration: underline; color: var(--accent);">RoasterDB@proton.me</a>.
           </p>
+          <button type="button" class="btn btn-outline" style="margin-top: 20px; padding: 12px 24px; font-size: 0.8rem; font-weight: 600;" onclick="resetCheckout()">
+            <span>↻ Submit another request</span>
+          </button>
         </div>
 
         <div style="margin-top: 20px; text-align: center; font-size: 0.7rem; color: var(--text-muted);">
@@ -797,7 +800,7 @@
         <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">
           This is where most of the value is — a fresh, curated feed built to your requirements, not a one-off snapshot of public data.
         </p>
-        <a href="#support" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 22px;">
+        <a href="#support" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 22px;" onclick="openCustomQuote(event)">
           <span>Request a Custom Quote →</span>
         </a>
       </div>
@@ -874,6 +877,9 @@
           <p style="margin-top: 8px; font-size: 0.85rem;">
             Your message has been sent directly to <code>RoasterDB@proton.me</code>. Our team typically responds within 2–4 business hours.
           </p>
+          <button type="button" class="btn btn-outline" style="margin-top: 18px; padding: 12px 24px; font-size: 0.8rem; font-weight: 600;" onclick="resetSupport()">
+            <span>↻ Send another message</span>
+          </button>
         </div>
       </div>
     </div>
@@ -960,10 +966,36 @@
       });
     }
 
+    // Restore the checkout form after a successful submit so the user can
+    // request again. No-op if the form is already showing (won't wipe input).
+    function resetCheckout() {
+      const success = document.getElementById('checkoutSuccess');
+      if (!success || success.style.display === 'none' || success.style.display === '') return;
+      const form = document.getElementById('checkoutForm');
+      form.reset();
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.disabled = false;
+      form.style.display = '';
+      success.style.display = 'none';
+    }
+
+    // Restore the support form after a successful submit.
+    function resetSupport() {
+      const form = document.getElementById('supportForm');
+      form.reset();
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.disabled = false;
+      form.style.display = '';
+      document.getElementById('supportSuccess').style.display = 'none';
+    }
+
     function toggleSupportForm() {
       const container = document.getElementById('supportFormContainer');
       const btnText = document.getElementById('supportBtnText');
       if (container.style.display === 'none') {
+        // Reopening after a prior submit should show a fresh form, not the
+        // stale success box.
+        if (document.getElementById('supportSuccess').style.display !== 'none') resetSupport();
         container.style.display = 'block';
         btnText.innerText = '✕ Close Support Contact Form';
         container.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -971,6 +1003,21 @@
         container.style.display = 'none';
         btnText.innerText = '💬 Open Support Contact Form';
       }
+    }
+
+    // Tier 2 CTA: open the support form as a custom-quote request (fresh form,
+    // Custom/Enterprise topic preselected) instead of dropping the user next to
+    // the Tier 1 checkout box.
+    function openCustomQuote(event) {
+      if (event) event.preventDefault();
+      if (document.getElementById('supportSuccess').style.display !== 'none') resetSupport();
+      const topic = document.getElementById('suppTopic');
+      if (topic) topic.value = 'Custom Scraping / Enterprise Integration';
+      const container = document.getElementById('supportFormContainer');
+      const btnText = document.getElementById('supportBtnText');
+      container.style.display = 'block';
+      if (btnText) btnText.innerText = '✕ Close Support Contact Form';
+      container.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
     function handleSupport(event) {
