@@ -1,5 +1,7 @@
 <div align="center">
 
+![RoasterDB — Specialty Coffee Dataset mapped to the SCA Flavor Wheel](assets/kaggle-cover.png)
+
 # ☕ RoasterDB — Specialty Coffee Dataset
 
 **8,086 specialty-coffee products · 278 artisan roasters · 22 countries · mapped to the SCA Flavor Wheel**
