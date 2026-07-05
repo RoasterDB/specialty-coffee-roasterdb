@@ -767,7 +767,7 @@
             ✦ Order Request Sent Successfully!
           </div>
           <p style="margin-top: 12px; font-size: 0.85rem; line-height: 1.6;">
-            Your request has been sent to our desk (<code>RoasterDB@proton.me</code>). We'll email <strong id="sentEmailText" style="color: var(--accent);">your inbox</strong> with the download and payment details shortly.
+            Your request has been sent to our desk (<code>RoasterDB@proton.me</code>). We'll email the address you provided with the download and payment details shortly.
           </p>
           <p style="margin-top: 12px; font-size: 0.75rem; opacity: 0.7;">
             If you do not see our email within 5 minutes, please contact our desk directly at <a href="mailto:RoasterDB@proton.me" style="text-decoration: underline; color: var(--accent);">RoasterDB@proton.me</a>.
@@ -951,7 +951,6 @@
       })
       .then(data => {
         form.style.display = 'none';
-        document.getElementById('sentEmailText').innerText = email;
         document.getElementById('checkoutSuccess').style.display = 'block';
       })
       .catch(err => {
