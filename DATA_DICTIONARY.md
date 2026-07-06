@@ -29,12 +29,12 @@ dataset ships the same fields in CSV and JSON, plus a relational SQLite build.
 | `retrieved_at` | datetime | Crawl timestamp (when the fact was true) | 100% |
 | `dataset_version` | string | Snapshot id, e.g. `2026.07` | 100% |
 
-\* Share of the full 8,086-record dataset with a non-empty value.
+\* Share of the full dataset (8,000+ records) with a non-empty value.
 † `process_method` is present on 100% of rows but is `Other` when not stated; 45% carry a specific method.
 
 ## Notes
 
-- **Coverage is honest and uneven.** Storefronts don't all publish farm-level data, so origin/altitude/process are partial. Use the `quality_flag = good` **verified tier** (3,422 records) when you need complete rows.
+- **Coverage is honest and uneven.** Storefronts don't all publish farm-level data, so origin/altitude/process are partial. Use the `quality_flag = good` **verified tier** (3,400+ records) when you need complete rows.
 - **SCA flavor mapping** normalizes free-text tasting notes to the SCA 3-tier Flavor Wheel (`Category > Subcategory > Descriptor`). Multiple nodes per coffee are joined with `; `.
 - **Provenance.** `source_url` + `retrieved_at` let you trace and re-verify any record against the original listing.
 - **Relational build (full dataset).** The SQLite export normalizes into `roasters`, `coffee_beans`, `sca_flavor_nodes`, and `bean_flavors`.
