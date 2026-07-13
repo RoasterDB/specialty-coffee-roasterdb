@@ -1,0 +1,18 @@
+# RoasterDB — Specialty Coffee Dataset
+
+> A structured dataset of 8,000+ specialty-coffee products from 280+ artisan roasters across 20+ countries, with free-text tasting notes normalized to the SCA (Specialty Coffee Association) Flavor Wheel and a source URL on every record.
+
+## What it is
+- One row per coffee product listing, collected from roasters' public online storefronts.
+- Fields: origin country/region, altitude, process method, roast level, varietals, weight, price, and hierarchical SCA flavor nodes (Category > Subcategory > Descriptor).
+- Every record carries its source URL and crawl timestamp, so any fact can be re-verified.
+
+## Key pages
+- [Landing & pricing](https://specialty-coffee-roasterdb.pages.dev/): what's inside, honest field coverage, and how to buy.
+- [Free sample on Kaggle](https://www.kaggle.com/datasets/ahtiticheamine/roasterdb-specialty-coffee-sample): 100-row CSV plus a working starter notebook.
+
+## Pricing & licensing
+- Free sample: 100 rows, CC-BY-NC-4.0.
+- Full snapshot: $99 one-time (SQLite + CSV + JSON), commercial license.
+- Custom & recurring feeds: from $1,000, quoted per engagement.
+- Contact: RoasterDB@proton.me
