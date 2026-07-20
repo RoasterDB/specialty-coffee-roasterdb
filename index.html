@@ -135,6 +135,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Product",
+    "image": "https://specialty-coffee-roasterdb.pages.dev/og-image.png",
     "name": "RoasterDB Specialty Coffee Dataset — Full Snapshot",
     "description": "Structured specialty coffee dataset: 8,000+ products from 280+ artisan roasters across 20+ countries, with tasting notes mapped to the SCA Flavor Wheel and full source provenance. Relational SQLite plus CSV and JSON.",
     "brand": {
@@ -147,7 +148,9 @@
       "price": "49.00",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "url": "https://specialty-coffee-roasterdb.pages.dev/#pricing"
+      "url": "https://specialty-coffee-roasterdb.pages.dev/#pricing",
+      "shippingDetails": {"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":"0","currency":"USD"},"shippingDestination":[{"@type":"DefinedRegion","addressCountry":"US"},{"@type":"DefinedRegion","addressCountry":"GB"},{"@type":"DefinedRegion","addressCountry":"CA"},{"@type":"DefinedRegion","addressCountry":"AU"}],"deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":0,"unitCode":"DAY"},"transitTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":0,"unitCode":"DAY"}}},
+      "hasMerchantReturnPolicy": {"@type":"MerchantReturnPolicy","applicableCountry":["US", "GB", "CA", "AU"],"returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted"}
     }
   }
   </script>
