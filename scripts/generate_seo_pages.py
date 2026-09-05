@@ -181,7 +181,7 @@ def build_profile(name, coffees, kind):
 def generate_roaster_page(roaster_name: str, coffees: list):
     slug = slugify(roaster_name)
     file_path = ROASTERS_DIR / f"{slug}.html"
-    url = f"https://specialty-coffee-roasterdb.pages.dev/roasters/{slug}"
+    url = f"https://roasterdb.dataengineered.io/roasters/{slug}"
     
     # Build ItemList schema
     item_list = []
@@ -232,8 +232,8 @@ def generate_roaster_page(roaster_name: str, coffees: list):
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://specialty-coffee-roasterdb.pages.dev/" }},
-      {{ "@type": "ListItem", "position": 2, "name": "Roasters", "item": "https://specialty-coffee-roasterdb.pages.dev/#explorer" }},
+      {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://roasterdb.dataengineered.io/" }},
+      {{ "@type": "ListItem", "position": 2, "name": "Roasters", "item": "https://roasterdb.dataengineered.io/#explorer" }},
       {{ "@type": "ListItem", "position": 3, "name": "{html.escape(roaster_name)}", "item": "{url}" }}
     ]
   }}
@@ -320,7 +320,7 @@ def generate_roaster_page(roaster_name: str, coffees: list):
 def generate_origin_page(origin_name: str, coffees: list):
     slug = slugify(origin_name)
     file_path = ORIGINS_DIR / f"{slug}.html"
-    url = f"https://specialty-coffee-roasterdb.pages.dev/origins/{slug}"
+    url = f"https://roasterdb.dataengineered.io/origins/{slug}"
     
     rows_html = []
     for c in coffees:
@@ -360,8 +360,8 @@ def generate_origin_page(origin_name: str, coffees: list):
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://specialty-coffee-roasterdb.pages.dev/" }},
-      {{ "@type": "ListItem", "position": 2, "name": "Origins", "item": "https://specialty-coffee-roasterdb.pages.dev/#explorer" }},
+      {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://roasterdb.dataengineered.io/" }},
+      {{ "@type": "ListItem", "position": 2, "name": "Origins", "item": "https://roasterdb.dataengineered.io/#explorer" }},
       {{ "@type": "ListItem", "position": 3, "name": "{html.escape(origin_name)}", "item": "{url}" }}
     ]
   }}
@@ -451,7 +451,7 @@ def main():
         if origin and origin not in ['Unknown', 'Blend']:
             origins_map.setdefault(origin, []).append(c)
             
-    sitemap_urls = ["https://specialty-coffee-roasterdb.pages.dev/"]
+    sitemap_urls = ["https://roasterdb.dataengineered.io/"]
     
     print(f"Generating {len(roasters_map)} Roaster SEO Landing Pages...")
     for r_name, r_coffees in roasters_map.items():
@@ -467,7 +467,7 @@ def main():
     now_str = datetime.now().strftime('%Y-%m-%d')
     url_tags = []
     for u in sitemap_urls:
-        priority = "1.0" if u == "https://specialty-coffee-roasterdb.pages.dev/" else "0.8"
+        priority = "1.0" if u == "https://roasterdb.dataengineered.io/" else "0.8"
         url_tags.append(f"""  <url>
     <loc>{u}</loc>
     <lastmod>{now_str}</lastmod>

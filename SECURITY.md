@@ -5,7 +5,7 @@
 We take the integrity and privacy of the RoasterDB data seriously. If you
 discover any of the following, please report it privately:
 
-- A security vulnerability in the site ([roasterdb.net](https://specialty-coffee-roasterdb.pages.dev))
+- A security vulnerability in the site ([roasterdb.net](https://roasterdb.dataengineered.io))
   or in anything published in this repository (e.g. the starter notebook).
 - A data-privacy concern — a record that exposes information it shouldn't, or
   content that should be removed.

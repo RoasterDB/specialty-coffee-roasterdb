@@ -3,7 +3,7 @@
     python examples/load_sample.py
 
 No dependencies beyond the Python standard library.
-Full dataset: https://specialty-coffee-roasterdb.pages.dev
+Full dataset: https://roasterdb.dataengineered.io
 """
 
 import csv

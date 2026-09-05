@@ -12,7 +12,7 @@
  * are never written to or served from the cache.
  */
 
-const CACHE_NAME = 'roasterdb-public-cache-v2026.07.3';
+const CACHE_NAME = 'roasterdb-public-cache-v2026.09.1';
 const CORE_ASSETS = [
   '/',
   '/site.webmanifest',

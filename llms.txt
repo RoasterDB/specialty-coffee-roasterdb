@@ -8,7 +8,7 @@
 - Every record carries its source URL and crawl timestamp, so any fact can be re-verified.
 
 ## Key pages
-- [Landing & pricing](https://specialty-coffee-roasterdb.pages.dev/): what's inside, honest field coverage, and how to buy.
+- [Landing & pricing](https://roasterdb.dataengineered.io/): what's inside, honest field coverage, and how to buy.
 - [Free sample on Kaggle](https://www.kaggle.com/datasets/ahtiticheamine/roasterdb-specialty-coffee-sample): 100-row CSV plus a working starter notebook.
 
 ## Pricing & licensing
