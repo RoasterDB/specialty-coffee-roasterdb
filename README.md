@@ -17,6 +17,8 @@
 
 **Free sample:** [100 rows](samples/roasterdb_sample.csv) · **Full dataset: $49 one-time** → [Buy on Stripe](https://buy.stripe.com/8x2eVe2gU730fUf96w38405)
 
+**Same sample on [Hugging Face](https://huggingface.co/datasets/Ichlibitiche/roasterdb-specialty-coffee-sample)** · **[Kaggle](https://www.kaggle.com/datasets/ahtiticheamine/roasterdb-specialty-coffee-sample)**
+
 </div>
 
 ---
