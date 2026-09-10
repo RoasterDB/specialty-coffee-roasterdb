@@ -39,4 +39,4 @@ dataset ships the same fields in CSV and JSON, plus a relational SQLite build.
 - **Provenance.** `source_url` + `retrieved_at` let you trace and re-verify any record against the original listing.
 - **Relational build (full dataset).** The SQLite export normalizes into `roasters`, `coffee_beans`, `sca_flavor_nodes`, and `bean_flavors`.
 
-Full dataset: **[roasterdb.net](https://roasterdb.dataengineered.io)** · Questions: **[roasterdb@dataengineered.io](mailto:roasterdb@dataengineered.io)**
+Full dataset: **[roasterdb.net](https://roasterdb.dataengineered.io)** · Questions: roasterdb@dataengineered.io

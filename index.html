@@ -913,7 +913,7 @@
 
         <div style="margin-top: 20px; text-align: center; font-size: 0.7rem; color: var(--text-muted);">
           Secure card checkout via Stripe · Apple&nbsp;Pay / Google&nbsp;Pay · dataset delivered instantly after payment<br>
-          Need a company invoice or crypto payment? <a href="mailto:roasterdb@dataengineered.io?subject=RoasterDB%20Snapshot%20%E2%80%94%20invoice%20%2F%20crypto%20request" style="text-decoration: underline;">email our desk</a>
+          Need a company invoice or crypto payment? <a href="#support" style="text-decoration: underline;">use the contact form</a> (roasterdb@dataengineered.io)
         </div>
       </div>
 
@@ -1167,9 +1167,7 @@
           "Use Case: " + useCase + "\n\n" +
           "(Sent via automatic fallback due to FormSubmit server timeout)"
         );
-        window.location.href = "mailto:roasterdb@dataengineered.io?subject=" + subject + "&body=" + body;
-        
-        alert("⚠️ Notice: Our third-party form provider (FormSubmit.co) is currently experiencing a temporary server outage (Error 522).\n\nWe have automatically launched your email client with your request pre-filled! If your email app didn't open, please email us directly at roasterdb@dataengineered.io.");
+        alert("Our form provider is unreachable right now. Please write to roasterdb@dataengineered.io with your request — we reply within 1 business day.");
       });
     }
 
@@ -1280,9 +1278,7 @@
           "Message: \n" + message + "\n\n" +
           "(Sent via automatic fallback due to FormSubmit server timeout)"
         );
-        window.location.href = "mailto:roasterdb@dataengineered.io?subject=" + subject + "&body=" + body;
-        
-        alert("⚠️ Notice: Our third-party form provider (FormSubmit.co) is currently experiencing a temporary server outage (Error 522).\n\nWe have automatically launched your email client with your message pre-filled! If your email app didn't open, please email us directly at roasterdb@dataengineered.io.");
+        alert("Our form provider is unreachable right now. Please write to roasterdb@dataengineered.io with your request — we reply within 1 business day.");
       });
     }
 

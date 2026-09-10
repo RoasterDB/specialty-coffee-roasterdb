@@ -78,7 +78,7 @@ See [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) for every field.
 | **Custom & Enterprise** | Your target roasters · recurring refreshes · API | **$99+** |
 | **Live scrape** | On-demand, self-serve via Apify | pay-per-result |
 
-**[→ Get it at roasterdb.net](https://roasterdb.dataengineered.io)** · or email **[roasterdb@dataengineered.io](mailto:roasterdb@dataengineered.io)** for custom work.
+**[→ Get it at roasterdb.net](https://roasterdb.dataengineered.io)** · or use the [contact form](https://roasterdb.dataengineered.io/#support) (roasterdb@dataengineered.io) for custom work.
 
 > 🔄 **Prefer live, self-serve scraping?** Run the [Specialty Coffee Roaster Scraper on Apify](https://apify.com/dataengineered/specialty-coffee-roaster-scraper) — pay-per-result, fresh data on demand.
 
@@ -105,4 +105,4 @@ A fuller example is in [`examples/load_sample.py`](examples/load_sample.py).
 - **Sample data & docs in this repo:** CC-BY-NC-4.0 — free to use with attribution, non-commercial (see [`LICENSE`](LICENSE)).
 - **Full dataset:** commercial license, available at [roasterdb.net](https://roasterdb.dataengineered.io). Distributed as derived factual attributes with source attribution.
 
-Are you a roaster and want a record corrected or removed? Email **[roasterdb@dataengineered.io](mailto:roasterdb@dataengineered.io)**.
+Are you a roaster and want a record corrected or removed? Use the [contact form](https://roasterdb.dataengineered.io/#support) or write to roasterdb@dataengineered.io.
