@@ -15,6 +15,8 @@
 
 **[→ Get the full dataset at roasterdb.net](https://roasterdb.dataengineered.io)**
 
+**Free sample:** [100 rows](samples/roasterdb_sample.csv) · **Full dataset: $49 one-time** → [Buy on Stripe](https://buy.stripe.com/8x2eVe2gU730fUf96w38405)
+
 </div>
 
 ---
