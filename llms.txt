@@ -15,4 +15,4 @@
 - Free sample: 100 rows, CC-BY-NC-4.0.
 - Full snapshot: $99 one-time (SQLite + CSV + JSON), commercial license.
 - Custom & recurring feeds: from $1,000, quoted per engagement.
-- Contact: RoasterDB@proton.me
+- Contact: roasterdb@dataengineered.io

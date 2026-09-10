@@ -26,7 +26,7 @@ informs custom builds.
 ## Roasters: correction or removal requests
 
 If you're a roaster and want a record corrected or removed, please email
-**RoasterDB@proton.me** (or open an issue). We honor removal requests for the
+**roasterdb@dataengineered.io** (or open an issue). We honor removal requests for the
 public sample promptly.
 
 ## Pull request guidelines
@@ -42,4 +42,4 @@ By contributing, you agree that your contributions to the sample and docs are
 licensed under **CC-BY-NC-4.0**, the same license as this repository (see
 [`LICENSE`](LICENSE)).
 
-Questions? **RoasterDB@proton.me** · full dataset: [roasterdb.net](https://roasterdb.dataengineered.io)
+Questions? **roasterdb@dataengineered.io** · full dataset: [roasterdb.net](https://roasterdb.dataengineered.io)

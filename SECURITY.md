@@ -11,7 +11,7 @@ discover any of the following, please report it privately:
   content that should be removed.
 - Any suspected leak of the full (paid) dataset or pipeline source.
 
-**Please email: RoasterDB@proton.me**
+**Please email: roasterdb@dataengineered.io**
 
 Do **not** open a public GitHub issue for security-sensitive reports.
 
@@ -38,4 +38,4 @@ suspected leak) are still very welcome via the email above.
 ## Roasters
 
 If you're a roaster and want a record corrected or removed, email
-**RoasterDB@proton.me** — see also [`CONTRIBUTING.md`](CONTRIBUTING.md).
+**roasterdb@dataengineered.io** — see also [`CONTRIBUTING.md`](CONTRIBUTING.md).
