@@ -11,9 +11,9 @@
 [![🤗 Explorer](https://img.shields.io/badge/%F0%9F%A4%97%20Spaces-sample%20explorer-ffd21e.svg)](https://huggingface.co/spaces/Ichlibitiche/dataset-sample-explorers)
 [![Roasters: 280+](https://img.shields.io/badge/Roasters-280%2B-8a5a44.svg)](#whats-inside)
 [![Snapshot: 2026.07](https://img.shields.io/badge/Snapshot-2026.07-blue.svg)](CHANGELOG.md)
-[![Get the data](https://img.shields.io/badge/Get%20the%20data-roasterdb.net-ff6b4a.svg)](https://roasterdb.dataengineered.io)
+[![Get the data](https://img.shields.io/badge/Get%20the%20data-roasterdb.dataengineered.io-ff6b4a.svg)](https://roasterdb.dataengineered.io)
 
-**[→ Get the full dataset at roasterdb.net](https://roasterdb.dataengineered.io)**
+**[→ Get the full dataset at roasterdb.dataengineered.io](https://roasterdb.dataengineered.io)**
 
 **Free sample:** [100 rows](samples/roasterdb_sample.csv) · **Full dataset: $49 one-time** → [Buy on Stripe](https://buy.stripe.com/8x2eVe2gU730fUf96w38405)
 
@@ -35,7 +35,7 @@ This is a **storefront catalog + flavor-mapping** dataset — strong on roaster 
 | SCA flavor mappings | **11,000+** | ~250 |
 | Formats | SQLite · CSV · JSON | CSV |
 
-The free [`samples/roasterdb_sample.csv`](samples/roasterdb_sample.csv) is 100 verified-tier records across 72 roasters — a real taste of the schema and quality. Explore it interactively in the [🤗 Sample Explorer](https://huggingface.co/spaces/Ichlibitiche/dataset-sample-explorers), or load it straight from the [🤗 sample dataset](https://huggingface.co/datasets/Ichlibitiche/roasterdb-specialty-coffee-sample). The full dataset is available at **[roasterdb.net](https://roasterdb.dataengineered.io)**.
+The free [`samples/roasterdb_sample.csv`](samples/roasterdb_sample.csv) is 100 verified-tier records across 72 roasters — a real taste of the schema and quality. Explore it interactively in the [🤗 Sample Explorer](https://huggingface.co/spaces/Ichlibitiche/dataset-sample-explorers), or load it straight from the [🤗 sample dataset](https://huggingface.co/datasets/Ichlibitiche/roasterdb-specialty-coffee-sample). The full dataset is available at **[roasterdb.dataengineered.io](https://roasterdb.dataengineered.io)**.
 
 ## Field coverage (the honest numbers)
 
@@ -80,7 +80,7 @@ See [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) for every field.
 | **Custom & Enterprise** | Your target roasters · recurring refreshes · API | **$99+** |
 | **Live scrape** | On-demand, self-serve via Apify | pay-per-result |
 
-**[→ Get it at roasterdb.net](https://roasterdb.dataengineered.io)** · or use the [contact form](https://roasterdb.dataengineered.io/#support) (roasterdb@dataengineered.io) for custom work.
+**[→ Get it at roasterdb.dataengineered.io](https://roasterdb.dataengineered.io)** · or use the [contact form](https://roasterdb.dataengineered.io/#support) (roasterdb@dataengineered.io) for custom work.
 
 > 🔄 **Prefer live, self-serve scraping?** Run the [Specialty Coffee Roaster Scraper on Apify](https://apify.com/dataengineered/specialty-coffee-roaster-scraper) — pay-per-result, fresh data on demand.
 
@@ -105,6 +105,6 @@ A fuller example is in [`examples/load_sample.py`](examples/load_sample.py).
 ## License
 
 - **Sample data & docs in this repo:** CC-BY-NC-4.0 — free to use with attribution, non-commercial (see [`LICENSE`](LICENSE)).
-- **Full dataset:** commercial license, available at [roasterdb.net](https://roasterdb.dataengineered.io). Distributed as derived factual attributes with source attribution.
+- **Full dataset:** commercial license, available at [roasterdb.dataengineered.io](https://roasterdb.dataengineered.io). Distributed as derived factual attributes with source attribution.
 
 Are you a roaster and want a record corrected or removed? Use the [contact form](https://roasterdb.dataengineered.io/#support) or write to roasterdb@dataengineered.io.

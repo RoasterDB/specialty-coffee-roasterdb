@@ -42,4 +42,4 @@ By contributing, you agree that your contributions to the sample and docs are
 licensed under **CC-BY-NC-4.0**, the same license as this repository (see
 [`LICENSE`](LICENSE)).
 
-Questions? **roasterdb@dataengineered.io** · full dataset: [roasterdb.net](https://roasterdb.dataengineered.io)
+Questions? **roasterdb@dataengineered.io** · full dataset: [roasterdb.dataengineered.io](https://roasterdb.dataengineered.io)
