@@ -79,7 +79,7 @@ See [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) for every field.
 | :--- | :--- | :--- |
 | **Sample** | 100 verified rows (this repo) | Free |
 | **Snapshot** | Full 8,000+ records · SQLite + CSV + JSON | **$49** one-time |
-| **Custom & Enterprise** | Your target roasters · recurring refreshes · API | **$99+** |
+| **Custom work** | Subsets, recurring feeds, schema mapping — quoted per engagement | from $99, via the [contact form](https://roasterdb.dataengineered.io/#support) |
 | **Live scrape** | On-demand, self-serve via Apify | pay-per-result |
 
 **[→ Get it at roasterdb.dataengineered.io](https://roasterdb.dataengineered.io)** · or use the [contact form](https://roasterdb.dataengineered.io/#support) (roasterdb@dataengineered.io) for custom work.
