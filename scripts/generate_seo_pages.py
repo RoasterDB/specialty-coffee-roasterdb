@@ -73,8 +73,17 @@ def _oxford(items):
     return ", ".join(items[:-1]) + f", and {items[-1]}"
 
 def _plural(n, word):
-    """'<n> <word>' or '<n> <word>s' -- the one place release-count grammar lives."""
-    return f"{n} {word}" if n == 1 else f"{n} {word}s"
+    """'<n> <word>' or '<n> <word's plural>' -- the one place release-count grammar lives."""
+    if n == 1:
+        return f"{n} {word}"
+    if word.endswith('y') and word[-2:-1].lower() not in 'aeiou':
+        return f"{n} {word[:-1]}ies"
+    return f"{n} {word}s"
+
+def _cap(text):
+    """Capitalize only the first character; unlike str.capitalize() this never
+    lowercases the rest of the string (which would mangle 'Dark', 'SCA', etc.)."""
+    return text[:1].upper() + text[1:] if text else text
 
 def _families(coffees):
     fams = Counter()
@@ -183,45 +192,47 @@ def build_profile(name, coffees, kind):
     </section>"""
 
 def roaster_description(name, coffees):
+    # Plain text only -- the caller HTML-escapes once at the embed point.
     n = len(coffees)
     countries = Counter(_origin_of(c) for c in coffees if _origin_of(c))
     roasts = Counter(r for c in coffees
                      if (r := (c.get('roast_level') or '').strip()) and r != 'Unknown')
     processes = Counter(p for c in coffees
                         if (p := (c.get('process_method') or '').strip()) and p != 'Unknown')
-    parts = [f"{html.escape(name)} lists {_plural(n, 'specialty coffee release')} on RoasterDB"]
+    text = f"{name} lists {_plural(n, 'specialty coffee release')} on RoasterDB"
     if countries:
-        parts[0] += f" across {_plural(len(countries), 'origin country')}" if len(countries) != 1 \
-            else f" from {_oxford([html.escape(c) for c in countries])}"
-    text = parts[0] + "."
+        text += f" across {_plural(len(countries), 'origin country')}" if len(countries) != 1 \
+            else f" from {_oxford(list(countries))}"
+    text += "."
     tail_bits = []
     if roasts:
-        tail_bits.append("roast levels span " + _oxford([html.escape(r) for r, _ in roasts.most_common()]))
+        tail_bits.append("roast levels span " + _oxford([r for r, _ in roasts.most_common()]))
     if processes:
-        tail_bits.append("processing includes " + _oxford([html.escape(p) for p, _ in processes.most_common(3)]))
+        tail_bits.append("processing includes " + _oxford([p for p, _ in processes.most_common(3)]))
     if tail_bits:
-        text += " " + "; ".join(tail_bits).capitalize() + "."
+        text += " " + _cap("; ".join(tail_bits)) + "."
     return fit_desc(text)
 
 def origin_description(name, coffees):
+    # Plain text only -- the caller HTML-escapes once at the embed point.
     n = len(coffees)
     alts = _ints([c.get('altitude_min_meters') for c in coffees]
                  + [c.get('altitude_max_meters') for c in coffees])
     processes = Counter(p for c in coffees
                         if (p := (c.get('process_method') or '').strip()) and p != 'Unknown')
     fams = _families(coffees)
-    text = f"{html.escape(name)} appears in {_plural(n, 'specialty coffee release')} on RoasterDB"
+    text = f"{name} appears in {_plural(n, 'specialty coffee release')} on RoasterDB"
     if alts:
         lo, hi = min(alts), max(alts)
         text += f" grown at {lo} masl" if lo == hi else f" grown between {lo}-{hi} masl"
     text += "."
     tail_bits = []
     if processes:
-        tail_bits.append("processing methods seen include " + _oxford([html.escape(p) for p, _ in processes.most_common(3)]))
+        tail_bits.append("processing methods seen include " + _oxford([p for p, _ in processes.most_common(3)]))
     if fams:
-        tail_bits.append("top SCA descriptors are " + _oxford([html.escape(f) for f, _ in fams.most_common(3)]))
+        tail_bits.append("top SCA descriptors are " + _oxford([f for f, _ in fams.most_common(3)]))
     if tail_bits:
-        text += " " + "; ".join(tail_bits).capitalize() + "."
+        text += " " + _cap("; ".join(tail_bits)) + "."
     return fit_desc(text)
 
 def build_roaster_related(name, coffees, ctx):

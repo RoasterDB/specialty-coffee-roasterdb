@@ -22,6 +22,10 @@ def _cut(text, room):
     cut = text[:room].rsplit(" ", 1)[0].rstrip(_TRAIL)
     if len(cut) < max(8, room // 2):
         cut = text[:room].rstrip(_TRAIL)
+    # never end inside an unclosed bracket: drop the dangling "(…" / "[…" fragment
+    for open_, close in (("(", ")"), ("[", "]")):
+        if cut.count(open_) > cut.count(close):
+            cut = cut[: cut.rfind(open_)].rstrip(_TRAIL)
     return cut
 
 
