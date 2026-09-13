@@ -179,6 +179,21 @@ def build_profile(name, coffees, kind):
         f'<strong style="font-size:1.05rem;">{value}</strong></li>'
         for label, value in tiles)
 
+    # Full reciprocal chip list -- every sibling gets an inbound link from this page,
+    # independent of (and uncapped by) the curated .related section below, so a busy
+    # origin like Colombia (28 roasters) still links every one of them somewhere.
+    links = ""
+    if kind == 'roaster' and countries:
+        chips = [f'<a href="/origins/{slugify(c)}">{esc(c)}</a>' for c in sorted(countries)]
+        links = ('<p style="margin-top:16px;font-size:0.85rem;color:var(--text-muted);">'
+                 '<strong style="color:var(--text-ink);">Origins in this collection:</strong> '
+                 + " &middot; ".join(chips) + "</p>")
+    elif kind == 'origin' and roasters:
+        chips = [f'<a href="/roasters/{slugify(r)}">{esc(r)}</a>' for r in sorted(roasters)]
+        links = ('<p style="margin-top:16px;font-size:0.85rem;color:var(--text-muted);">'
+                 f'<strong style="color:var(--text-ink);">Roasters sourcing {esc(name)}:</strong> '
+                 + " &middot; ".join(chips) + "</p>")
+
     heading = "Collection Profile" if kind == 'roaster' else "Origin Profile"
     p2_html = f'<p style="margin-top:10px;">{p2}</p>' if p2 else ""
     return f"""
@@ -189,6 +204,7 @@ def build_profile(name, coffees, kind):
       <ul style="list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:20px;padding:0;">
         {tiles_html}
       </ul>
+      {links}
     </section>"""
 
 def roaster_description(name, coffees):
@@ -236,25 +252,39 @@ def origin_description(name, coffees):
     return fit_desc(text)
 
 def build_roaster_related(name, coffees, ctx):
+    """Reserved slots (not one combined cap), so a roaster with several origins never
+    crowds out its sibling-roaster items: up to 3 origins + up to 2 sibling roasters
+    (preferring roasters sharing this roaster's top origin, topped up from roasters
+    sharing its top roast level when fewer than 2 origin-siblings exist) + the hub."""
     items = []
     origins_here = sorted({_origin_of(c) for c in coffees if _origin_of(c) and _origin_of(c) not in ('Unknown', 'Blend')})
-    for o in origins_here:
+    for o in origins_here[:3]:
         items.append((f"../origins/{slugify(o)}", o, "origin sourced by this roaster"))
 
-    top_origin = ctx['roaster_top_origin'].get(name)
     seen = {name}
+    siblings = []
+    top_origin = ctx['roaster_top_origin'].get(name)
     if top_origin:
-        for r in [x for x in ctx['origin_to_roasters'].get(top_origin, []) if x not in seen][:2]:
-            items.append((f"../roasters/{slugify(r)}", r, f"also sources {top_origin}"))
+        for r in ctx['origin_to_roasters'].get(top_origin, []):
+            if r in seen:
+                continue
+            siblings.append((r, f"also sources {top_origin}"))
             seen.add(r)
+            if len(siblings) >= 2:
+                break
+    if len(siblings) < 2:
+        top_roast = ctx['roaster_top_roast'].get(name)
+        if top_roast:
+            for r in ctx['roast_level_roasters'].get(top_roast, []):
+                if r in seen:
+                    continue
+                siblings.append((r, f"same {top_roast.lower()} roast level"))
+                seen.add(r)
+                if len(siblings) >= 2:
+                    break
+    for r, reason in siblings:
+        items.append((f"../roasters/{slugify(r)}", r, reason))
 
-    top_roast = ctx['roaster_top_roast'].get(name)
-    if top_roast:
-        for r in [x for x in ctx['roast_level_roasters'].get(top_roast, []) if x not in seen][:1]:
-            items.append((f"../roasters/{slugify(r)}", r, f"same {top_roast.lower()} roast level"))
-            seen.add(r)
-
-    items = items[:5]
     have = {label for _, label, _ in items} | {name}
     if len(items) < 3:
         for r in _pad_related(name, ctx['roaster_names'], have, 3, ctx['roaster_idx']):
@@ -263,10 +293,15 @@ def build_roaster_related(name, coffees, ctx):
     return items
 
 def build_origin_related(name, coffees, ctx):
+    """Reserved slots: up to 3 roasters carrying this origin + up to 2 origins with the
+    closest altitude band + the hub -- kept separate so a busy origin (e.g. Colombia,
+    28 roasters) still gets its altitude siblings instead of the roaster list crowding
+    them out under a single combined cap. Every roaster is still linked from this page
+    via the full, uncapped chip list in build_profile()."""
     items = []
     roasters_here = sorted({(c.get('source_roaster') or '').strip() for c in coffees
                             if (c.get('source_roaster') or '').strip()})
-    for r in roasters_here:
+    for r in roasters_here[:3]:
         items.append((f"../roasters/{slugify(r)}", r, "roaster sourcing this origin"))
 
     avg = ctx['origin_alt_avg'].get(name)
@@ -278,7 +313,6 @@ def build_origin_related(name, coffees, ctx):
         for o, _ in others[:2]:
             items.append((f"../origins/{slugify(o)}", o, "similar growing elevation"))
 
-    items = items[:5]
     have = {label for _, label, _ in items} | {name}
     if len(items) < 3:
         for o in _pad_related(name, ctx['origin_names'], have, 3, ctx['origin_idx']):
