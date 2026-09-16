@@ -1,0 +1,1460 @@
+{
+ "01042ceb0520ae28": {
+  "src": "RoasterDB — Specialty Coffee Dataset &amp; SCA Flavor Taxonomy",
+  "t": "RoasterDB — Spezialitätenkaffee-Datensatz &amp; SCA-Aromataxonomie",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "029d02dc82a56812": {
+  "src": "— same {0} roast level",
+  "t": "— gleicher Röstgrad ({0})",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "02bd4fc96f44c4cd": {
+  "src": "Dataset Question / Sample Inquiry",
+  "t": "Frage zum Datensatz / Anfrage zu Beispieldaten",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "03688ba6aa340b87": {
+  "src": "FAQ",
+  "t": "FAQ",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "03ae7995488f66ba": {
+  "src": "Prefer live, self-serve data? <0>Run our scraper on Apify →</0>",
+  "t": "Lieber Live-Daten in Eigenregie? <0>Unseren Scraper auf Apify ausführen →</0>",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "046fddfd83638201": {
+  "src": "alex@company.com",
+  "t": "max@firma.de",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "05198cf9b2d76c7c": {
+  "src": "e.g. Alex Smith",
+  "t": "z. B. Max Mustermann",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0555af6ab54e3bff": {
+  "src": "ROASTERDB <0>Specialty Coffee Dataset</0>",
+  "t": "ROASTERDB <0>Spezialitätenkaffee-Datensatz</0>",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "05d3c6015fb914c0": {
+  "src": "{0} — Specialty Coffee Releases",
+  "t": "{0} — Spezialitätenkaffees",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0610b494d79c8fef": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}), {6} ({7}), and {8} ({9}) families of the SCA Flavor Wheel; roast levels span {10} and {11}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}) und {2} ({3}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {4} ({5}), {6} ({7}) und {8} ({9}) des SCA Flavor Wheel; die Röstgrade umfassen {10} und {11}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "06d401762bbaa8fe": {
+  "src": "SCA Wheel",
+  "t": "SCA-Aromarad",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "06f7fa00b2de38da": {
+  "src": "Coffee origin directory — RoasterDB",
+  "t": "Verzeichnis der Kaffeeherkünfte — RoasterDB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0714a401bba3ac0f": {
+  "src": "↻ Send another message",
+  "t": "↻ Weitere Nachricht senden",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "07ef6204bf6747b9": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}); tasting descriptors resolve most often to the {2} ({3}) and {4} ({5}) families of the SCA Flavor Wheel.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {2} ({3}) und {4} ({5}) des SCA Flavor Wheel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "088a505f59f402d5": {
+  "src": "Sitemap XML",
+  "t": "XML-Sitemap",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "08c9dabe9ccbb1ed": {
+  "src": "Live Explorer",
+  "t": "Live-Explorer",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0b6ff3036f217d01": {
+  "src": "RoasterDB is a structured, factual database containing over {0} specialty coffee releases from {1} artisan roasters across {2} countries. Every entry includes standardized attributes like origin country, altitude (masl), process method, varietals, and tasting notes mapped directly to the SCA Flavor Wheel.",
+  "t": "RoasterDB ist eine strukturierte, faktenbasierte Datenbank mit über {0} Spezialitätenkaffees von {1} Handwerksröstereien aus {2} Ländern. Jeder Eintrag enthält standardisierte Attribute wie Ursprungsland, Anbauhöhe (m ü. d. M.), Aufbereitungsmethode, Varietäten und Verkostungsnotizen, die direkt dem SCA Flavor Wheel zugeordnet sind.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0c3991fe7471990b": {
+  "src": "<0>{1} specialty coffees</0> from {2} curated artisan roasters across {3} countries.",
+  "t": "<0>{1} Spezialitätenkaffees</0> von {2} ausgewählten Handwerksröstereien aus {3} Ländern.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0cad3a2fb9b8d9c7": {
+  "src": "{0}-Tier Hierarchical Taxonomy",
+  "t": "{0}-stufige hierarchische Taxonomie",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0ce7f440e93fef7c": {
+  "src": "Origins",
+  "t": "Herkünfte",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0e97be9edde3104d": {
+  "src": "Structured specialty coffee dataset: {0} products from {1} artisan roasters across {2} countries, with tasting notes mapped to the SCA Flavor Wheel and full source provenance. Relational SQLite plus CSV and JSON.",
+  "t": "Strukturierter Spezialitätenkaffee-Datensatz: {0} Produkte von {1} Handwerksröstereien aus {2} Ländern, mit dem SCA Flavor Wheel zugeordneten Verkostungsnotizen und vollständiger Herkunft der Quellen. Relationales SQLite plus CSV und JSON.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0efc2e6be4c23b9a": {
+  "src": "Overview",
+  "t": "Überblick",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "0f2d2f3f40178f74": {
+  "src": "Processing methods",
+  "t": "Aufbereitungsmethoden",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "109dbd0c3665b8ee": {
+  "src": "<0>Snapshot {1}</0> · one-time purchase, no recurring fees. Distributed as derived factual attributes with attribution.",
+  "t": "<0>Snapshot {1}</0> · einmaliger Kauf, keine wiederkehrenden Gebühren. Bereitgestellt als abgeleitete Faktenattribute mit Quellenangabe.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "11760e1aac4396e1": {
+  "src": "Guatemala",
+  "t": "Guatemala",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "11f222389ff461ee": {
+  "src": "Poetic terms (`\"Grandma's peach cobbler\"`) mapped directly to hierarchical paths (`Fruity &gt; Other Fruit &gt; Peach`).",
+  "t": "Poetische Begriffe (`\"Grandma's peach cobbler\"`) werden direkt hierarchischen Pfaden zugeordnet (`Fruity &gt; Other Fruit &gt; Peach`).",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "12466054459a8a11": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}) families of the SCA Flavor Wheel; roast levels span {6}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}) und {2} ({3}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {4} ({5}) des SCA Flavor Wheel; die Röstgrade umfassen {6}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "12f4c13a6a06f999": {
+  "src": "Process",
+  "t": "Aufbereitung",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "137b881c17cdb668": {
+  "src": "{0} appears in {1} specialty coffee releases on RoasterDB. Processing methods seen include {2}, {3}, and {4}; top SCA descriptors are…",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffees vertreten. Aufbereitungsmethoden: {2}, {3} und {4}; häufigste SCA-Deskriptoren:…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "178e464dba22e340": {
+  "src": "{0} producing origins",
+  "t": "{0} Anbauherkünfte",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "17e5eca1cffde6fd": {
+  "src": "Your message has been sent directly to {0}. Our team typically responds within {1} business hours.",
+  "t": "Ihre Nachricht wurde direkt an {0} gesendet. Unser Team antwortet in der Regel innerhalb von {1} Geschäftsstunden.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "18995216c02f90b0": {
+  "src": "{0} appears in {1} specialty coffee releases on RoasterDB grown between {2} masl. Processing methods seen include {3}, {4}, and {5}; top…",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffees vertreten, angebaut auf {2} m ü. d. M. Aufbereitungsmethoden: {3}, {4} und {5}; häufigste…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "19547c0939dc911d": {
+  "src": "↓ Sample Explorer",
+  "t": "↓ Beispiel-Explorer",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "19ebc7a89800fba9": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}); tasting descriptors resolve most often to the {2} ({3}), {4} ({5}), and {6} ({7}) families of the SCA Flavor Wheel; roast levels span {8}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {2} ({3}), {4} ({5}) und {6} ({7}) des SCA Flavor Wheel; die Röstgrade umfassen {8}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "1b8f448e84758d74": {
+  "src": "One-time download · {0} records · Snapshot {1}",
+  "t": "Einmaliger Download · {0} Datensätze · Snapshot {1}",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "1b97d070d0b66d1e": {
+  "src": "{0} rows",
+  "t": "{0} Zeilen",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "1ba6798981696741": {
+  "src": "— also sources {0}",
+  "t": "— bezieht ebenfalls Kaffee aus {0}",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "1ecd4ea7b862d013": {
+  "src": "How are tasting notes mapped to the SCA Flavor Wheel?",
+  "t": "Wie werden Verkostungsnotizen dem SCA Flavor Wheel zugeordnet?",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "1f64a7b69dc49d9c": {
+  "src": "Coffees indexed",
+  "t": "Erfasste Kaffees",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "2086d8819cc600ca": {
+  "src": "Every coffee-producing origin in RoasterDB, each with its specialty releases, SCA tasting notes and growing elevations.",
+  "t": "Alle Kaffeeanbauherkünfte in RoasterDB, jeweils mit ihren Spezialitätenkaffees, SCA-Verkostungsnotizen und Anbauhöhen.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "21b842d042f8962d": {
+  "src": "Growing elevations range from {0} to {1} metres above sea level.",
+  "t": "Die Anbauhöhen reichen von {0} bis {1} Metern über dem Meeresspiegel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "21e7201f549f094d": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}) families of the SCA Flavor Wheel; roast levels span {6} and {7}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}) und {2} ({3}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {4} ({5}) des SCA Flavor Wheel; die Röstgrade umfassen {6} und {7}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "2329a484a94cb1aa": {
+  "src": "Get Full Snapshot Dataset ({0}) →",
+  "t": "Vollständigen Snapshot-Datensatz erhalten ({0}) →",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "233e417df913a957": {
+  "src": "✦ Support Inquiry Dispatched!",
+  "t": "✦ Supportanfrage gesendet!",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "294388fae194f1ac": {
+  "src": "{0} — {1} specialty release | RoasterDB",
+  "t": "{0} — {1} Spezialitätenkaffee | RoasterDB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "2afa50ce4a1b6f11": {
+  "src": "specialty coffee database",
+  "t": "Spezialitätenkaffee-Datenbank",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "2bd325f2679af9be": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}); tasting descriptors resolve most often to the {2} ({3}) and {4} ({5}) families of the SCA Flavor Wheel; roast levels span {6}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {2} ({3}) und {4} ({5}) des SCA Flavor Wheel; die Röstgrade umfassen {6}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "2ce80e9e93ea21b4": {
+  "src": "§ {0} · Cross-Source Pipeline &amp; Flavor Mapping",
+  "t": "§ {0} · Quellenübergreifende Pipeline &amp; Aromazuordnung",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "2d2599079b3a4b29": {
+  "src": "What database formats are included in the download?",
+  "t": "Welche Datenbankformate sind im Download enthalten?",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "2f73739960648665": {
+  "src": "Colombia",
+  "t": "Kolumbien",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "30808506cfb56d0d": {
+  "src": "coffee flavor notes taxonomy",
+  "t": "Taxonomie der Kaffee-Aromanoten",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "311078c1a01c2bdf": {
+  "src": "Your Name / Company *",
+  "t": "Ihr Name / Unternehmen *",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "31e7bc198f6e6b8f": {
+  "src": "Headline Metrics",
+  "t": "Kennzahlen",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3425b833fba0d1d2": {
+  "src": "Multi-layer keyword and product-type boundaries filter out mugs, grinders, apparel, gift cards, subscriptions, and merchandise.",
+  "t": "Mehrstufige Schlagwort- und Produkttypfilter sortieren Becher, Mühlen, Bekleidung, Geschenkkarten, Abonnements und Merchandise aus.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "34ac37f56e147bf6": {
+  "src": "Back to home",
+  "t": "Zurück zur Startseite",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3aad1071e19c8ed5": {
+  "src": "Specialty coffee dataset and SCA flavor taxonomy provider.",
+  "t": "Anbieter eines Spezialitätenkaffee-Datensatzes und der SCA-Aromataxonomie.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3ae982889b0abd24": {
+  "src": "Origin Country",
+  "t": "Ursprungsland",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3c0ed6a962e805c2": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}) and {6} ({7}) families of the SCA Flavor Wheel; roast levels span {8}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}) und {2} ({3}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {4} ({5}) und {6} ({7}) des SCA Flavor Wheel; die Röstgrade umfassen {8}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3ce9fe8c82c13534": {
+  "src": "This RoasterDB snapshot of {0} catalogues {1} specialty coffee release sourced from {2}.",
+  "t": "Dieser RoasterDB-Snapshot von {0} verzeichnet {1} Spezialitätenkaffee aus {2}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3cff3b5bc853fc34": {
+  "src": "§ {0} · Two Ways to Get the Data",
+  "t": "§ {0} · Zwei Wege zu den Daten",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3d2b5bf2631bd9eb": {
+  "src": "Listed retail price is {0} {1}.",
+  "t": "Der gelistete Verkaufspreis beträgt {0} {1}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3d91f7631ba813c1": {
+  "src": "Ethiopia",
+  "t": "Äthiopien",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3d948d0880bc36b7": {
+  "src": "Custom work — subsets, recurring feeds, schema mapping — is quoted per engagement from {0}. Use the contact form on this page.",
+  "t": "Individuelle Arbeiten — Teilmengen, wiederkehrende Feeds, Schema-Mapping — werden je Auftrag ab {0} angeboten. Nutzen Sie das Kontaktformular auf dieser Seite.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3e343e606dd3d7d8": {
+  "src": "{0} masl",
+  "t": "{0} m ü. d. M.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3e901e6be83b04fc": {
+  "src": "Related roasters and origins",
+  "t": "Verwandte Röstereien und Herkünfte",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "3fc75ea93aa13902": {
+  "src": "{0} — {1} specialty releases | RoasterDB",
+  "t": "{0} — {1} Spezialitätenkaffees | RoasterDB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "422ffc6064e1b406": {
+  "src": "Every specialty coffee roaster in RoasterDB, each with its current releases, origins and roast profiles.",
+  "t": "Alle Spezialitätenröstereien in RoasterDB, jeweils mit ihren aktuellen Kaffees, Herkünften und Röstprofilen.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "4426257b0fd170ed": {
+  "src": "artisan coffee roasters dataset",
+  "t": "Datensatz handwerklicher Kaffeeröstereien",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "44ab85a252adb7ad": {
+  "src": "Origin",
+  "t": "Herkunft",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "47bfd7086883b0c2": {
+  "src": "Whether you need custom schema formats, API access, or enterprise invoicing, reach out directly to our desk at {0}.",
+  "t": "Ob individuelle Schemaformate, API-Zugang oder Rechnungsstellung für Unternehmen — wenden Sie sich direkt an unser Team unter {0}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "489f4877244a2991": {
+  "src": "Score",
+  "t": "Bewertung",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "496fa61c0e7b86a2": {
+  "src": "Related origins and roasters",
+  "t": "Verwandte Herkünfte und Röstereien",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "4991f872abd18e81": {
+  "src": "<0>SCA Flavor Wheel mapping:</0> {1} bean→flavor links as {2}-tier paths (`Category &gt; Subcategory &gt; Descriptor`).",
+  "t": "<0>SCA-Flavor-Wheel-Zuordnung:</0> {1} Bohne→Aroma-Verknüpfungen als {2}-stufige Pfade (`Category &gt; Subcategory &gt; Descriptor`).",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "4a6acb3226ffea37": {
+  "src": "Top flavor family",
+  "t": "Häufigste Aromafamilie",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "4b1f58d83fce1752": {
+  "src": "{0} specialty roasters",
+  "t": "{0} Spezialitätenröstereien",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "4ba8f1b236486a8f": {
+  "src": "§ {0} · Live Catalog Explorer Preview",
+  "t": "§ {0} · Vorschau des Live-Katalog-Explorers",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "4bdcf669d2bbb7c1": {
+  "src": "{0} lists {1} specialty coffee release on RoasterDB from {2}. Processing includes {3}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffee aus {2}. Aufbereitung: {3}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "4c37be6112836df9": {
+  "src": "RoasterDB Specialty Coffee Dataset — Full Snapshot {0}",
+  "t": "RoasterDB Spezialitätenkaffee-Datensatz — vollständiger Snapshot {0}",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "4c9164e245da6a4f": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB from {2}. Processing includes {3} and {4}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2}. Aufbereitung: {3} und {4}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "52490d97adaa6711": {
+  "src": "{0} appears in {1} specialty coffee release on RoasterDB. Processing methods seen include {2}; top SCA descriptors are {3}.",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffee vertreten. Aufbereitungsmethoden: {2}; häufigste SCA-Deskriptoren: {3}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "573bee0f64ef8504": {
+  "src": "Verified-Tier Records (origin + price + SCA flavor, QA-passed)",
+  "t": "Datensätze der verifizierten Stufe (Herkunft + Preis + SCA-Aroma, QS-geprüft)",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "57dc0875342d41f0": {
+  "src": "RoasterDB catalogues {0} specialty coffee releases grown in {1}, offered by {2}, {3}, {4}, and {5}.",
+  "t": "RoasterDB verzeichnet {0} in {1} angebaute Spezialitätenkaffees, angeboten von {2}, {3}, {4} und {5}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "59ee7f9fcd0843b3": {
+  "src": "Direct automated extraction across `/products.json` and `/sitemap.xml` feeds without browser rendering latency.",
+  "t": "Direkte automatisierte Extraktion aus den Feeds `/products.json` und `/sitemap.xml` ohne Latenz durch Browser-Rendering.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "5aa588714ab4cbfd": {
+  "src": "Honduras",
+  "t": "Honduras",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "5b4ce8668787ceff": {
+  "src": "RoasterDB Specialty Coffee Dataset — Full Snapshot",
+  "t": "RoasterDB Spezialitätenkaffee-Datensatz — vollständiger Snapshot",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "5b8d2481ae4f0b44": {
+  "src": "Part of the DataEngineered catalog →",
+  "t": "Teil des DataEngineered-Katalogs →",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "5c12b6ae72a74abc": {
+  "src": "| Roaster Catalog Snapshot",
+  "t": "| Snapshot des Röstereikatalogs",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "5c7e3c8e023992ef": {
+  "src": "All specialty roasters",
+  "t": "Alle Spezialitätenröstereien",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "5d2e5886de41b746": {
+  "src": "Bug Report / Data Quality Feedback",
+  "t": "Fehlermeldung / Feedback zur Datenqualität",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "5e1fbda3f800f492": {
+  "src": "✕ Close Support Contact Form",
+  "t": "✕ Support-Kontaktformular schließen",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "60ea9fbcff2d33f7": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}), {6} ({7}), {8} ({9}), and {10} ({11}) families of the SCA Flavor Wheel; roast levels span {12} and {13}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}) und {2} ({3}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {4} ({5}), {6} ({7}), {8} ({9}) und {10} ({11}) des SCA Flavor Wheel; die Röstgrade umfassen {12} und {13}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "6249343da799aec4": {
+  "src": "RoasterDB is a structured, factual database containing over <0>{1} specialty coffee releases</0> from <2>{3} artisan roasters across {4} countries</2>. Every entry includes standardized attributes like origin country, altitude (masl), process method, varietals, and tasting notes mapped directly to the SCA Flavor Wheel.",
+  "t": "RoasterDB ist eine strukturierte, faktenbasierte Datenbank mit über <0>{1} Spezialitätenkaffees</0> von <2>{3} Handwerksröstereien aus {4} Ländern</2>. Jeder Eintrag enthält standardisierte Attribute wie Ursprungsland, Anbauhöhe (m ü. d. M.), Aufbereitungsmethode, Varietäten und Verkostungsnotizen, die direkt dem SCA Flavor Wheel zugeordnet sind.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "626d86e3d7bd5c0c": {
+  "src": "Storefront Ingestion Engine",
+  "t": "Shop-Erfassungs-Engine",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "62b656c201613be9": {
+  "src": "Page not found — RoasterDB",
+  "t": "Seite nicht gefunden — RoasterDB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "632fdda0f55615b6": {
+  "src": "RoasterDB catalogues {0} specialty coffee release grown in {1}, offered by {2}.",
+  "t": "RoasterDB verzeichnet {0} in {1} angebauten Spezialitätenkaffee, angeboten von {2}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "64b686bc54101fce": {
+  "src": "Elevation (masl)",
+  "t": "Anbauhöhe (m ü. d. M.)",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "65f529e5b6209307": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}); tasting descriptors resolve most often to the {2} ({3}) and {4} ({5}) families of the SCA Flavor Wheel; roast levels span {6} and {7}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {2} ({3}) und {4} ({5}) des SCA Flavor Wheel; die Röstgrade umfassen {6} und {7}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "67f75c6cacccbd6f": {
+  "src": "<0>Verified tier included:</0> {1} QA-passed records (origin + sanitized price + flavor) alongside the full catalog.",
+  "t": "<0>Verifizierte Stufe inklusive:</0> {1} QS-geprüfte Datensätze (Herkunft + bereinigter Preis + Aroma) zusätzlich zum vollständigen Katalog.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "6b0cb5f66c08eba2": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}), {6} ({7}), and {8} ({9}) families of the SCA Flavor Wheel.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}) und {2} ({3}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {4} ({5}), {6} ({7}) und {8} ({9}) des SCA Flavor Wheel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "6b21fb791ac05170": {
+  "src": "About",
+  "t": "Über uns",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "6c67a4a27244bbbe": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Processing includes {3}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2} Ursprungsländern. Aufbereitung: {3}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "6cba8404fea192c8": {
+  "src": "Artisan Roaster",
+  "t": "Handwerksrösterei",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "6d4b3b1e4a1bfa56": {
+  "src": "{0} appears in {1} specialty coffee release on RoasterDB grown between {2} masl. Processing methods seen include {3}; top SCA…",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffee vertreten, angebaut auf {2} m ü. d. M. Aufbereitungsmethoden: {3}; häufigste SCA-…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "6e4bf5684629830e": {
+  "src": "Send Message to roasterdb@dataengineered.io ➔",
+  "t": "Nachricht an roasterdb@dataengineered.io senden ➔",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "7077e5d7c5460476": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3}; processing includes {4}…",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2} Ursprungsländern. Röstgrade: {3}; Aufbereitung: {4}…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "70f8bb9a8a5393ef": {
+  "src": "Home",
+  "t": "Startseite",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "732f68036aeac6fc": {
+  "src": "The structured <0>specialty coffee dataset</0> — {1} products from {2} artisan roasters, with tasting notes mapped to the SCA Flavor Wheel.",
+  "t": "Der strukturierte <0>Spezialitätenkaffee-Datensatz</0> — {1} Produkte von {2} Handwerksröstereien, mit dem SCA Flavor Wheel zugeordneten Verkostungsnotizen.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "7511bd4716655d38": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB from {2}. Roast levels span {3}; processing includes {4} and {5}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2}. Röstgrade: {3}; Aufbereitung: {4} und {5}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "7770167075cbe146": {
+  "src": "Roasters sourcing {0}:",
+  "t": "Röstereien mit Kaffee aus {0}:",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "77dc3ba0003a0db0": {
+  "src": "Light Mode",
+  "t": "Heller Modus",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "7887210f966cc27a": {
+  "src": "Sample selection of exceptional specialty coffees indexed in the RoasterDB relational database.",
+  "t": "Beispielauswahl außergewöhnlicher Spezialitätenkaffees aus der relationalen RoasterDB-Datenbank.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "79557e073fa199b4": {
+  "src": "RoasterDB converts poetic or unstructured roaster descriptions (such as 'Grandma's peach cobbler') into strict {0}-tier hierarchical SCA Flavor Wheel paths (for example: Fruity &gt; Other Fruit &gt; Peach). This enables precise filtering and machine learning feature extraction.",
+  "t": "RoasterDB überführt poetische oder unstrukturierte Beschreibungen der Röstereien (etwa 'Grandma's peach cobbler') in strikte {0}-stufige hierarchische Pfade des SCA Flavor Wheel (zum Beispiel: Fruity &gt; Other Fruit &gt; Peach). Das ermöglicht präzises Filtern und die Extraktion von Merkmalen für maschinelles Lernen.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "7a213ce070165296": {
+  "src": "All coffee origins",
+  "t": "Alle Kaffeeherkünfte",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "7ab6b7e48cec6ce4": {
+  "src": "Get the Dataset",
+  "t": "Datensatz erhalten",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "7d1d295e65994f51": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3} and {4}; processing includes {5}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2} Ursprungsländern. Röstgrade: {3} und {4}; Aufbereitung: {5}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "7dbfcf0c0baf298f": {
+  "src": "Roaster directory",
+  "t": "Röstereiverzeichnis",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "7f472c6243059abd": {
+  "src": "Origins in this collection:",
+  "t": "Herkünfte in dieser Kollektion:",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8004f21022147489": {
+  "src": "Custom Scraping / Enterprise Integration",
+  "t": "Individuelles Scraping / Enterprise-Integration",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "818e0a066ca87a34": {
+  "src": "Listed retail prices range {0} {1}.",
+  "t": "Die gelisteten Verkaufspreise liegen bei {0} {1}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "832fc72cfb4fb3f4": {
+  "src": "Full Snapshot Dataset",
+  "t": "Vollständiger Snapshot-Datensatz",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "851a156a3f05db8d": {
+  "src": "Elevation range",
+  "t": "Höhenbereich",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "853436b7e84890ad": {
+  "src": "Structured specialty coffee dataset containing {0} products from {1} artisan roasters across {2} countries. Every record is standardized with tasting notes mapped directly to the SCA {3}-tier Flavor Wheel taxonomy (`Category &gt; Subcategory &gt; Descriptor`) along with origin country, altitude (masl), process method, varietals, and full source roaster provenance.",
+  "t": "Strukturierter Spezialitätenkaffee-Datensatz mit {0} Produkten von {1} Handwerksröstereien aus {2} Ländern. Jeder Datensatz ist standardisiert: Verkostungsnotizen sind direkt der {3}-stufigen Taxonomie des SCA Flavor Wheel (`Category &gt; Subcategory &gt; Descriptor`) zugeordnet, dazu Ursprungsland, Anbauhöhe (m ü. d. M.), Aufbereitungsmethode, Varietäten und die vollständige Herkunft der Quellrösterei.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "86b0db81d24e1483": {
+  "src": "Snapshot + Custom",
+  "t": "Snapshot + individuell",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "879aa7446c521b39": {
+  "src": "Download structured specialty coffee data mapped to the SCA Flavor Wheel.",
+  "t": "Laden Sie strukturierte Spezialitätenkaffee-Daten herunter, zugeordnet zum SCA Flavor Wheel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "88dfbfc29bf4b22e": {
+  "src": "Get the dataset",
+  "t": "Datensatz erhalten",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8a2f695b05fffa67": {
+  "src": "One-time purchase · Instant CSV / SQLite download · Zero recurring fees",
+  "t": "Einmaliger Kauf · Sofortiger CSV-/SQLite-Download · Keine wiederkehrenden Gebühren",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8addb891254ad8a1": {
+  "src": "Message *",
+  "t": "Nachricht *",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8b6c6a9424b9a11a": {
+  "src": "Documented growing elevation sits at {0} metres above sea level.",
+  "t": "Die dokumentierte Anbauhöhe liegt bei {0} Metern über dem Meeresspiegel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8b79cd0036e48007": {
+  "src": "§ {0} · Frequently Asked Questions",
+  "t": "§ {0} · Häufig gestellte Fragen",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8c67540544e38d0e": {
+  "src": "Filter by roaster, origin, or flavor note (e.g. Onyx, Colombia, Peach)...",
+  "t": "Nach Rösterei, Herkunft oder Aromanote filtern (z. B. Onyx, Colombia, Peach)...",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8d3a8023c92616cd": {
+  "src": "— similar growing elevation",
+  "t": "— ähnliche Anbauhöhe",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8d3e07cc30bac85d": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3}; processing includes…",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2} Ursprungsländern. Röstgrade: {3}; Aufbereitung:…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8e072025366d8304": {
+  "src": "Refund policy",
+  "t": "Rückerstattungsrichtlinie",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "8fd6756022cac95a": {
+  "src": "Tier {0} · Self-Serve Snapshot",
+  "t": "Stufe {0} · Snapshot zum Selbstbezug",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "90d7cc5e9314f1d7": {
+  "src": "<0>Home</0> › Roaster directory",
+  "t": "<0>Startseite</0> › Röstereiverzeichnis",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "90f40e74de6be244": {
+  "src": "Shopify API",
+  "t": "Shopify-API",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "911f3aca23617c0f": {
+  "src": "Our form provider is unreachable right now. Please write to roasterdb@dataengineered.io with your request — we reply within {0} business day.",
+  "t": "Unser Formularanbieter ist derzeit nicht erreichbar. Bitte schreiben Sie Ihr Anliegen an roasterdb@dataengineered.io — wir antworten innerhalb von {0} Werktag.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "91b5fd33d68e716d": {
+  "src": "{0} Tables",
+  "t": "{0} Tabellen",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "91d32844f878f14e": {
+  "src": "This RoasterDB snapshot of {0} catalogues {1} specialty coffee releases sourced from {2} and {3}.",
+  "t": "Dieser RoasterDB-Snapshot von {0} verzeichnet {1} Spezialitätenkaffees aus {2} und {3}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "921eaf595bb91c45": {
+  "src": "{0} Specialty Coffees",
+  "t": "Spezialitätenkaffees von {0}",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "9424852a213818ad": {
+  "src": "Direct Roaster {0}Storefronts, {1} <2>normalized</2><3>.</3>",
+  "t": "Direkt aus {0}Röstereishops, {1} <2>normalisiert</2><3>.</3>",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "94fa9ca800793310": {
+  "src": "<0>ROASTERDB</0> — Specialty Coffee Dataset © {1}",
+  "t": "<0>ROASTERDB</0> — Spezialitätenkaffee-Datensatz © {1}",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "9568e402dbbfff48": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}), {2} ({3}), {4} ({5}), and {6} ({7}); tasting descriptors resolve most often to the {8} ({9}), {10} ({11}), {12} ({13}), and {14} ({15}) families of the SCA Flavor Wheel; roast levels span {16}, {17}, and {18}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}), {2} ({3}), {4} ({5}) und {6} ({7}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {8} ({9}), {10} ({11}), {12} ({13}) und {14} ({15}) des SCA Flavor Wheel; die Röstgrade umfassen {16}, {17} und {18}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "95b5b3759fe1763d": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}), {2} ({3}), {4} ({5}), and {6} ({7}); tasting descriptors resolve most often to the {8} ({9}), {10} ({11}), {12} ({13}), and {14} ({15}) families of the SCA Flavor Wheel; roast levels span {16}, {17}, {18}, and {19}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}), {2} ({3}), {4} ({5}) und {6} ({7}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {8} ({9}), {10} ({11}), {12} ({13}) und {14} ({15}) des SCA Flavor Wheel; die Röstgrade umfassen {16}, {17}, {18} und {19}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "96e16354a53ea2bd": {
+  "src": "RoasterDB converts poetic or unstructured roaster descriptions (such as {0} or {1}) into strict {2}-tier hierarchical SCA Flavor Wheel paths (for example: {3}). This enables precise semantic filtering and machine learning feature extraction.",
+  "t": "RoasterDB überführt poetische oder unstrukturierte Beschreibungen der Röstereien (etwa {0} oder {1}) in strikte {2}-stufige hierarchische Pfade des SCA Flavor Wheel (zum Beispiel: {3}). Das ermöglicht präzises semantisches Filtern und die Extraktion von Merkmalen für maschinelles Lernen.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "976b40a8b5da86de": {
+  "src": "Structured specialty coffee data: {0} coffees from {1} roasters across {2} countries, mapped to the SCA Flavor Wheel, with full source provenance.",
+  "t": "Strukturierte Spezialitätenkaffee-Daten: {0} Kaffees von {1} Röstereien aus {2} Ländern, zugeordnet zum SCA Flavor Wheel, mit vollständiger Herkunft der Quellen.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "99b90d2fa0bf4db2": {
+  "src": "<0>Home</0> › Coffee origin directory",
+  "t": "<0>Startseite</0> › Verzeichnis der Kaffeeherkünfte",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "99ece1b6a4ca58fa": {
+  "src": "{0} appears in {1} specialty coffee releases on RoasterDB grown at {2} masl. Processing methods seen include {3}, {4}, and {5}; top SCA…",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffees vertreten, angebaut auf {2} m ü. d. M. Aufbereitungsmethoden: {3}, {4} und {5}; häufigste SCA-…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "9a07bf1c56177b42": {
+  "src": "Your Email Address *",
+  "t": "Ihre E-Mail-Adresse *",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "9b571f76ce2cf37c": {
+  "src": "SCA flavor wheel",
+  "t": "SCA-Aromarad",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "9dac9145d41c0e6e": {
+  "src": "What is the RoasterDB Specialty Coffee Dataset?",
+  "t": "Was ist der RoasterDB Spezialitätenkaffee-Datensatz?",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "9e4f2071c19fad44": {
+  "src": "Structured Knowledge Base",
+  "t": "Strukturierte Wissensbasis",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "9e82ff902725b7a6": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}), {2} ({3}), and {4} ({5}); tasting descriptors resolve most often to the {6} ({7}), {8} ({9}), {10} ({11}), and {12} ({13}) families of the SCA Flavor Wheel; roast levels span {14}, {15}, and {16}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}), {2} ({3}) und {4} ({5}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {6} ({7}), {8} ({9}), {10} ({11}) und {12} ({13}) des SCA Flavor Wheel; die Röstgrade umfassen {14}, {15} und {16}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "9e9cf3221a302462": {
+  "src": "Documentation",
+  "t": "Dokumentation",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a0d9bbad5f932ea5": {
+  "src": "Pricing",
+  "t": "Preise",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a1c230ed87f69d40": {
+  "src": "{0} appears in {1} specialty coffee releases on RoasterDB grown between {2} masl. Processing methods seen include {3}, {4}, and {5}…",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffees vertreten, angebaut auf {2} m ü. d. M. Aufbereitungsmethoden: {3}, {4} und {5}…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a514da1094ce1bd6": {
+  "src": "Elevation",
+  "t": "Anbauhöhe",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a55a275aa676930d": {
+  "src": "Terms",
+  "t": "AGB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a5d310900a7f53e2": {
+  "src": "Payment / Crypto / Invoicing Support",
+  "t": "Support zu Zahlung / Krypto / Rechnungsstellung",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a7cae26651786b49": {
+  "src": "RoasterDB Snapshot {0}",
+  "t": "RoasterDB-Snapshot {0}",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a84f56f2e6a77ecb": {
+  "src": "Kenya",
+  "t": "Kenia",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a8d91247a8d41e33": {
+  "src": "— origin sourced by this roaster",
+  "t": "— Herkunft im Sortiment dieser Rösterei",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a9dedf1e99c0bdf1": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}); tasting descriptors resolve most often to the {2} ({3}) families of the SCA Flavor Wheel; roast levels span {4}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {2} ({3}) des SCA Flavor Wheel; die Röstgrade umfassen {4}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "a9f5d63b14cfa9fd": {
+  "src": "Bean-Only",
+  "t": "Nur Bohnen",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "ab5e4a6e03613667": {
+  "src": "Have Questions or Need Custom Data?",
+  "t": "Fragen oder Bedarf an individuellen Daten?",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "ab831407228abef1": {
+  "src": "Roaster directory — RoasterDB",
+  "t": "Röstereiverzeichnis — RoasterDB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "ac569dd5059583c8": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}); tasting descriptors resolve most often to the {2} ({3}) families of the SCA Flavor Wheel.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {2} ({3}) des SCA Flavor Wheel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "ae1e30fa33906100": {
+  "src": "Custom work (subsets, recurring feeds, schema mapping): from {0} — <1>contact the desk</1>",
+  "t": "Individuelle Arbeiten (Teilmengen, wiederkehrende Feeds, Schema-Mapping): ab {0} — <1>Team kontaktieren</1>",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "aee2b6a6ecbc1c7d": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}), {6} ({7}), and {8} ({9}) families of the SCA Flavor Wheel; roast levels span {10}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}) und {2} ({3}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {4} ({5}), {6} ({7}) und {8} ({9}) des SCA Flavor Wheel; die Röstgrade umfassen {10}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "aeee596b682c7df0": {
+  "src": "Topic *",
+  "t": "Thema *",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "aef4424f9b31e815": {
+  "src": "Process Method",
+  "t": "Aufbereitungsmethode",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "af378c43ea616ed7": {
+  "src": "A structured catalog of {0} specialty-coffee products from {1} curated artisan roasters across {2} countries. RoasterDB reads each roaster's live storefront and maps its tasting notes deterministically to standard hierarchical SCA Flavor Wheel nodes — with a source URL on every record so any fact can be re-verified.",
+  "t": "Ein strukturierter Katalog von {0} Spezialitätenkaffee-Produkten von {1} ausgewählten Handwerksröstereien aus {2} Ländern. RoasterDB liest den Live-Shop jeder Rösterei aus und ordnet deren Verkostungsnotizen deterministisch den standardisierten hierarchischen Knoten des SCA Flavor Wheel zu — mit einer Quell-URL in jedem Datensatz, damit sich jede Angabe erneut überprüfen lässt.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b1c19264838b1c9c": {
+  "src": "Structured specialty coffee dataset: {0} products from {1} roasters across {2} countries, mapped to SCA flavor nodes with source provenance.",
+  "t": "Strukturierter Spezialitätenkaffee-Datensatz: {0} Produkte von {1} Röstereien aus {2} Ländern, SCA-Aromaknoten zugeordnet, mit Herkunft der Quellen.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b28893c312ab305c": {
+  "src": "Browse every page",
+  "t": "Alle Seiten durchsuchen",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b2b3c9f1c3ad81b3": {
+  "src": "Open Source Snapshot",
+  "t": "Open-Source-Snapshot",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b361c10007bb4fb9": {
+  "src": "← Back to Main Explorer",
+  "t": "← Zurück zum Haupt-Explorer",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b37377ab9c21bcff": {
+  "src": "coffee dataset",
+  "t": "Kaffee-Datensatz",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b39673c40926904d": {
+  "src": "Top Curated Specialty Coffees in RoasterDB Snapshot",
+  "t": "Ausgewählte Spezialitätenkaffees im RoasterDB-Snapshot",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b4f154c588b4ff16": {
+  "src": "Coffee Title",
+  "t": "Kaffeebezeichnung",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b52363ec025f74ee": {
+  "src": "§ {0} · Direct Engineering &amp; Dataset Support",
+  "t": "§ {0} · Direkter Engineering- &amp; Datensatz-Support",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b6d9926948a837e9": {
+  "src": "💬 Open Support Contact Form",
+  "t": "💬 Support-Kontaktformular öffnen",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b6db50ad1ca25da6": {
+  "src": "RoasterDB catalogues {0} specialty coffee releases grown in {1}, offered by {2}, {3}, {4}, {5}, and {6}.",
+  "t": "RoasterDB verzeichnet {0} in {1} angebaute Spezialitätenkaffees, angeboten von {2}, {3}, {4}, {5} und {6}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b78607d93ed9bcb2": {
+  "src": "RoasterDB catalogues {0} specialty coffee releases grown in {1}, offered by {2} and {3}.",
+  "t": "RoasterDB verzeichnet {0} in {1} angebaute Spezialitätenkaffees, angeboten von {2} und {3}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b83561e0e3e15130": {
+  "src": "{0} lists {1} specialty coffee release on RoasterDB from {2}. Roast levels span {3}; processing includes {4}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffee aus {2}. Röstgrade: {3}; Aufbereitung: {4}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "b8feaf6028b06553": {
+  "src": "RoasterDB — specialty coffee dataset mapped to the SCA Flavor Wheel",
+  "t": "RoasterDB — Spezialitätenkaffee-Datensatz, zugeordnet zum SCA Flavor Wheel",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "bc3023b36063a768": {
+  "src": "Page not found",
+  "t": "Seite nicht gefunden",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c2cd0d06c2c27390": {
+  "src": "Want to dig deeper? <0>Try the interactive Sample Explorer on 🤗 Hugging Face →</0> or <1>download the free {2}-row sample dataset</1>.",
+  "t": "Sie möchten tiefer einsteigen? <0>Probieren Sie den interaktiven Beispiel-Explorer auf 🤗 Hugging Face aus →</0> oder <1>laden Sie die kostenlosen Beispieldaten mit {2} Zeilen herunter</1>.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c43d1a9f9279a119": {
+  "src": "{0} — coffee roaster | RoasterDB",
+  "t": "{0} — Kaffeerösterei | RoasterDB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c5c42991db5ea316": {
+  "src": "{0} appears in {1} specialty coffee releases on RoasterDB. Processing methods seen include {2} and {3}; top SCA descriptors are {4}, {5}…",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffees vertreten. Aufbereitungsmethoden: {2} und {3}; häufigste SCA-Deskriptoren: {4}, {5}…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c605fa14d66f968a": {
+  "src": "The page you're looking for doesn't exist or may have moved.",
+  "t": "Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c63b1d3fc94e0b61": {
+  "src": "{0} appears in {1} specialty coffee releases on RoasterDB grown between {2} masl. Processing methods seen include {3} and {4}; top SCA…",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffees vertreten, angebaut auf {2} m ü. d. M. Aufbereitungsmethoden: {3} und {4}; häufigste SCA-…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c6d66530ef6741f9": {
+  "src": "<0>Coverage:</0> Price {1} · Origin {2} · SCA flavor mapping {3} ({4} links) · Source URL on every record. Catalog-depth dataset — see field coverage before you buy.",
+  "t": "<0>Abdeckung:</0> Preis {1} · Herkunft {2} · SCA-Aromazuordnung {3} ({4} Verknüpfungen) · Quell-URL in jedem Datensatz. Datensatz mit Katalogtiefe — prüfen Sie die Feldabdeckung vor dem Kauf.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c74bff12cb405f26": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3}; processing includes {4}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2} Ursprungsländern. Röstgrade: {3}; Aufbereitung: {4}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c75a0a927d2adefc": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}), {2} ({3}), and {4} ({5}); tasting descriptors resolve most often to the {6} ({7}), {8} ({9}), and {10} ({11}) families of the SCA Flavor Wheel; roast levels span {12}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}), {2} ({3}) und {4} ({5}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {6} ({7}), {8} ({9}) und {10} ({11}) des SCA Flavor Wheel; die Röstgrade umfassen {12}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c9566b11f65f9b75": {
+  "src": "<0>Full provenance:</0> every record carries its source roaster, source URL, and crawl timestamp — traceable and re-verifiable.",
+  "t": "<0>Vollständige Herkunft:</0> Jeder Datensatz enthält Quellrösterei, Quell-URL und Crawl-Zeitstempel — nachvollziehbar und erneut überprüfbar.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "c9c7e5a7865f29a0": {
+  "src": "| Origin Catalog Snapshot",
+  "t": "| Snapshot des Herkunftskatalogs",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "cad2dfddc73e3308": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Processing includes {3} and {4}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2} Ursprungsländern. Aufbereitung: {3} und {4}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "cc43343cc4c6c6f2": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3}; processing includes {4} and {5}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2} Ursprungsländern. Röstgrade: {3}; Aufbereitung: {4} und {5}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "cea85fd2af630e20": {
+  "src": "SCA Flavor Wheel Nodes",
+  "t": "SCA-Flavor-Wheel-Knoten",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "cf01481f626d5127": {
+  "src": "Privacy",
+  "t": "Datenschutz",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "cf8a3f024482fc24": {
+  "src": "Non-Bean Filtering",
+  "t": "Filterung von Nicht-Bohnen-Produkten",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "d0aa7c7570c892ed": {
+  "src": "Roaster",
+  "t": "Rösterei",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "d0d2ac3e31dd1569": {
+  "src": "Coffee origin directory",
+  "t": "Verzeichnis der Kaffeeherkünfte",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "d13f318cd92c8a92": {
+  "src": "Collection Profile — {0}",
+  "t": "Kollektionsprofil — {0}",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "d201e33631439eb9": {
+  "src": "{0} — SCA flavor profile | RoasterDB",
+  "t": "{0} — SCA-Aromaprofil | RoasterDB",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "d2a764e3da78b405": {
+  "src": "Structured specialty coffee dataset: {0} products from {1} artisan roasters across {2} countries, tasting notes mapped to the SCA Flavor Wheel.",
+  "t": "Strukturierter Spezialitätenkaffee-Datensatz: {0} Produkte von {1} Handwerksröstereien aus {2} Ländern, Verkostungsnotizen zugeordnet zum SCA Flavor Wheel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "d5d16f7e7232dda4": {
+  "src": "Origin Profile — {0}",
+  "t": "Herkunftsprofil — {0}",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "d69f03b6467d9952": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3} and {4}; processing includes {5}…",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2} Ursprungsländern. Röstgrade: {3} und {4}; Aufbereitung: {5}…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "d79da395b5d7a09c": {
+  "src": "Abstract",
+  "t": "Zusammenfassung",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "d8fb6efe6df6ed2c": {
+  "src": "§ {0} · Headline Metrics · Relational Integrity",
+  "t": "§ {0} · Kennzahlen · Relationale Integrität",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "dd3072c7aadf94b5": {
+  "src": "{0} appears in {1} specialty coffee releases on RoasterDB. Processing methods seen include {2} and {3}; top SCA descriptors are {4}…",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffees vertreten. Aufbereitungsmethoden: {2} und {3}; häufigste SCA-Deskriptoren: {4}…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e1c79e32af1a011a": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}), {6} ({7}), {8} ({9}), and {10} ({11}) families of the SCA Flavor Wheel; roast levels span {12}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}) und {2} ({3}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {4} ({5}), {6} ({7}), {8} ({9}) und {10} ({11}) des SCA Flavor Wheel; die Röstgrade umfassen {12}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e251bade74738bac": {
+  "src": "Indexed <0>{1} specialty coffee releases</0> from {2} with elevation (masl) and SCA Flavor Wheel descriptors.",
+  "t": "<0>{1} Spezialitätenkaffees</0> aus {2} erfasst, mit Anbauhöhe (m ü. d. M.) und Deskriptoren des SCA Flavor Wheel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e5531adae3c84603": {
+  "src": "GitHub Repository",
+  "t": "GitHub-Repository",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e5901f9aa9e7247e": {
+  "src": "{0} — Monarch (Cafes Only)",
+  "t": "{0} — Monarch (Cafes Only)",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e596a70bbc3834aa": {
+  "src": "Download our normalized relational SQLite snapshot covering {0} roasters worldwide.",
+  "t": "Laden Sie unseren normalisierten relationalen SQLite-Snapshot mit {0} Röstereien weltweit herunter.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e6947d798064438a": {
+  "src": "<0>Relational SQLite + CSV + JSON:</0> normalized tables (`roasters`, `coffee_beans`, `sca_flavor_nodes`, `bean_flavors`), ready for ML, recommendation engines, and {1} apps.",
+  "t": "<0>Relationales SQLite + CSV + JSON:</0> normalisierte Tabellen (`roasters`, `coffee_beans`, `sca_flavor_nodes`, `bean_flavors`), bereit für ML, Empfehlungssysteme und {1}-Apps.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e6e3fc719fe17f94": {
+  "src": "Buy Now · Instant Download · <0>{1}</0> →",
+  "t": "Jetzt kaufen · Sofortiger Download · <0>{1}</0> →",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e7f8b9dcdb12a0a6": {
+  "src": "Dark Mode",
+  "t": "Dunkler Modus",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e93d591e7e2406fc": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3} and {4}; processing…",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2} Ursprungsländern. Röstgrade: {3} und {4}; Aufbereitung…",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "e9db6ea4293eeafc": {
+  "src": "Origin countries",
+  "t": "Ursprungsländer",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "eaebf487fb536ac9": {
+  "src": "— roaster sourcing this origin",
+  "t": "— Rösterei mit Kaffee aus dieser Herkunft",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "eba5b2f1e9e45dcf": {
+  "src": "Secure card checkout via Stripe · Apple Pay / Google Pay · dataset delivered instantly after payment{0} Need a company invoice or crypto payment? <1>use the contact form</1> (roasterdb@dataengineered.io)",
+  "t": "Sichere Kartenzahlung über Stripe · Apple Pay / Google Pay · Datensatz sofort nach der Zahlung geliefert{0} Sie benötigen eine Firmenrechnung oder Kryptozahlung? <1>Nutzen Sie das Kontaktformular</1> (roasterdb@dataengineered.io)",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "eca58f2bce65a4e3": {
+  "src": "Specialty Coffees · {0} Roasters · {1} Countries",
+  "t": "Spezialitätenkaffees · {0} Röstereien · {1} Länder",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "ece9860c445bcdc8": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}); tasting descriptors resolve most often to the {2} ({3}), {4} ({5}), and {6} ({7}) families of the SCA Flavor Wheel.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {2} ({3}), {4} ({5}) und {6} ({7}) des SCA Flavor Wheel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "ed449b18b2bd2a2a": {
+  "src": "Indexed <0>{1} specialty coffee releases</0> from {2} with tasting descriptors normalized to the SCA Flavor Wheel.",
+  "t": "<0>{1} Spezialitätenkaffees</0> von {2} erfasst, mit auf das SCA Flavor Wheel normalisierten Geschmacksdeskriptoren.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "ee21e8bc4ebe25a5": {
+  "src": "The download package includes a normalized relational SQLite database file (.db) with separate tables for roasters, coffee beans, and flavor node linkages, alongside clean CSV and JSON exports for direct import into pandas, R, or web applications.",
+  "t": "Das Download-Paket enthält eine normalisierte relationale SQLite-Datenbankdatei (.db) mit separaten Tabellen für Röstereien, Kaffeebohnen und Verknüpfungen zu Aromaknoten, dazu saubere CSV- und JSON-Exporte für den direkten Import in pandas, R oder Webanwendungen.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "eecb3c5467ae9bb0": {
+  "src": "Dataset &amp; Taxonomy FAQ",
+  "t": "FAQ zu Datensatz &amp; Taxonomie",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "efe8a67b3f41ecea": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}), {2} ({3}), and {4} ({5}); tasting descriptors resolve most often to the {6} ({7}), {8} ({9}), {10} ({11}), and {12} ({13}) families of the SCA Flavor Wheel; roast levels span {14}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}), {2} ({3}) und {4} ({5}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {6} ({7}), {8} ({9}), {10} ({11}) und {12} ({13}) des SCA Flavor Wheel; die Röstgrade umfassen {14}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f12ce92e2b8c5220": {
+  "src": "This RoasterDB snapshot of {0} catalogues {1} specialty coffee releases sourced from {2}.",
+  "t": "Dieser RoasterDB-Snapshot von {0} verzeichnet {1} Spezialitätenkaffees aus {2}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f22181a88db44b2a": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}), {2} ({3}), and {4} ({5}); tasting descriptors resolve most often to the {6} ({7}), {8} ({9}), {10} ({11}), and {12} ({13}) families of the SCA Flavor Wheel; roast levels span {14} and {15}.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}), {2} ({3}) und {4} ({5}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {6} ({7}), {8} ({9}), {10} ({11}) und {12} ({13}) des SCA Flavor Wheel; die Röstgrade umfassen {14} und {15}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f24d313178feb8fa": {
+  "src": "{0} lists {1} specialty coffee releases on RoasterDB from {2}. Roast levels span {3} and {4}; processing includes {5} and {6}.",
+  "t": "{0} führt auf RoasterDB {1} Spezialitätenkaffees aus {2}. Röstgrade: {3} und {4}; Aufbereitung: {5} und {6}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f254d1d0d2d2b379": {
+  "src": "Roasters",
+  "t": "Röstereien",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f2c07ee20f705ed7": {
+  "src": "The download package includes a normalized relational SQLite database file ({0}) with separate tables for roasters, coffee beans, and flavor node linkages, alongside clean CSV and JSON exports for direct import into pandas, R, Python scripts, or web applications.",
+  "t": "Das Download-Paket enthält eine normalisierte relationale SQLite-Datenbankdatei ({0}) mit separaten Tabellen für Röstereien, Kaffeebohnen und Verknüpfungen zu Aromaknoten, dazu saubere CSV- und JSON-Exporte für den direkten Import in pandas, R, Python-Skripte oder Webanwendungen.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f2f5527d654f9883": {
+  "src": "Can I request custom scraping or real-time API access?",
+  "t": "Kann ich individuelles Scraping oder Echtzeit-API-Zugang anfragen?",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f32d5a3b17e61429": {
+  "src": "Support",
+  "t": "Support",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f4111212e31d154c": {
+  "src": "Dataset Catalog",
+  "t": "Datensatzkatalog",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f5c4ec9ecf25f2f1": {
+  "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}) and {6} ({7}) families of the SCA Flavor Wheel.",
+  "t": "In diesen Partien erfasste Aufbereitungsmethoden: {0} ({1}) und {2} ({3}); die Geschmacksdeskriptoren entsprechen am häufigsten den Familien {4} ({5}) und {6} ({7}) des SCA Flavor Wheel.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f79d00e0ed765a23": {
+  "src": "RoasterDB catalogues {0} specialty coffee releases grown in {1}, offered by {2}, {3}, and {4}.",
+  "t": "RoasterDB verzeichnet {0} in {1} angebaute Spezialitätenkaffees, angeboten von {2}, {3} und {4}.",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f86b32a1778af40e": {
+  "src": "Need Full SQL / CSV Access to All {0} Releases?",
+  "t": "Vollständiger SQL-/CSV-Zugriff auf alle {0} Kaffees gewünscht?",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "f8d8da6a0b135517": {
+  "src": "coffee origin and altitude",
+  "t": "Kaffeeherkunft und Anbauhöhe",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "fae4e93af5ae76c6": {
+  "src": "{0} — Edwin Noreña Fruity Flowers {1}",
+  "t": "{0} — Edwin Noreña Fruity Flowers {1}",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "fda519e54144bc55": {
+  "src": "RoasterDB Specialty Coffee Dataset",
+  "t": "RoasterDB Spezialitätenkaffee-Datensatz",
+  "by": "claude-opus-5",
+  "at": "2026-09-17"
+ }
+}

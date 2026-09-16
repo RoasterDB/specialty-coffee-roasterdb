@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="2VE0Ll5xPaIkGjSTkvTenDhcKRLJGPFgVqekvGOIw-4" name="google-site-verification"/>
+<title>RoasterDB — Dataset de cafés especiais e taxonomia de sabores SCA</title>
+<meta content="Conjunto de dados estruturado de cafés especiais: 8.000+ produtos de 280+ torrefações artesanais em 20+ países, com notas sensoriais segundo a Roda de Sabores da SCA." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://roasterdb.dataengineered.io/pt-br/" rel="canonical"/>
+<!-- i18n:alternates -->
+<link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/">
+<link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/">
+<link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/">
+<link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/">
+<link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/">
+<link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/">
+<style>th,td{overflow-wrap:anywhere;hyphens:auto}h1,h2,h3,h4,button,.btn{overflow-wrap:break-word;hyphens:auto}</style>
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<script src="/i18n/i18n.js?v=1" defer></script>
+<!-- /i18n:alternates -->
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/favicon.png" rel="icon" sizes="32x32" type="image/png"/>
+<!-- Open Graph / Social Meta -->
+<meta content="RoasterDB — Dataset de cafés especiais e taxonomia de sabores SCA" property="og:title"/>
+<meta content="Dados estruturados de cafés especiais: 8.000+ cafés de 280+ torrefações em 20+ países, mapeados para a Roda de Sabores da SCA, com procedência completa." property="og:description"/>
+<meta content="https://roasterdb.dataengineered.io/pt-br/" property="og:url"/>
+<meta content="Dataset de cafés especiais RoasterDB" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="https://roasterdb.dataengineered.io/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="RoasterDB — dataset de cafés especiais mapeado para a Roda de Sabores da SCA" property="og:image:alt"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="RoasterDB — Dataset de cafés especiais e taxonomia de sabores SCA" name="twitter:title"/>
+<meta content="Baixe dados estruturados de cafés especiais mapeados para a Roda de Sabores da SCA." name="twitter:description"/>
+<meta content="https://roasterdb.dataengineered.io/og-image.png" name="twitter:image"/>
+<!-- Twitter Card (End) -->
+<!-- Core Web Vitals & PageSpeed Mobile : Non-blocking Fonts & Geo-Targeting -->
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+</noscript>
+<!-- JSON-LD Structured Data Schemas (Google Dataset Search Specification + FAQ + ItemList + BreadcrumbList) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RoasterDB",
+  "url": "https://roasterdb.dataengineered.io/pt-br/",
+  "email": "roasterdb@dataengineered.io",
+  "description": "Fornecedor de conjuntos de dados de cafés especiais e da taxonomia de sabores SCA."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Dataset de cafés especiais RoasterDB",
+  "url": "https://roasterdb.dataengineered.io/pt-br/",
+  "description": "Conjunto de dados estruturado de cafés especiais: 8.000+ produtos de 280+ torrefações em 20+ países, mapeados para nós de sabor SCA com procedência da fonte.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://roasterdb.dataengineered.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "inLanguage": "pt-BR"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Dataset de cafés especiais RoasterDB — Snapshot completo 2026.07",
+  "description": "Conjunto de dados estruturado de cafés especiais com 8.000+ produtos de 280+ torrefações artesanais em 20+ países. Cada registro é padronizado, com notas sensoriais mapeadas diretamente para a taxonomia de 3 níveis da Roda de Sabores da SCA (`Category > Subcategory > Descriptor`), além de país de origem, altitude (m), método de processamento, variedades e procedência completa da torrefação de origem.",
+  "url": "https://roasterdb.dataengineered.io/pt-br/",
+  "sameAs": "https://github.com/RoasterDB/specialty-coffee-roasterdb",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "isAccessibleForFree": false,
+  "keywords": [
+    "banco de dados de cafés especiais",
+    "roda de sabores SCA",
+    "dataset de café",
+    "taxonomia de notas de sabor do café",
+    "dataset de torrefações artesanais de café",
+    "origem e altitude do café"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "RoasterDB",
+    "url": "https://roasterdb.dataengineered.io/pt-br/"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-sqlite3",
+      "contentUrl": "https://roasterdb.dataengineered.io/#pricing"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://roasterdb.dataengineered.io/#pricing"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://roasterdb.dataengineered.io/#pricing"
+    }
+  ],
+  "variableMeasured": [
+    "title",
+    "source_roaster",
+    "origin_country",
+    "origin_region",
+    "altitude_min_meters",
+    "altitude_max_meters",
+    "process_method",
+    "roast_level",
+    "varietals",
+    "tasting_notes_sca_nodes",
+    "price_value"
+  ],
+  "spatialCoverage": [
+    {
+      "@type": "Place",
+      "name": "Colômbia"
+    },
+    {
+      "@type": "Place",
+      "name": "Etiópia"
+    },
+    {
+      "@type": "Place",
+      "name": "Guatemala"
+    },
+    {
+      "@type": "Place",
+      "name": "Costa Rica"
+    },
+    {
+      "@type": "Place",
+      "name": "Quênia"
+    },
+    {
+      "@type": "Place",
+      "name": "Honduras"
+    }
+  ],
+  "inLanguage": "pt-BR"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "image": "https://roasterdb.dataengineered.io/og-image.png",
+  "name": "Dataset de cafés especiais RoasterDB — Snapshot completo",
+  "description": "Conjunto de dados estruturado de cafés especiais: 8.000+ produtos de 280+ torrefações artesanais em 20+ países, com notas sensoriais mapeadas para a Roda de Sabores da SCA e procedência completa da fonte. SQLite relacional, além de CSV e JSON.",
+  "brand": {
+    "@type": "Brand",
+    "name": "RoasterDB"
+  },
+  "category": "Software > Data & Databases",
+  "offers": {
+    "@type": "Offer",
+    "price": "49.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://roasterdb.dataengineered.io/pt-br/#pricing",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      },
+      "shippingDestination": [
+        {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "DefinedRegion",
+          "addressCountry": "GB"
+        },
+        {
+          "@type": "DefinedRegion",
+          "addressCountry": "CA"
+        },
+        {
+          "@type": "DefinedRegion",
+          "addressCountry": "AU"
+        }
+      ],
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": [
+        "US",
+        "GB",
+        "CA",
+        "AU"
+      ],
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Cafés especiais em destaque no Snapshot do RoasterDB",
+  "description": "Seleção de amostra de cafés especiais excepcionais indexados no banco de dados relacional RoasterDB.",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Onyx Coffee Lab — Monarch (Cafes Only)",
+      "url": "https://roasterdb.dataengineered.io/pt-br/#explorer"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Verve Coffee Roasters — Streetlevel",
+      "url": "https://roasterdb.dataengineered.io/pt-br/#explorer"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Black & White — Edwin Noreña Fruity Flowers Anaerobic",
+      "url": "https://roasterdb.dataengineered.io/pt-br/#explorer"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Passenger Coffee — Divino Niño 2024 Washed",
+      "url": "https://roasterdb.dataengineered.io/pt-br/#explorer"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "The Barn — Volcan Azul Geisha Natural Anaerobic",
+      "url": "https://roasterdb.dataengineered.io/pt-br/#explorer"
+    }
+  ],
+  "inLanguage": "pt-BR"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que é o dataset de cafés especiais RoasterDB?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O RoasterDB é um banco de dados estruturado e factual com mais de 8.000 cafés especiais de 280+ torrefações artesanais em 20+ países. Cada registro inclui atributos padronizados como país de origem, altitude (m), método de processamento, variedades e notas sensoriais mapeadas diretamente para a Roda de Sabores da SCA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como as notas sensoriais são mapeadas para a Roda de Sabores da SCA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O RoasterDB converte descrições poéticas ou não estruturadas das torrefações (como 'Grandma's peach cobbler') em caminhos hierárquicos estritos de 3 níveis da Roda de Sabores da SCA (por exemplo: Fruity > Other Fruit > Peach). Isso permite filtragem precisa e extração de features para machine learning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais formatos de banco de dados estão incluídos no download?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O pacote de download inclui um arquivo de banco de dados SQLite relacional normalizado (.db) com tabelas separadas para torrefações, cafés e vínculos com nós de sabor, além de exportações limpas em CSV e JSON para importação direta no pandas, no R ou em aplicações web."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso solicitar scraping sob medida ou acesso via API em tempo real?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trabalhos sob medida (subconjuntos, feeds recorrentes, mapeamento de esquemas) são orçados por projeto a partir de $99. Use o formulário de contato desta página."
+      }
+    }
+  ],
+  "inLanguage": "pt-BR"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://roasterdb.dataengineered.io/pt-br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Catálogo de datasets",
+      "item": "https://roasterdb.dataengineered.io/pt-br/#overview"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "RoasterDB Snapshot 2026.07",
+      "item": "https://roasterdb.dataengineered.io/pt-br/#pricing"
+    }
+  ]
+}
+</script>
+<style>
+    :root {
+      --bg-paper: #f8f7f4;
+      --bg-paper-2: #efede7;
+      --text-ink: #181715;
+      --text-muted: #66635e;
+      --rule-color: rgba(24, 23, 21, 0.15);
+      --rule-dim: rgba(24, 23, 21, 0.08);
+      --accent: #d94e34;
+      --card-bg: #ffffff;
+      --card-border: #181715;
+    }
+
+    html.dark {
+      --bg-paper: #0e0d0c;
+      --bg-paper-2: #141311;
+      --text-ink: #f0eee9;
+      --text-muted: #9c9891;
+      --rule-color: rgba(240, 238, 233, 0.18);
+      --rule-dim: rgba(240, 238, 233, 0.08);
+      --accent: #ff6b4a;
+      --card-bg: #181715;
+      --card-border: #f0eee9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-paper);
+      color: var(--text-ink);
+      font-family: 'JetBrains Mono', monospace;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-paper);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule-color);
+    }
+
+    .header-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 32px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-tag {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.6;
+      border-left: 1px solid var(--rule-color);
+      padding-left: 16px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--rule-color);
+      color: var(--text-ink);
+      padding: 6px 12px;
+      font-family: inherit;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .section {
+      border-bottom: 1px solid var(--rule-color);
+      padding: 72px 32px;
+    }
+
+    .section-alt {
+      background-color: var(--bg-paper-2);
+    }
+
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      opacity: 0.75;
+      margin-bottom: 36px;
+    }
+
+    .section-header h2 {
+      font: inherit;
+      margin: 0;
+      color: inherit;
+    }
+
+    .section-diamond {
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent);
+      transform: rotate(45deg);
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background-color: var(--rule-dim);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+      line-height: 0.98;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-abstract {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      max-width: 600px;
+    }
+
+    .abstract-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.55;
+      padding-top: 4px;
+    }
+
+    .abstract-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .cta-group {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      font-family: inherit;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border: 1px solid var(--text-ink);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--text-ink);
+      color: var(--bg-paper);
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-ink);
+    }
+
+    .btn-outline:hover {
+      background: var(--rule-dim);
+    }
+
+    .stat-card {
+      border: 1px solid var(--rule-color);
+      background: var(--bg-paper-2);
+      padding: 40px;
+      position: relative;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px;
+      border-top: 1px solid var(--rule-color);
+      padding-top: 28px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.85;
+    }
+
+    .form-input, .form-select {
+      width: 100%;
+      padding: 14px 16px;
+      background: var(--bg-paper);
+      border: 1px solid var(--rule-color);
+      color: var(--text-ink);
+      font-family: inherit;
+      font-size: 0.85rem;
+      transition: border-color 0.2s;
+    }
+
+    .form-input:focus, .form-select:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+
+    .stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.7;
+      margin-top: 12px;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .pricing-container {
+      max-width: 720px;
+      margin: 0 auto;
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      padding: 56px;
+      position: relative;
+      box-shadow: 12px 12px 0px rgba(0,0,0,0.25);
+    }
+
+    html.dark .pricing-container {
+      box-shadow: 12px 12px 0px rgba(255, 107, 74, 0.15);
+    }
+
+    .pricing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--rule-color);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .price-amount {
+      font-family: 'Outfit', sans-serif;
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+      font-size: 0.85rem;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .feature-list li::before {
+      content: "✦";
+      color: var(--accent);
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--rule-color);
+      margin-top: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--rule-dim);
+    }
+
+    th {
+      background: var(--bg-paper-2);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.75;
+    }
+
+    tr:hover {
+      background: var(--rule-dim);
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 14px 20px;
+      background: transparent;
+      border: 1px solid var(--rule-color);
+      color: var(--text-ink);
+      font-family: inherit;
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    footer {
+      border-top: 1px solid var(--rule-color);
+      padding: 48px 32px;
+      font-size: 0.75rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<a class="brand font-display" href="#">
+        ROASTERDB <span class="brand-tag">Dataset de cafés especiais</span>
+</a>
+<nav>
+<a href="#overview">Visão geral</a>
+<a href="#metrics">Métricas principais</a>
+<a href="#explorer">Explorador ao vivo</a>
+<a href="#pricing">Preços</a>
+<a href="#faq">Perguntas frequentes</a>
+<a href="#support">Suporte</a>
+<button class="theme-toggle" onclick="toggleTheme()">
+<span id="theme-label">Modo claro</span>
+</button>
+</nav>
+</div>
+</header>
+<section class="section" id="overview">
+<div class="container">
+<div class="section-header">
+<span class="section-diamond"></span>
+<h2>§ 00 · Pipeline multifonte e mapeamento de sabores</h2>
+<div class="section-line"></div>
+</div>
+<div class="hero-grid">
+<div>
+<h1 class="font-display">
+            Lojas on-line <br/>das torrefações, <br/> <em style="font-style: italic; font-weight: 300;">normalizadas</em><span style="color: var(--accent)">.</span>
+</h1>
+<p class="hero-subhead" style="font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 400; line-height: 1.5; margin-top: 20px; color: var(--text-muted);">
+            O <strong style="color: var(--text-ink); font-weight: 600;">conjunto de dados de cafés especiais</strong> estruturado: 8.000+ produtos de 280+ torrefações artesanais, com notas sensoriais mapeadas para a Roda de Sabores da SCA.
+          </p>
+<div class="hero-abstract">
+<span class="abstract-label">Resumo</span>
+<p class="abstract-text">
+              Um catálogo estruturado de 8.000+ produtos de cafés especiais de 280+ torrefações artesanais selecionadas em 20+ países. O RoasterDB lê a loja on-line ao vivo de cada torrefação e mapeia suas notas sensoriais de forma determinística para os nós hierárquicos padrão da Roda de Sabores da SCA, com uma URL de origem em cada registro para que qualquer dado possa ser verificado novamente.
+            </p>
+</div>
+<div class="cta-group">
+<a class="btn btn-primary" href="#pricing" onclick="resetCheckout()">
+<span>Obter o dataset</span>
+<span style="font-size: 1.2rem;">↗</span>
+</a>
+<a class="btn btn-outline" href="#explorer">
+<span>↓ Explorador de amostra</span>
+<span>8.000+ linhas</span>
+</a>
+</div>
+<p style="margin-top: 16px; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.55;">
+            Pagamento único · Download imediato em CSV / SQLite · Sem cobranças recorrentes
+          </p>
+</div>
+<div>
+<div class="stat-card">
+<div class="stat-number">8.000+</div>
+<div class="stat-label">Cafés especiais · 280+ torrefações · 20+ países</div>
+<div style="margin: 24px 0; height: 1px; background: var(--rule-color);"></div>
+<div class="stat-number" style="font-size: 2.2rem;">3.400+</div>
+<div class="stat-label">Registros do nível verificado (origem + preço + sabor SCA, aprovados no controle de qualidade)</div>
+<div style="margin: 24px 0; height: 1px; background: var(--rule-color);"></div>
+<div style="font-size: 0.8rem; color: var(--text-muted);">
+<strong>Cobertura:</strong> Preço 88% · Origem 58% · Mapeamento de sabores SCA 55% (11.000+ vínculos) · URL de origem em cada registro. Conjunto de dados com a profundidade do catálogo: confira a cobertura por campo antes de comprar.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-alt" id="metrics">
+<div class="container">
+<div class="section-header">
+<span class="section-diamond"></span>
+<h2>§ 01 · Métricas principais · Integridade relacional</h2>
+<div class="section-line"></div>
+<span>4 tabelas</span>
+</div>
+<div class="metrics-grid">
+<div class="stat-card" style="background: var(--bg-paper);">
+<div class="stat-number" style="font-size: 2.4rem;">API da Shopify</div>
+<div class="stat-label">Motor de ingestão de lojas on-line</div>
+<p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">
+            Extração automatizada direta dos feeds `/products.json` e `/sitemap.xml`, sem a latência de renderização no navegador.
+          </p>
+</div>
+<div class="stat-card" style="background: var(--bg-paper);">
+<div class="stat-number" style="font-size: 2.4rem;">Roda SCA</div>
+<div class="stat-label">Taxonomia hierárquica de 3 níveis</div>
+<p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">
+            Termos poéticos (`"Grandma's peach cobbler"`) mapeados diretamente para caminhos hierárquicos (`Fruity &gt; Other Fruit &gt; Peach`).
+          </p>
+</div>
+<div class="stat-card" style="background: var(--bg-paper);">
+<div class="stat-number" style="font-size: 2.4rem;">Só café em grão</div>
+<div class="stat-label">Filtragem de itens que não são café em grão</div>
+<p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">
+            Filtros em várias camadas, por palavra-chave e tipo de produto, excluem canecas, moedores, roupas, vales-presente, assinaturas e produtos promocionais.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="explorer">
+<div class="container">
+<div class="section-header">
+<span class="section-diamond"></span>
+<h2>§ 02 · Prévia do explorador do catálogo ao vivo</h2>
+<div class="section-line"></div>
+<span>Snapshot de código aberto</span>
+</div>
+<input class="search-input" id="searchBox" onkeyup="filterTable()" placeholder="Filtre por torrefação, origem ou nota de sabor (ex.: Onyx, Colombia, Peach)..." type="text"/>
+<div class="table-wrapper">
+<table id="coffeeTable">
+<thead>
+<tr>
+<th>ID</th>
+<th>Torrefação</th>
+<th>Nome do café</th>
+<th>Origem</th>
+<th>Altitude (m)</th>
+<th>Processo</th>
+<th>Nós da Roda de Sabores SCA</th>
+<th>Pontuação</th>
+</tr>
+</thead>
+<tbody id="tableBody">
+<tr>
+<td>7704499585122</td>
+<td translate="no"><strong>Onyx Coffee Lab</strong></td>
+<td translate="no">Monarch - Cafes Only</td>
+<td translate="no">Colombia / Ethiopia</td>
+<td>1.650 - 2.100m</td>
+<td translate="no">Natural</td>
+<td><code>Nutty/Cocoa &gt; Cocoa &gt; Dark Chocolate</code></td>
+<td><span style="color: var(--accent); font-weight: bold;">92.5</span></td>
+</tr>
+<tr>
+<td>bean_2078</td>
+<td translate="no"><strong>Verve Coffee Roasters</strong></td>
+<td translate="no">Streetlevel</td>
+<td translate="no">Guatemala / Colombia</td>
+<td>1.500 - 1.850m</td>
+<td translate="no">Washed</td>
+<td><code>Sweet &gt; Brown Sugar &gt; Caramel</code>, <code>Fruity &gt; Citrus &gt; Orange</code></td>
+<td><span style="color: var(--accent); font-weight: bold;">91.0</span></td>
+</tr>
+<tr>
+<td>9142729113913</td>
+<td translate="no"><strong>Black &amp; White</strong></td>
+<td translate="no">Edwin Noreña - Fruity Flowers</td>
+<td translate="no">Colombia (Quindio)</td>
+<td>1.600 - 1.750m</td>
+<td translate="no">Anaerobic</td>
+<td><code>Fruity &gt; Berry &gt; Strawberry</code>, <code>Floral &gt; Floral &gt; Jasmine</code></td>
+<td><span style="color: var(--accent); font-weight: bold;">94.0</span></td>
+</tr>
+<tr>
+<td>882194011</td>
+<td translate="no"><strong>Passenger Coffee</strong></td>
+<td translate="no">Divino Niño 2024</td>
+<td translate="no">Colombia (Huila)</td>
+<td>1.800m</td>
+<td translate="no">Washed</td>
+<td><code>Fruity &gt; Stone Fruit &gt; Peach</code>, <code>Sweet &gt; Honey &gt; Honey</code></td>
+<td><span style="color: var(--accent); font-weight: bold;">93.5</span></td>
+</tr>
+<tr>
+<td>664192018</td>
+<td translate="no"><strong>The Barn</strong></td>
+<td translate="no">Volcan Azul Geisha</td>
+<td translate="no">Costa Rica</td>
+<td>1.700m</td>
+<td translate="no">Natural Anaerobic</td>
+<td><code>Floral &gt; Floral &gt; Rose</code>, <code>Fruity &gt; Tropical &gt; Passion Fruit</code></td>
+<td><span style="color: var(--accent); font-weight: bold;">95.0</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: center; margin-top: 24px; font-size: 0.85rem; color: var(--text-muted);">
+        Quer se aprofundar? <a href="https://huggingface.co/spaces/Ichlibitiche/dataset-sample-explorers" rel="noopener" style="color: var(--accent); text-decoration: underline; font-weight: 600;" target="_blank">Experimente o Sample Explorer interativo no 🤗 Hugging Face →</a> ou <a href="https://huggingface.co/datasets/Ichlibitiche/roasterdb-specialty-coffee-sample" rel="noopener" style="color: var(--accent); text-decoration: underline; font-weight: 600;" target="_blank">baixe a amostra gratuita de 100 linhas</a>.
+      </p>
+</div>
+</section>
+<section class="section section-alt" id="pricing">
+<div class="container">
+<div class="section-header">
+<span class="section-diamond"></span>
+<h2>§ 03 · Duas formas de obter os dados</h2>
+<div class="section-line"></div>
+<span>Snapshot + sob medida</span>
+</div>
+<div class="pricing-container">
+<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 700; margin-bottom: 10px;">Nível 1 · Snapshot em autoatendimento</div>
+<div class="pricing-header">
+<div>
+<h2 class="font-display" style="font-size: 2rem;">Dataset Snapshot completo</h2>
+<p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Download com pagamento único · 8.000+ registros · Snapshot 2026.07</p>
+</div>
+<div class="price-amount"><span class="js-snapshot-price">$49</span></div>
+</div>
+<ul class="feature-list">
+<li><strong>8.000+ cafés especiais</strong> de 280+ torrefações artesanais selecionadas em 20+ países.</li>
+<li><strong>SQLite relacional + CSV + JSON:</strong> tabelas normalizadas (`roasters`, `coffee_beans`, `sca_flavor_nodes`, `bean_flavors`), prontas para ML, sistemas de recomendação e aplicativos B2B.</li>
+<li><strong>Mapeamento para a Roda de Sabores da SCA:</strong> 11.000+ vínculos café→sabor como caminhos de 3 níveis (`Category &gt; Subcategory &gt; Descriptor`).</li>
+<li><strong>Procedência completa:</strong> cada registro traz a torrefação de origem, a URL de origem e o carimbo de data/hora da coleta; é rastreável e pode ser verificado novamente.</li>
+<li><strong>Nível verificado incluído:</strong> 3.400+ registros aprovados no controle de qualidade (origem + preço saneado + sabor) junto com o catálogo completo.</li>
+<li><strong>Snapshot 2026.07</strong> · pagamento único, sem cobranças recorrentes. Distribuído como atributos factuais derivados, com atribuição.</li>
+</ul>
+<a class="btn btn-primary" href="https://buy.stripe.com/8x2eVe2gU730fUf96w38405" style="width: 100%; justify-content: center; font-size: 0.9rem; padding: 22px; margin-top: 8px;">
+<span>Comprar agora · Download imediato · <span class="js-snapshot-price">$49</span> →</span>
+</a>
+<div style="margin-top: 20px; text-align: center; font-size: 0.7rem; color: var(--text-muted);">
+          Pagamento seguro com cartão via Stripe · Apple Pay / Google Pay · conjunto de dados entregue imediatamente após o pagamento<br/> Precisa de nota fiscal para empresa ou de pagamento em cripto? <a href="#support" style="text-decoration: underline;">use o formulário de contato</a> (roasterdb@dataengineered.io)
+        </div>
+</div>
+<p class="custom-line" style="margin-top:24px;text-align:center;font-size:0.85rem;color:var(--text-muted);">Trabalho sob medida (subconjuntos, feeds recorrentes, mapeamento de esquemas): a partir de $99 — <a href="#support" style="text-decoration:underline;">fale com a equipe</a></p>
+<p style="text-align: center; margin-top: 32px; font-size: 0.85rem; color: var(--text-muted);">
+        Prefere dados ao vivo e em autoatendimento? <a href="https://apify.com/dataengineered/specialty-coffee-roaster-scraper" rel="noopener" style="color: var(--accent); text-decoration: underline; font-weight: 600;" target="_blank">Execute nosso scraper no Apify →</a>
+</p>
+</div>
+</section>
+<script>
+    // ── Snapshot price lives here (single source of truth). If you change it,
+    //    also update the JSON-LD Product offer "price" near the top of this file. ──
+    const SNAPSHOT_PRICE = "$49";
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".js-snapshot-price").forEach(function (el) {
+        el.textContent = SNAPSHOT_PRICE;
+      });
+    });
+  </script>
+<section class="section section-alt" id="faq">
+<div class="container" style="max-width: 900px;">
+<div class="section-header">
+<span class="section-diamond"></span>
+<h2>§ 04 · Perguntas frequentes</h2>
+<div class="section-line"></div>
+<span>Base de conhecimento estruturada</span>
+</div>
+<h3 class="font-display" style="font-size: 1.8rem; margin-bottom: 28px;">Perguntas frequentes sobre o dataset e a taxonomia</h3>
+<div style="display: flex; flex-direction: column; gap: 24px;">
+<div style="border-left: 2px solid var(--accent); padding-left: 20px; background: var(--bg-paper); padding: 20px; border-radius: 4px; border: 1px solid var(--rule-color); border-left: 3px solid var(--accent);">
+<h4 class="font-display" style="font-size: 1.15rem; font-weight: 700; color: var(--text-ink);">O que é o dataset de cafés especiais RoasterDB?</h4>
+<p style="margin-top: 8px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+            O RoasterDB é um banco de dados estruturado e factual com mais de <strong>8.000 cafés especiais</strong> de <strong>280+ torrefações artesanais em 20+ países</strong>. Cada registro inclui atributos padronizados como país de origem, altitude (m), método de processamento, variedades e notas sensoriais mapeadas diretamente para a Roda de Sabores da SCA.
+          </p>
+</div>
+<div style="border-left: 2px solid var(--accent); padding-left: 20px; background: var(--bg-paper); padding: 20px; border-radius: 4px; border: 1px solid var(--rule-color); border-left: 3px solid var(--accent);">
+<h4 class="font-display" style="font-size: 1.15rem; font-weight: 700; color: var(--text-ink);">Como as notas sensoriais são mapeadas para a Roda de Sabores da SCA?</h4>
+<p style="margin-top: 8px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+            O RoasterDB converte descrições poéticas ou não estruturadas das torrefações (como <code>"Grandma's peach cobbler"</code> ou <code>"bright clementine acidity"</code>) em caminhos hierárquicos estritos de 3 níveis da Roda de Sabores da SCA (por exemplo: <code>Fruity &gt; Other Fruit &gt; Peach</code>). Isso permite filtragem semântica precisa e extração de features para machine learning.
+          </p>
+</div>
+<div style="border-left: 2px solid var(--accent); padding-left: 20px; background: var(--bg-paper); padding: 20px; border-radius: 4px; border: 1px solid var(--rule-color); border-left: 3px solid var(--accent);">
+<h4 class="font-display" style="font-size: 1.15rem; font-weight: 700; color: var(--text-ink);">Quais formatos de banco de dados estão incluídos no download?</h4>
+<p style="margin-top: 8px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+            O pacote de download inclui um arquivo de banco de dados SQLite relacional normalizado (<code>.db</code>) com tabelas separadas para torrefações, cafés e vínculos com nós de sabor, além de exportações limpas em CSV e JSON para importação direta no pandas, no R, em scripts Python ou em aplicações web.
+          </p>
+</div>
+<div style="border-left: 2px solid var(--accent); padding-left: 20px; background: var(--bg-paper); padding: 20px; border-radius: 4px; border: 1px solid var(--rule-color); border-left: 3px solid var(--accent);">
+<h4 class="font-display" style="font-size: 1.15rem; font-weight: 700; color: var(--text-ink);">Posso solicitar scraping sob medida ou acesso via API em tempo real?</h4>
+<p style="margin-top: 8px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+            Trabalhos sob medida (subconjuntos, feeds recorrentes, mapeamento de esquemas) são orçados por projeto a partir de $99. Use o formulário de contato desta página.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="support">
+<div class="container" style="max-width: 720px; text-align: center;">
+<div class="section-header" style="justify-content: center;">
+<span class="section-diamond"></span>
+<h2>§ 05 · Suporte técnico direto e sobre o dataset</h2>
+<div class="section-line"></div>
+</div>
+<h3 class="font-display" style="font-size: 1.8rem;">Tem dúvidas ou precisa de dados sob medida?</h3>
+<p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;">
+        Se você precisa de formatos de esquema personalizados, acesso via API ou faturamento corporativo, fale diretamente com nossa equipe em <code>roasterdb@dataengineered.io</code>.
+      </p>
+<button class="btn btn-outline" onclick="toggleSupportForm()" style="margin-top: 24px; padding: 16px 32px; font-weight: 600;" type="button">
+<span id="supportBtnText">💬 Abrir o formulário de contato do suporte</span>
+</button>
+<div id="supportFormContainer" style="display: none; margin-top: 32px; text-align: left; border: 1px solid var(--rule-color); background: var(--bg-paper-2); padding: 40px;">
+<form action="https://api.web3forms.com/submit" class="contact-form" id="supportForm" method="POST" onsubmit="handleSupport(event)" style="margin-top: 0; border-top: none; padding-top: 0;"><input name="lang" type="hidden" value="pt-BR"/>
+<input name="access_key" type="hidden" value="bf34ff48-fcc6-4823-b386-9ae3d0712797"/>
+<input name="subject" type="hidden" value="New Support Inquiry for RoasterDB!"/>
+<input name="from_name" type="hidden" value="RoasterDB Contact Form"/>
+<div class="form-group">
+<label class="form-label" for="suppName">Seu nome / empresa *</label>
+<input class="form-input" id="suppName" name="name" placeholder="ex.: Alex Smith" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="suppEmail">Seu endereço de e-mail *</label>
+<input class="form-input" id="suppEmail" name="email" placeholder="alex@company.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="suppTopic">Assunto *</label>
+<select class="form-select" id="suppTopic" name="topic" required="">
+<option value="Dataset Question / Sample Inquiry">Dúvida sobre o dataset / Pedido de amostra</option>
+<option value="Payment / Crypto / Invoicing Support">Suporte a pagamentos / cripto / faturamento</option>
+<option value="Custom Scraping / Enterprise Integration">Scraping sob medida / Integração corporativa</option>
+<option value="Bug Report / Data Quality Feedback">Relatório de erro / Feedback sobre a qualidade dos dados</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label" for="suppMsg">Mensagem *</label>
+<textarea class="form-input" id="suppMsg" name="message" placeholder="Describe your question or custom requirement..." required="" rows="4" style="resize: vertical;"></textarea>
+</div>
+<button class="btn btn-primary" style="width: 100%; justify-content: center; padding: 18px; margin-top: 8px;" type="submit">
+<span>Enviar mensagem para roasterdb@dataengineered.io ➔</span>
+</button>
+</form>
+<div id="supportSuccess" style="display: none; padding: 24px; border: 1px solid var(--accent); background: var(--bg-paper); text-align: center;">
+<div style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--accent);">
+            ✦ Solicitação de suporte enviada!
+          </div>
+<p style="margin-top: 8px; font-size: 0.85rem;">
+            Sua mensagem foi enviada diretamente para <code>roasterdb@dataengineered.io</code>. Nossa equipe costuma responder em até 2–4 horas úteis.
+          </p>
+<button class="btn btn-outline" onclick="resetSupport()" style="margin-top: 18px; padding: 12px 24px; font-size: 0.8rem; font-weight: 600;" type="button">
+<span>↻ Enviar outra mensagem</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- BEGIN:hub-browse -->
+<section id="browse" style="max-width:1000px;margin:0 auto;padding:30px 24px;border-top:1px solid rgba(128,128,128,.28)">
+<h2 style="font-size:1.05rem;margin:0 0 8px">Ver todas as páginas</h2>
+<p style="margin:0;opacity:.85"><a href="/pt-br/origins/">16 origens produtoras</a> · <a href="/pt-br/roasters/">72 torrefações de cafés especiais</a></p>
+</section>
+<!-- END:hub-browse -->
+<footer>
+<div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+<div>
+<strong>ROASTERDB</strong> — Dataset de cafés especiais © 2026
+      </div>
+<div>
+<a href="https://github.com/RoasterDB/specialty-coffee-roasterdb" style="text-decoration: underline;">Repositório no GitHub</a> ·
+        <a href="#overview">Documentação</a> · 
+        <a href="#pricing">Preços</a> ·
+        <a href="#faq">Perguntas frequentes</a> ·
+        <a href="#support">Suporte</a> ·
+        <a href="/sitemap.xml">Sitemap XML</a>
+</div>
+</div>
+<div class="catalog-line" style="text-align:center; margin-top:14px; font-size:0.85rem; opacity:0.85;"><a href="https://dataengineered.io/">Parte do catálogo DataEngineered →</a> · <a href="https://dataengineered.io/about">Sobre</a> · <a href="https://dataengineered.io/terms">Termos</a> · <a href="https://dataengineered.io/privacy">Privacidade</a> · <a href="https://dataengineered.io/refund-policy">Política de reembolso</a></div>
+<!-- i18n:switcher --><nav class="i18n-switch" translate="no" aria-label="Idioma" style="text-align:center;margin:14px auto;font-size:0.85rem;opacity:0.85;"><a href="/" hreflang="en" lang="en" data-i18n-lang="en">English</a> · <a href="/es/" hreflang="es" lang="es" data-i18n-lang="es">Español</a> · <a href="/de/" hreflang="de" lang="de" data-i18n-lang="de">Deutsch</a> · <a href="/fr/" hreflang="fr" lang="fr" data-i18n-lang="fr">Français</a> · <span aria-current="true" style="font-weight:600">Português</span></nav><!-- /i18n:switcher --></footer>
+<script data-i18n="" id="i18n-strings" type="application/json">
+{
+  "themeDark": "Modo escuro",
+  "themeLight": "Modo claro",
+  "supportOpen": "💬 Abrir o formulário de contato do suporte",
+  "supportClose": "✕ Fechar o formulário de contato do suporte",
+  "formUnreachable": "Nosso provedor de formulários está indisponível no momento. Escreva para roasterdb@dataengineered.io com sua solicitação; respondemos em até 1 dia útil."
+}
+</script>
+<script>
+    // Runtime UI text lives in the #i18n-strings table above (translated per locale by
+    // scripts/i18n_common.py); only the English values are written here.
+    const I18N = JSON.parse(document.getElementById('i18n-strings').textContent);
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const label = document.getElementById('theme-label');
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        label.innerText = I18N.themeDark;
+      } else {
+        html.classList.add('dark');
+        label.innerText = I18N.themeLight;
+      }
+    }
+
+    function filterTable() {
+      const input = document.getElementById('searchBox');
+      const filter = input.value.toUpperCase();
+      const table = document.getElementById('coffeeTable');
+      const tr = table.getElementsByTagName('tr');
+
+      for (let i = 1; i < tr.length; i++) {
+        const rowText = tr[i].textContent || tr[i].innerText;
+        if (rowText.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = '';
+        } else {
+          tr[i].style.display = 'none';
+        }
+      }
+    }
+
+    function handleCheckout(event) {
+      event.preventDefault();
+      const form = document.getElementById('checkoutForm');
+      const email = document.getElementById('userEmail').value;
+      const name = document.getElementById('userName').value;
+      const payMethod = document.getElementById('payMethod').value;
+      const useCase = document.getElementById('useCase').value;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      const abortController = new AbortController();
+      const timeoutId = setTimeout(() => abortController.abort(), 7000);
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: 'bf34ff48-fcc6-4823-b386-9ae3d0712797',
+          subject: 'New RoasterDB Snapshot Dataset Request: ' + name,
+          from_name: 'RoasterDB Contact Form',
+          Name: name,
+          email: email,
+          PaymentMethod: payMethod,
+          UseCase: useCase
+        }),
+        signal: abortController.signal
+      }).then(response => {
+        clearTimeout(timeoutId);
+        if (!response.ok) throw new Error('Form provider response error: ' + response.status);
+        return response.json();
+      })
+      .then(data => {
+        if (!data || data.success !== true) throw new Error('Form provider did not confirm delivery');
+        form.style.display = 'none';
+        document.getElementById('checkoutSuccess').style.display = 'block';
+      })
+      .catch(err => {
+        clearTimeout(timeoutId);
+        console.warn('FormSubmit server outage or AJAX error (Cloudflare 522) — activating smart email fallback:', err);
+        if (submitBtn) submitBtn.disabled = false;
+        
+        // FormSubmit.co is experiencing a 522 Cloudflare timeout/outage.
+        // Instead of redirecting the user to a dead 522 error page with form.submit(),
+        // open their email app with the request pre-filled and show a clean inline notification.
+        const subject = encodeURIComponent('New RoasterDB Snapshot Request: ' + name);
+        const body = encodeURIComponent(
+          "Name: " + name + "\n" +
+          "Email: " + email + "\n" +
+          "Payment Method: " + payMethod + "\n" +
+          "Use Case: " + useCase + "\n\n" +
+          "(Sent via automatic fallback due to FormSubmit server timeout)"
+        );
+        alert(I18N.formUnreachable);
+      });
+    }
+
+    // Restore the checkout form after a successful submit so the user can
+    // request again. No-op if the form is already showing (won't wipe input).
+    function resetCheckout() {
+      const success = document.getElementById('checkoutSuccess');
+      if (!success || success.style.display === 'none' || success.style.display === '') return;
+      const form = document.getElementById('checkoutForm');
+      form.reset();
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.disabled = false;
+      form.style.display = '';
+      success.style.display = 'none';
+    }
+
+    // Restore the support form after a successful submit.
+    function resetSupport() {
+      const form = document.getElementById('supportForm');
+      form.reset();
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.disabled = false;
+      form.style.display = '';
+      document.getElementById('supportSuccess').style.display = 'none';
+    }
+
+    function toggleSupportForm() {
+      const container = document.getElementById('supportFormContainer');
+      const btnText = document.getElementById('supportBtnText');
+      if (container.style.display === 'none') {
+        // Reopening after a prior submit should show a fresh form, not the
+        // stale success box.
+        if (document.getElementById('supportSuccess').style.display !== 'none') resetSupport();
+        container.style.display = 'block';
+        btnText.innerText = I18N.supportClose;
+        container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        container.style.display = 'none';
+        btnText.innerText = I18N.supportOpen;
+      }
+    }
+
+    // Tier 2 CTA: open the support form as a custom-quote request (fresh form,
+    // Custom/Enterprise topic preselected) instead of dropping the user next to
+    // the Tier 1 checkout box.
+    function openCustomQuote(event) {
+      if (event) event.preventDefault();
+      if (document.getElementById('supportSuccess').style.display !== 'none') resetSupport();
+      const topic = document.getElementById('suppTopic');
+      if (topic) topic.value = 'Custom Scraping / Enterprise Integration';
+      const container = document.getElementById('supportFormContainer');
+      const btnText = document.getElementById('supportBtnText');
+      container.style.display = 'block';
+      if (btnText) btnText.innerText = I18N.supportClose;
+      container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function handleSupport(event) {
+      event.preventDefault();
+      const form = document.getElementById('supportForm');
+      const name = document.getElementById('suppName').value;
+      const email = document.getElementById('suppEmail').value;
+      const topic = document.getElementById('suppTopic').value;
+      const message = document.getElementById('suppMsg').value;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      const abortController = new AbortController();
+      const timeoutId = setTimeout(() => abortController.abort(), 7000);
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: 'bf34ff48-fcc6-4823-b386-9ae3d0712797',
+          subject: 'RoasterDB Support: ' + topic + ' (' + name + ')',
+          from_name: 'RoasterDB Contact Form',
+          Name: name,
+          email: email,
+          Topic: topic,
+          Message: message
+        }),
+        signal: abortController.signal
+      }).then(response => {
+        clearTimeout(timeoutId);
+        if (!response.ok) throw new Error('Form provider response error: ' + response.status);
+        return response.json();
+      })
+      .then(data => {
+        if (!data || data.success !== true) throw new Error('Form provider did not confirm delivery');
+        form.style.display = 'none';
+        document.getElementById('supportSuccess').style.display = 'block';
+      })
+      .catch(err => {
+        clearTimeout(timeoutId);
+        console.warn('FormSubmit server outage or AJAX error (Cloudflare 522) — activating smart email fallback:', err);
+        if (submitBtn) submitBtn.disabled = false;
+        
+        // FormSubmit.co is experiencing a 522 Cloudflare timeout/outage.
+        const subject = encodeURIComponent('RoasterDB Support: ' + topic + ' (' + name + ')');
+        const body = encodeURIComponent(
+          "Name: " + name + "\n" +
+          "Email: " + email + "\n" +
+          "Topic: " + topic + "\n" +
+          "Message: \n" + message + "\n\n" +
+          "(Sent via automatic fallback due to FormSubmit server timeout)"
+        );
+        alert(I18N.formUnreachable);
+      });
+    }
+
+    // Register Progressive Web App Service Worker with Auto-Update
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((reg) => {
+            console.log('RoasterDB PWA Service Worker registered:', reg.scope);
+            reg.addEventListener('updatefound', () => {
+              const newWorker = reg.installing;
+              if (newWorker) {
+                newWorker.addEventListener('statechange', () => {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    console.log('New RoasterDB catalog update available offline.');
+                  }
+                });
+              }
+            });
+          })
+          .catch((err) => console.warn('RoasterDB PWA Service Worker error:', err));
+      });
+    }
+  </script>
+</body>
+</html>

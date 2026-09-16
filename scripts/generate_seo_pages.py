@@ -9,6 +9,7 @@ Reads samples/roasterdb_sample.csv and generates:
 
 import csv
 import html
+import json
 import os
 import re
 import sys
@@ -85,6 +86,17 @@ def _cap(text):
     lowercases the rest of the string (which would mangle 'Dark', 'SCA', etc.)."""
     return text[:1].upper() + text[1:] if text else text
 
+def data(value):
+    """An HTML-escaped data value marked translate="no" for scripts/i18n_common.py."""
+    return f'<span translate="no">{html.escape(value)}</span>'
+
+def jstr(value):
+    """A value for inside a JSON-LD string literal. JSON escaping, not HTML escaping: the
+    old html.escape() put a literal "&amp;" / "&#x27;" into the structured data ("Black
+    &amp; White Coffee Roasters"), which also kept the name from matching its translate="no"
+    body text, so i18n_common.py could not placeholder it."""
+    return json.dumps(value, ensure_ascii=False)[1:-1].replace("</", "<\\/")
+
 def _families(coffees):
     fams = Counter()
     for c in coffees:
@@ -110,7 +122,10 @@ def build_profile(name, coffees, kind):
     kind: 'roaster' (links out to origins) or 'origin' (links out to roasters)."""
     n = len(coffees)
     rel = "release" if n == 1 else "releases"
-    esc = html.escape
+    # Data values (roaster, origin, process, flavor family, roast level, currency) carry
+    # translate="no" (see scripts/i18n_common.py): localized copies keep them verbatim and
+    # translate only the sentence around them. Rendering is unchanged.
+    esc = data
     countries = Counter(_origin_of(c) for c in coffees if _origin_of(c))
     roasters = Counter((c.get('source_roaster') or '').strip()
                        for c in coffees if (c.get('source_roaster') or '').strip())
@@ -132,15 +147,15 @@ def build_profile(name, coffees, kind):
     if kind == 'roaster':
         origin_phrase = ("sourced from " + _oxford([esc(c) for c, _ in countries.most_common(5)])
                          if countries else "spanning multiple origins")
-        p1 = f"This RoasterDB snapshot of {esc(name)} catalogues {n} specialty coffee {rel} {origin_phrase}."
+        p1 = [f"This RoasterDB snapshot of {esc(name)} catalogues {n} specialty coffee {rel} {origin_phrase}."]
     else:
         rphrase = _oxford([esc(r) for r, _ in roasters.most_common(5)]) or "various artisan roasters"
-        p1 = f"RoasterDB catalogues {n} specialty coffee {rel} grown in {esc(name)}, offered by {rphrase}."
+        p1 = [f"RoasterDB catalogues {n} specialty coffee {rel} grown in {esc(name)}, offered by {rphrase}."]
     if alts:
         lo, hi = min(alts), max(alts)
-        p1 += (f" Documented growing elevation sits at {lo} metres above sea level."
-               if lo == hi else
-               f" Growing elevations range from {lo} to {hi} metres above sea level.")
+        p1.append(f"Documented growing elevation sits at {lo} metres above sea level."
+                  if lo == hi else
+                  f"Growing elevations range from {lo} to {hi} metres above sea level.")
 
     # Paragraph 2 -- processing / flavor / roast / price
     bits = []
@@ -153,13 +168,18 @@ def build_profile(name, coffees, kind):
                     + " families of the SCA Flavor Wheel")
     if roasts:
         bits.append("roast levels span " + _oxford([esc(r) for r, _ in roasts.most_common()]))
-    p2 = ("Across these lots, " + "; ".join(bits) + ".") if bits else ""
+    p2 = [("Across these lots, " + "; ".join(bits) + ".")] if bits else []
     if prices:
         cur = esc(next((c.get('price_currency') for c in coffees if c.get('price_currency')), ""))
         lo, hi = min(prices), max(prices)
-        p2 += (f" Listed retail price is {cur} {lo:.0f}."
-               if lo == hi else
-               f" Listed retail prices range {cur} {lo:.0f}-{hi:.0f}.")
+        p2.append(f"Listed retail price is {cur} {lo:.0f}."
+                  if lo == hi else
+                  f"Listed retail prices range {cur} {lo:.0f}-{hi:.0f}.")
+
+    # one <span> per sentence: each optional sentence is its own translation segment
+    # instead of every combination of sentences being a different paragraph
+    p1 = " ".join(f"<span>{s}</span>" for s in p1)
+    p2 = " ".join(f"<span>{s}</span>" for s in p2)
 
     # Stat tiles
     tiles = [("Coffees indexed", str(n))]
@@ -184,12 +204,12 @@ def build_profile(name, coffees, kind):
     # origin like Colombia (28 roasters) still links every one of them somewhere.
     links = ""
     if kind == 'roaster' and countries:
-        chips = [f'<a href="/origins/{slugify(c)}">{esc(c)}</a>' for c in sorted(countries)]
+        chips = [f'<a href="/origins/{slugify(c)}" translate="no">{html.escape(c)}</a>' for c in sorted(countries)]
         links = ('<p style="margin-top:16px;font-size:0.85rem;color:var(--text-muted);">'
                  '<strong style="color:var(--text-ink);">Origins in this collection:</strong> '
                  + " &middot; ".join(chips) + "</p>")
     elif kind == 'origin' and roasters:
-        chips = [f'<a href="/roasters/{slugify(r)}">{esc(r)}</a>' for r in sorted(roasters)]
+        chips = [f'<a href="/roasters/{slugify(r)}" translate="no">{html.escape(r)}</a>' for r in sorted(roasters)]
         links = ('<p style="margin-top:16px;font-size:0.85rem;color:var(--text-muted);">'
                  f'<strong style="color:var(--text-ink);">Roasters sourcing {esc(name)}:</strong> '
                  + " &middot; ".join(chips) + "</p>")
@@ -259,7 +279,7 @@ def build_roaster_related(name, coffees, ctx):
     items = []
     origins_here = sorted({_origin_of(c) for c in coffees if _origin_of(c) and _origin_of(c) not in ('Unknown', 'Blend')})
     for o in origins_here[:3]:
-        items.append((f"../origins/{slugify(o)}", o, "origin sourced by this roaster"))
+        items.append((f"../origins/{slugify(o)}", o, "origin sourced by this roaster", False))
 
     seen = {name}
     siblings = []
@@ -283,12 +303,12 @@ def build_roaster_related(name, coffees, ctx):
                 if len(siblings) >= 2:
                     break
     for r, reason in siblings:
-        items.append((f"../roasters/{slugify(r)}", r, reason))
+        items.append((f"../roasters/{slugify(r)}", r, reason, False))
 
-    have = {label for _, label, _ in items} | {name}
+    have = {item[1] for item in items} | {name}
     if len(items) < 3:
         for r in _pad_related(name, ctx['roaster_names'], have, 3, ctx['roaster_idx']):
-            items.append((f"../roasters/{slugify(r)}", r, None))
+            items.append((f"../roasters/{slugify(r)}", r, None, False))
     items.append(("../roasters/", "All specialty roasters", None))
     return items
 
@@ -302,7 +322,7 @@ def build_origin_related(name, coffees, ctx):
     roasters_here = sorted({(c.get('source_roaster') or '').strip() for c in coffees
                             if (c.get('source_roaster') or '').strip()})
     for r in roasters_here[:3]:
-        items.append((f"../roasters/{slugify(r)}", r, "roaster sourcing this origin"))
+        items.append((f"../roasters/{slugify(r)}", r, "roaster sourcing this origin", False))
 
     avg = ctx['origin_alt_avg'].get(name)
     if avg is not None:
@@ -311,17 +331,24 @@ def build_origin_related(name, coffees, ctx):
              if o != name and ctx['origin_alt_avg'].get(o) is not None),
             key=lambda t: (t[1], t[0]))
         for o, _ in others[:2]:
-            items.append((f"../origins/{slugify(o)}", o, "similar growing elevation"))
+            items.append((f"../origins/{slugify(o)}", o, "similar growing elevation", False))
 
-    have = {label for _, label, _ in items} | {name}
+    have = {item[1] for item in items} | {name}
     if len(items) < 3:
         for o in _pad_related(name, ctx['origin_names'], have, 3, ctx['origin_idx']):
-            items.append((f"../origins/{slugify(o)}", o, None))
+            items.append((f"../origins/{slugify(o)}", o, None, False))
     items.append(("../origins/", "All coffee origins", None))
     return items
 
-RELATED_CSS = """
-    .related { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--rule-color); }
+def marked_related_block(items, heading):
+    """seo_common.related_block, with the data inside a reason ("also sources Kenya",
+    "same light roast level") marked translate="no" -- related_block escapes reasons, so
+    the markup is added to its output; the rendered text is unchanged."""
+    out = related_block(items, heading=heading, limit=None)
+    out = re.sub(r'(— also sources )(.*?)(</span>)', r'\1<span translate="no">\2</span>\3', out)
+    return re.sub(r'(— same )(.*?)( roast level</span>)', r'\1<span translate="no">\2</span>\3', out)
+
+RELATED_CSS = """    .related { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--rule-color); }
     .related h2 { font-size: 1.15rem; font-family: 'Outfit', sans-serif; }
     .related ul { list-style: none; padding: 0; margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px 18px; }
     .related li { font-size: 0.85rem; color: var(--text-muted); }
@@ -338,7 +365,7 @@ def generate_roaster_page(roaster_name: str, coffees: list, ctx: dict):
         item_list.append(f"""      {{
         "@type": "ListItem",
         "position": {idx},
-        "name": "{html.escape(c['title'])}"
+        "name": "{jstr(c['title'])}"
       }}""")
     item_list_json = ",\n".join(item_list)
 
@@ -351,17 +378,17 @@ def generate_roaster_page(roaster_name: str, coffees: list, ctx: dict):
         nodes_badge = " ".join([f"<code>{html.escape(n.strip())}</code>" for n in nodes.split(';') if n.strip()][:3])
 
         rows_html.append(f"""            <tr>
-              <td><strong>{html.escape(c['title'])}</strong></td>
-              <td>{html.escape(origin)}</td>
-              <td>{html.escape(masl)}m</td>
-              <td>{html.escape(process)}</td>
+              <td translate="no"><strong>{html.escape(c['title'])}</strong></td>
+              <td translate="no">{html.escape(origin)}</td>
+              <td translate="no">{html.escape(masl)}m</td>
+              <td translate="no">{html.escape(process)}</td>
               <td>{nodes_badge}</td>
             </tr>""")
 
     table_body = "\n".join(rows_html)
     title_tag = fit_title(roaster_name, ["SCA flavor profile", "coffee roaster"], BRAND)
     desc = roaster_description(roaster_name, coffees)
-    related_html = related_block(build_roaster_related(roaster_name, coffees, ctx), heading="Related roasters and origins", limit=None)
+    related_html = marked_related_block(build_roaster_related(roaster_name, coffees, ctx), "Related roasters and origins")
 
     page_content = f"""<!DOCTYPE html>
 <html lang="en" class="dark">
@@ -386,7 +413,7 @@ def generate_roaster_page(roaster_name: str, coffees: list, ctx: dict):
     "itemListElement": [
       {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "{BASE_URL}/" }},
       {{ "@type": "ListItem", "position": 2, "name": "Roasters", "item": "{BASE_URL}/#explorer" }},
-      {{ "@type": "ListItem", "position": 3, "name": "{html.escape(roaster_name)}", "item": "{url}" }}
+      {{ "@type": "ListItem", "position": 3, "name": "{jstr(roaster_name)}", "item": "{url}" }}
     ]
   }}
   </script>
@@ -394,7 +421,7 @@ def generate_roaster_page(roaster_name: str, coffees: list, ctx: dict):
   {{
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "{html.escape(roaster_name)} Specialty Coffees",
+    "name": "{jstr(roaster_name)} Specialty Coffees",
     "numberOfItems": {len(coffees)},
     "itemListElement": [
 {item_list_json}
@@ -430,15 +457,15 @@ def generate_roaster_page(roaster_name: str, coffees: list, ctx: dict):
   <div class="container">
     <div class="header-bar">
       <div>
-        <a href="/" style="font-weight: 700; letter-spacing: -0.02em; color: var(--text-ink);">ROASTERDB.NET</a>
+        <a href="/" translate="no" style="font-weight: 700; letter-spacing: -0.02em; color: var(--text-ink);">ROASTERDB.NET</a>
         <span style="opacity: 0.6; font-size: 0.75rem; margin-left: 12px;">| Roaster Catalog Snapshot</span>
       </div>
       <a href="/" style="font-size: 0.85rem;">← Back to Main Explorer</a>
     </div>
 
-    <h1 class="font-display">{html.escape(roaster_name)} — Specialty Coffee Releases</h1>
+    <h1 class="font-display">{data(roaster_name)} — Specialty Coffee Releases</h1>
     <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.9rem;">
-      Indexed <strong>{len(coffees)} specialty coffee releases</strong> from {html.escape(roaster_name)} with tasting descriptors normalized to the SCA Flavor Wheel.
+      Indexed <strong>{len(coffees)} specialty coffee releases</strong> from {data(roaster_name)} with tasting descriptors normalized to the SCA Flavor Wheel.
     </p>
 {build_profile(roaster_name, coffees, 'roaster')}
     <div style="overflow-x: auto; margin-top: 24px;">
@@ -489,17 +516,17 @@ def generate_origin_page(origin_name: str, coffees: list, ctx: dict):
         nodes_badge = " ".join([f"<code>{html.escape(n.strip())}</code>" for n in nodes.split(';') if n.strip()][:3])
 
         rows_html.append(f"""            <tr>
-              <td><strong>{html.escape(c['title'])}</strong></td>
-              <td>{html.escape(roaster)}</td>
-              <td>{html.escape(masl)}m</td>
-              <td>{html.escape(process)}</td>
+              <td translate="no"><strong>{html.escape(c['title'])}</strong></td>
+              <td translate="no">{html.escape(roaster)}</td>
+              <td translate="no">{html.escape(masl)}m</td>
+              <td translate="no">{html.escape(process)}</td>
               <td>{nodes_badge}</td>
             </tr>""")
     table_body = "\n".join(rows_html)
     n_releases = len(coffees)
     title_tag = fit_title(origin_name, [f"{_plural(n_releases, 'specialty release')}", "coffee origin"], BRAND)
     desc = origin_description(origin_name, coffees)
-    related_html = related_block(build_origin_related(origin_name, coffees, ctx), heading="Related origins and roasters", limit=None)
+    related_html = marked_related_block(build_origin_related(origin_name, coffees, ctx), "Related origins and roasters")
 
     page_content = f"""<!DOCTYPE html>
 <html lang="en" class="dark">
@@ -524,7 +551,7 @@ def generate_origin_page(origin_name: str, coffees: list, ctx: dict):
     "itemListElement": [
       {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "{BASE_URL}/" }},
       {{ "@type": "ListItem", "position": 2, "name": "Origins", "item": "{BASE_URL}/#explorer" }},
-      {{ "@type": "ListItem", "position": 3, "name": "{html.escape(origin_name)}", "item": "{url}" }}
+      {{ "@type": "ListItem", "position": 3, "name": "{jstr(origin_name)}", "item": "{url}" }}
     ]
   }}
   </script>
@@ -557,15 +584,15 @@ def generate_origin_page(origin_name: str, coffees: list, ctx: dict):
   <div class="container">
     <div class="header-bar">
       <div>
-        <a href="/" style="font-weight: 700; letter-spacing: -0.02em; color: var(--text-ink);">ROASTERDB.NET</a>
+        <a href="/" translate="no" style="font-weight: 700; letter-spacing: -0.02em; color: var(--text-ink);">ROASTERDB.NET</a>
         <span style="opacity: 0.6; font-size: 0.75rem; margin-left: 12px;">| Origin Catalog Snapshot</span>
       </div>
       <a href="/" style="font-size: 0.85rem;">← Back to Main Explorer</a>
     </div>
 
-    <h1 class="font-display">{html.escape(origin_name)} — Specialty Coffee Releases</h1>
+    <h1 class="font-display">{data(origin_name)} — Specialty Coffee Releases</h1>
     <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.9rem;">
-      Indexed <strong>{len(coffees)} specialty coffee releases</strong> from {html.escape(origin_name)} with elevation (masl) and SCA Flavor Wheel descriptors.
+      Indexed <strong>{len(coffees)} specialty coffee releases</strong> from {data(origin_name)} with elevation (masl) and SCA Flavor Wheel descriptors.
     </p>
 {build_profile(origin_name, coffees, 'origin')}
     <div style="overflow-x: auto; margin-top: 24px;">
