@@ -59,6 +59,12 @@ Measured across all 8,000+ records. Published up front so you can decide if the 
 - **4,500+ coffees** mapped to the SCA wheel · **11,000+** bean→flavor links · avg **2.6** descriptors each.
 - All **51** taxonomy descriptors exercised; tasting notes become hierarchical paths, e.g. `Fruity > Other Fruit > Peach`.
 
+## Statistics page (`/stats/`)
+
+[roasterdb.dataengineered.io/stats/](https://roasterdb.dataengineered.io/stats/) publishes aggregate statistics computed from the **full** snapshot — origin shares, SCA flavor families and top descriptors, processing methods, roast levels, median prices per 250 g and the Gesha premium, growing elevations, roaster locations, varietals — as a citable page with embeddable SVG charts and a machine-readable `stats/data.json`. The figures and charts are **CC BY 4.0**: reuse them with a link to the page. Only aggregates are published; the row-level data stays in the commercial dataset.
+
+`scripts/generate_stats.py` regenerates `stats/` from the private pipeline's SQLite after each data refresh (see the private repo's RELEASING.md); follow it with `generate_seo_pages.py` (sitemap) and the i18n `build` + `check`.
+
 ## Provenance
 
 Every record is traceable and re-verifiable:
