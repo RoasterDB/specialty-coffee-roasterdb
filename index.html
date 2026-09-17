@@ -688,6 +688,62 @@
       font-size: 0.75rem;
       opacity: 0.6;
     }
+
+    /* phones: let the header and its nav wrap instead of widening the page */
+    @media (max-width: 760px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 14px 16px;
+      }
+
+      .brand {
+        flex-wrap: wrap;
+        gap: 4px 12px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 10px 16px;
+      }
+
+      /* long translated words (de/fr) must not stretch the hero column */
+      .hero-grid > * {
+        min-width: 0;
+      }
+
+      h1 {
+        hyphens: auto;
+        overflow-wrap: break-word;
+      }
+
+      .pricing-container {
+        padding: 32px 20px;
+      }
+
+      .pricing-header {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      /* a flex li makes <strong> and the text after it two side-by-side items; use a block with a hanging mark */
+      .feature-list li {
+        display: block;
+        position: relative;
+        padding-left: 24px;
+      }
+
+      .feature-list li::before {
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cta-group {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
