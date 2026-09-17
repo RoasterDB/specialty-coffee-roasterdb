@@ -641,6 +641,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "736ae89b20005dd5": {
+  "src": "Coffee statistics",
+  "t": "Estadísticas del café",
+  "by": "claude-fable-5-1",
+  "at": "2026-09-17"
+ },
  "7511bd4716655d38": {
   "src": "{0} lists {1} specialty coffee releases on RoasterDB from {2}. Roast levels span {3}; processing includes {4} and {5}.",
   "t": "{0} reúne {1} cafés de especialidad en RoasterDB, procedentes de {2}. Niveles de tueste: {3}; procesado: {4} y {5}.",
@@ -1119,6 +1125,12 @@
   "src": "Page not found",
   "t": "Página no encontrada",
   "by": "claude-opus-5",
+  "at": "2026-09-17"
+ },
+ "be763e9aba2af6b8": {
+  "src": "Stats",
+  "t": "Estadísticas",
+  "by": "claude-fable-5-1",
   "at": "2026-09-17"
  },
  "c2cd0d06c2c27390": {

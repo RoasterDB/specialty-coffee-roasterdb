@@ -704,6 +704,10 @@ def main():
         idx_path = BASE_DIR / slug / "index.html"
         if idx_path.exists():
             sitemap_entries.append((f"{BASE_URL}/{slug}/", idx_path, "monthly", "0.7"))
+    # statistics page (scripts/generate_stats.py) -- a citable, embeddable asset, kept high in the sitemap
+    stats_path = BASE_DIR / "stats" / "index.html"
+    if stats_path.exists():
+        sitemap_entries.append((f"{BASE_URL}/stats/", stats_path, "monthly", "0.9"))
 
     n_urls = write_sitemap(BASE_DIR, sitemap_entries)
     print(f"Generated {n_urls} URLs in sitemap.xml")
