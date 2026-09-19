@@ -17,7 +17,7 @@ $env:PYTHONUTF8=1; python -m kaggle datasets create -p kaggle/dataset --dir-mode
 Check ingestion status until it reads `ready`:
 
 ```powershell
-python -m kaggle datasets status ahtiticheamine/roasterdb-specialty-coffee-sample
+python -m kaggle datasets status dataengineered/roasterdb-specialty-coffee-sample
 ```
 
 ## 2. Push the starter notebook (attached to the dataset)
@@ -48,7 +48,7 @@ $env:PYTHONUTF8=1; python -m kaggle kernels push -p kaggle/notebook
 ## Notes
 
 - The dataset `id` and the notebook's `dataset_sources` both use
-  `ahtiticheamine/roasterdb-specialty-coffee-sample`. If you change the slug, change it in
+  `dataengineered/roasterdb-specialty-coffee-sample`. If you change the slug, change it in
   **both** files.
 - Kaggle occasionally needs column descriptions confirmed once in the web **Data** tab if the
   CSV was ingested asynchronously — open the dataset after publish and verify the 10.0 score.
