@@ -10,7 +10,7 @@
 ## Key pages
 - [Landing & pricing](https://roasterdb.dataengineered.io/): what's inside, honest field coverage, and how to buy.
 - [Specialty coffee statistics](https://roasterdb.dataengineered.io/stats/): origin shares, SCA flavor families, processing, roast levels, median prices per 250 g and the Gesha premium, computed from the full snapshot; CC BY 4.0, with [data.json](https://roasterdb.dataengineered.io/stats/data.json) and embeddable SVG charts.
-- [Free sample on Kaggle](https://www.kaggle.com/datasets/ahtiticheamine/roasterdb-specialty-coffee-sample): 100-row CSV plus a working starter notebook.
+- [Free sample on Kaggle](https://www.kaggle.com/datasets/dataengineered/roasterdb-specialty-coffee-sample): 100-row CSV plus a working starter notebook.
 
 ## Pricing & licensing
 - Free sample: 100 rows, CC-BY-NC-4.0.

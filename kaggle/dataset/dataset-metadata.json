@@ -1,7 +1,7 @@
 {
   "title": "RoasterDB — Specialty Coffee Dataset (Sample)",
   "subtitle": "100 specialty coffees from 72 roasters, mapped to the SCA Flavor Wheel",
-  "id": "ahtiticheamine/roasterdb-specialty-coffee-sample",
+  "id": "dataengineered/roasterdb-specialty-coffee-sample",
   "licenses": [
     {
       "name": "CC-BY-NC-4.0"
