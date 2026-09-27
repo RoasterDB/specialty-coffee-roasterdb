@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 462" width="720" height="462" role="img" aria-labelledby="t d" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
-<title id="t">The most common tasting notes</title><desc id="d">Share of 5,649 mapped coffees whose notes resolve to each SCA descriptor</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 462" width="720" height="462" role="img" aria-labelledby="t-descriptors d-descriptors" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
+<title id="t-descriptors">The most common tasting notes</title><desc id="d-descriptors">Share of 5,649 mapped coffees whose notes resolve to each SCA descriptor</desc>
 <rect width="720" height="462" fill="#181715"/>
 <text x="20" y="26" font-size="15" font-weight="600" fill="#f8f7f4">The most common tasting notes</text>
 <text x="20" y="44" font-size="12" fill="#9c9891">Share of 5,649 mapped coffees whose notes resolve to each SCA descriptor</text>

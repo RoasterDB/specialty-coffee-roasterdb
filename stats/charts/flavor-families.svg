@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 282" width="720" height="282" role="img" aria-labelledby="t d" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
-<title id="t">What specialty coffee tastes like</title><desc id="d">Share of 15,063 SCA Flavor Wheel descriptors mapped from roasters&#x27; tasting notes</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 282" width="720" height="282" role="img" aria-labelledby="t-flavor-families d-flavor-families" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
+<title id="t-flavor-families">What specialty coffee tastes like</title><desc id="d-flavor-families">Share of 15,063 SCA Flavor Wheel descriptors mapped from roasters&#x27; tasting notes</desc>
 <rect width="720" height="282" fill="#181715"/>
 <text x="20" y="26" font-size="15" font-weight="600" fill="#f8f7f4">What specialty coffee tastes like</text>
 <text x="20" y="44" font-size="12" fill="#9c9891">Share of 15,063 SCA Flavor Wheel descriptors mapped from roasters&#x27; tasting notes</text>

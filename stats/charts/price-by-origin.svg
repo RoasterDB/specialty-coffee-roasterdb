@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 582" width="720" height="582" role="img" aria-labelledby="t d" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
-<title id="t">Median price of a 250 g bag, by origin (USD)</title><desc id="d">Listings priced in USD, 100-2,000 g units, origins with 50+ priced listings</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 582" width="720" height="582" role="img" aria-labelledby="t-price-by-origin d-price-by-origin" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
+<title id="t-price-by-origin">Median price of a 250 g bag, by origin (USD)</title><desc id="d-price-by-origin">Listings priced in USD, 100-2,000 g units, origins with 50+ priced listings</desc>
 <rect width="720" height="582" fill="#181715"/>
 <text x="20" y="26" font-size="15" font-weight="600" fill="#f8f7f4">Median price of a 250 g bag, by origin (USD)</text>
 <text x="20" y="44" font-size="12" fill="#9c9891">Listings priced in USD, 100-2,000 g units, origins with 50+ priced listings</text>

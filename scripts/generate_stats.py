@@ -107,6 +107,16 @@ def _svg_foot(width, height, note):
     return [f'<text x="20" y="{height - 12}" font-size="11" fill="{P["muted"]}">{esc(note)}</text>', "</svg>"]
 
 
+def chart_ids(svg, slug):
+    """Scope a chart's <title id="t">/<desc id="d"> (and its aria-labelledby) to its slug: a page
+    inlines many charts, and repeated ids make every chart's accessible name the first chart's.
+    Same as the portfolio's stats_common.chart_ids: figure() applies it to the inline copy and
+    main() to stats/charts/<slug>.svg; the two stay identical."""
+    return (svg.replace('aria-labelledby="t d"', f'aria-labelledby="t-{slug} d-{slug}"', 1)
+               .replace('<title id="t">', f'<title id="t-{slug}">', 1)
+               .replace('<desc id="d">', f'<desc id="d-{slug}">', 1))
+
+
 def svg_hbar(title, subtitle, rows, note, width=720, label_w=196):
     """rows: [(label, value, display)] -- one series, bars in the accent hue,
     <= 24px thick, 4px rounded data-end and square at the baseline, value at the tip."""
@@ -375,7 +385,7 @@ def embed_block(slug, title):
 
 
 def figure(slug, svg, title, note):
-    return (f'<figure id="fig-{slug}">{svg}<figcaption><span>{esc(note)}</span>'
+    return (f'<figure id="fig-{slug}">{chart_ids(svg, slug)}<figcaption><span>{esc(note)}</span>'
             f'<a href="/stats/charts/{slug}.svg" download="roasterdb-{slug}.svg">Download SVG</a></figcaption></figure>'
             + embed_block(slug, title))
 
@@ -715,7 +725,7 @@ def main():
     CHART_DIR.mkdir(exist_ok=True)
     (OUT_DIR / "index.html").write_text(page, encoding="utf-8", newline="\n")
     for slug, svg in charts.items():
-        (CHART_DIR / f"{slug}.svg").write_text(svg + "\n", encoding="utf-8", newline="\n")
+        (CHART_DIR / f"{slug}.svg").write_text(chart_ids(svg, slug) + "\n", encoding="utf-8", newline="\n")
     (OUT_DIR / "data.json").write_text(json.dumps(build_data_json(s), ensure_ascii=False, indent=1) + "\n",
                                        encoding="utf-8", newline="\n")
     print(f"stats/index.html + {len(charts)} charts + data.json  (snapshot {s['snapshot_date']}, "

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 462" width="720" height="462" role="img" aria-labelledby="t d" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
-<title id="t">Where specialty coffee comes from</title><desc id="d">Share of 6,031 listings that state a producing country</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 462" width="720" height="462" role="img" aria-labelledby="t-origins d-origins" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
+<title id="t-origins">Where specialty coffee comes from</title><desc id="d-origins">Share of 6,031 listings that state a producing country</desc>
 <rect width="720" height="462" fill="#181715"/>
 <text x="20" y="26" font-size="15" font-weight="600" fill="#f8f7f4">Where specialty coffee comes from</text>
 <text x="20" y="44" font-size="12" fill="#9c9891">Share of 6,031 listings that state a producing country</text>
