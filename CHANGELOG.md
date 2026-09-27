@@ -6,6 +6,10 @@ All notable changes to the RoasterDB dataset snapshots.
 > on a recurring schedule, so the live figures only grow — the numbers below
 > stay accurate between snapshots.
 
+## Site update — 2026-09-28
+
+- **Directory pages render sooner**: the coffee origin and roaster directories (`/origins/`, `/roasters/` and their Spanish, German, French and Portuguese copies) loaded the Google Fonts stylesheet twice: once without blocking, and once as a render-blocking copy of the no-JavaScript fallback, which had lost its `<noscript>` wrapper. The fallback is wrapped again, so these pages no longer wait for the font file before they render. Nothing visible changes (2026-09-28).
+
 ## Site update — 2026-09-27
 
 - **Translated Dataset markup**: on the Spanish, German, French and Portuguese pages the Dataset structured data now names its English original in `sameAs` (next to any existing `sameAs` links), so dataset search can tie the language copies to one canonical entry. English pages and all visible text are unchanged (2026-09-27).
