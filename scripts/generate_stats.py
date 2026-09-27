@@ -11,6 +11,9 @@ sample) and writes a citable, embeddable statistics page:
 
 Only aggregates leave the private database -- no row-level data is written.
 Every figure states its denominator and filter so a reader can reproduce it.
+The page carries the shared section-links snippet (scripts/section_links.py, a
+byte-for-byte copy of the portfolio root's), so embed links and the table of
+contents land on their chart/section after the web fonts swap in.
 
 Re-run after each data refresh, then `python scripts/generate_seo_pages.py`
 (sitemap), `python scripts/i18n_common.py build` and `... check`.
@@ -28,6 +31,8 @@ import sqlite3
 import statistics
 from collections import Counter, defaultdict
 from pathlib import Path
+
+from section_links import insert as section_links_insert  # copied next to this file, like i18n_common.py
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUT_DIR = BASE_DIR / "stats"
@@ -357,7 +362,8 @@ CSS = """
 
 def embed_block(slug, title):
     img = f"{BASE_URL}/stats/charts/{slug}.svg"
-    snippet = (f'<a href="{PAGE_URL}#{slug}"><img src="{img}" alt="{esc(title)}" width="720" '
+    # the chart's own id is fig-<slug> (figure() below); #<slug> matched no element on some charts, only the section on others
+    snippet = (f'<a href="{PAGE_URL}#fig-{slug}"><img src="{img}" alt="{esc(title)}" width="720" '
                f'style="max-width:100%;height:auto"></a>\n'
                f'<p><small>Source: <a href="{PAGE_URL}">{BRAND} specialty coffee statistics</a> (CC BY 4.0)</small></p>')
     return (f'<details><summary>Embed this chart</summary>'
@@ -699,7 +705,8 @@ def main():
         raise SystemExit(f"SQLite snapshot not found: {db}")
     s = compute(db)
     charts = {}
-    page = build_page(s, charts)
+    # the page has no <header>: the snippet goes right after <body> (section_links.insert default)
+    page = section_links_insert(build_page(s, charts))
     OUT_DIR.mkdir(exist_ok=True)
     CHART_DIR.mkdir(exist_ok=True)
     (OUT_DIR / "index.html").write_text(page, encoding="utf-8", newline="\n")
