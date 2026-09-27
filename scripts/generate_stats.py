@@ -11,6 +11,9 @@ sample) and writes a citable, embeddable statistics page:
 
 Only aggregates leave the private database -- no row-level data is written.
 Every figure states its denominator and filter so a reader can reproduce it.
+The page carries the shared section-links snippet (scripts/section_links.py, a
+byte-for-byte copy of the portfolio root's), so embed links and the table of
+contents land on their chart/section after the web fonts swap in.
 
 Re-run after each data refresh, then `python scripts/generate_seo_pages.py`
 (sitemap), `python scripts/i18n_common.py build` and `... check`.
@@ -28,6 +31,8 @@ import sqlite3
 import statistics
 from collections import Counter, defaultdict
 from pathlib import Path
+
+from section_links import insert as section_links_insert  # copied next to this file, like i18n_common.py
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUT_DIR = BASE_DIR / "stats"
@@ -177,7 +182,9 @@ def svg_line(title, subtitle, points, fmt, note, width=720, height=320, peak_lab
 
 def compute(db_path):
     con = sqlite3.connect(str(db_path))
-    q = lambda sql, *a: con.execute(sql, a).fetchall()
+
+    def q(sql, *a):
+        return con.execute(sql, a).fetchall()
     s = {}
 
     s["snapshot_date"] = q("select max(date(last_seen)) from coffee_beans")[0][0]
@@ -357,7 +364,8 @@ CSS = """
 
 def embed_block(slug, title):
     img = f"{BASE_URL}/stats/charts/{slug}.svg"
-    snippet = (f'<a href="{PAGE_URL}#{slug}"><img src="{img}" alt="{esc(title)}" width="720" '
+    # the chart's own id is fig-<slug> (figure() below); #<slug> matched no element on some charts, only the section on others
+    snippet = (f'<a href="{PAGE_URL}#fig-{slug}"><img src="{img}" alt="{esc(title)}" width="720" '
                f'style="max-width:100%;height:auto"></a>\n'
                f'<p><small>Source: <a href="{PAGE_URL}">{BRAND} specialty coffee statistics</a> (CC BY 4.0)</small></p>')
     return (f'<details><summary>Embed this chart</summary>'
@@ -373,7 +381,8 @@ def figure(slug, svg, title, note):
 
 
 def table(headers, rows, num_cols):
-    th = "".join(f'<th{" class=\"num\"" if i in num_cols else ""}>{esc(h)}</th>' for i, h in enumerate(headers))
+    num_attr = ' class="num"'  # outside the f-string: no backslash in an f-string expression before Python 3.12
+    th = "".join(f'<th{num_attr if i in num_cols else ""}>{esc(h)}</th>' for i, h in enumerate(headers))
     body = []
     for r in rows:
         tds = []
@@ -502,7 +511,7 @@ def build_page(s, charts):
         f"Lots naming the Gesha varietal carry a <strong>{g['premium']}x</strong> premium: median ${g['median']:.2f} against ${g['other_median']:.2f} for other named varietals.",
         figure("price-by-origin", charts["price-by-origin"], "Median price of a 250 g bag, by origin (USD)", f"{n(s['price_n'])} priced listings"),
         table(["Origin", "Priced listings", "Median USD per 250 g"], [(o, n(c), f"${m:.2f}") for o, c, m in pbo], {1, 2})
-        + f'<h3 class="font-display" style="margin-top:24px">By processing method and roast level</h3>'
+        + '<h3 class="font-display" style="margin-top:24px">By processing method and roast level</h3>'
         + table(["Segment", "Priced listings", "Median USD per 250 g"],
                 [(k, n(c), f"${m:.2f}") for k, c, m in s["price_by_process"]] + [(k, n(c), f"${m:.2f}") for k, c, m in s["price_by_roast"]], {1, 2}),
         f"Prices are the storefront list price at crawl time, normalized to 250 g. Filters: USD listings only; unit weight {PRICE_MIN_G} to {n(PRICE_MAX_G)} g "
@@ -513,7 +522,7 @@ def build_page(s, charts):
     # 7. elevation
     alt = s["alt_by_origin"]
     charts["elevation"] = svg_hbar("Growing elevation by origin",
-                                   f"Mean stated elevation in metres above sea level, origins with 20+ listings",
+                                   "Mean stated elevation in metres above sea level, origins with 20+ listings",
                                    [(o, m, f"{n(m)} m") for o, _, m in alt], src_note)
     sections.append(section(
         "elevation", "How high specialty coffee grows",
@@ -572,8 +581,9 @@ def build_page(s, charts):
             {"@type": "ListItem", "position": 1, "name": "Home", "item": BASE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "Statistics", "item": PAGE_URL}]}, ensure_ascii=False, indent=2)
 
+    date_attr = ' class="date"'  # outside the f-string: no backslash in an f-string expression before Python 3.12
     tiles = "".join(
-        f'<li{" class=\"date\"" if lbl == "Snapshot" else ""}><span>{lbl}</span><strong>{val}</strong></li>' for lbl, val in [
+        f'<li{date_attr if lbl == "Snapshot" else ""}><span>{lbl}</span><strong>{val}</strong></li>' for lbl, val in [
             ("Coffee listings", n(s["listings"])), ("Roasters", n(s["roasters"])), ("Roaster countries", n(s["roaster_countries"])),
             ("Producing origins", n(s["origin_countries"])), ("SCA flavor mappings", n(s["flavor_links"])), ("Snapshot", snap)])
 
@@ -699,7 +709,8 @@ def main():
         raise SystemExit(f"SQLite snapshot not found: {db}")
     s = compute(db)
     charts = {}
-    page = build_page(s, charts)
+    # the page has no <header>: the snippet goes right after <body> (section_links.insert default)
+    page = section_links_insert(build_page(s, charts))
     OUT_DIR.mkdir(exist_ok=True)
     CHART_DIR.mkdir(exist_ok=True)
     (OUT_DIR / "index.html").write_text(page, encoding="utf-8", newline="\n")

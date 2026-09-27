@@ -9,6 +9,7 @@ All notable changes to the RoasterDB dataset snapshots.
 ## Site update — 2026-09-27
 
 - **Translated Dataset markup**: on the Spanish, German, French and Portuguese pages the Dataset structured data now names its English original in `sameAs` (next to any existing `sameAs` links), so dataset search can tie the language copies to one canonical entry. English pages and all visible text are unchanged (2026-09-27).
+- **Section links**: links to a homepage section (`/#pricing`, `/#support`, the header nav, and the same on the Spanish, German, French and Portuguese homepages) now stop below the sticky header instead of under it, which matters most on phones where the header wraps to several rows. A visitor arriving from another page is also put back on the section once the web fonts have loaded and shifted the layout, unless they have already scrolled. The statistics page gets the same re-alignment, and each chart's "Embed this chart" snippet now links to that chart (`/stats/#fig-<chart>`); five of the ten snippets pointed at an anchor that did not exist. Figures, charts, `data.json` and all visible text are unchanged (2026-09-27).
 
 ## Site update — 2026-09-20
 
