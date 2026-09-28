@@ -10,7 +10,7 @@
 [![🤗 Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-sample%20dataset-ffd21e.svg)](https://huggingface.co/datasets/Ichlibitiche/roasterdb-specialty-coffee-sample)
 [![🤗 Explorer](https://img.shields.io/badge/%F0%9F%A4%97%20Spaces-sample%20explorer-ffd21e.svg)](https://huggingface.co/spaces/Ichlibitiche/dataset-sample-explorers)
 [![Roasters: 280+](https://img.shields.io/badge/Roasters-280%2B-8a5a44.svg)](#whats-inside)
-[![Snapshot: 2026.07](https://img.shields.io/badge/Snapshot-2026.07-blue.svg)](CHANGELOG.md)
+[![Snapshot: 2026.09](https://img.shields.io/badge/Snapshot-2026.09-blue.svg)](CHANGELOG.md)
 [![Get the data](https://img.shields.io/badge/Get%20the%20data-roasterdb.dataengineered.io-ff6b4a.svg)](https://roasterdb.dataengineered.io)
 
 **[→ Get the full dataset at roasterdb.dataengineered.io](https://roasterdb.dataengineered.io)**

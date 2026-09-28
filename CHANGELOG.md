@@ -8,6 +8,7 @@ All notable changes to the RoasterDB dataset snapshots.
 
 ## Site update — 2026-09-28
 
+- **Edition label**: the homepage (pricing card, license note, Dataset and breadcrumb structured data) and the README badge said "Snapshot 2026.07"; buyers have downloaded edition 2026.09 since 2026-09-04. All now say 2026.09, on the Spanish, German, French and Portuguese homepages too; homepage sitemap `lastmod` set to 2026-09-28. The free sample (`samples/roasterdb_sample.csv`) and the field-coverage figures are still the 2026.07 measurement; every figure is at or below the 2026.09 value, so the stated minimums hold.
 - **Repository files off the website**: the translation catalogs (`/locales/`), the build scripts (`/scripts/`), `i18n.config.json`, `README.md`, `vercel.json` and the dotfiles belong to this repository, not to the website, but the site served them as plain files. They now answer the site's normal 404 page (also when requested as `/locales%2Fes.json` or `//locales/es.json`) and stay available here on GitHub. Pages, data files, samples, `llms.txt` and the sitemap are unchanged (2026-09-28).
 
 ## Site update — 2026-09-27
