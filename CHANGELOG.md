@@ -8,6 +8,7 @@ All notable changes to the RoasterDB dataset snapshots.
 
 ## Site update — 2026-09-29
 
+- **Site name**: the header of the 72 roaster pages and 16 origin pages (English, Spanish, German, French and Portuguese; 440 pages) read `ROASTERDB.NET`; it now reads `ROASTERDB`, as on the homepage (`scripts/generate_seo_pages.py`). The licence attribution, the Kaggle dataset description and starter notebook, and `assets/README.md` now name `roasterdb.dataengineered.io` instead of `roasterdb.net`. The sitemap dates those 440 pages 2026-09-29, and the ten directory hubs and `/stats/` get their real last-change date (2026-09-28) instead of 2026-09-15/17 (2026-09-29).
 - **Security policy link**: `SECURITY.md` showed the site link as `roasterdb.net`; it now shows `roasterdb.dataengineered.io`, the address the link already pointed to (2026-09-29).
 - **Visit counts**: Cloudflare Web Analytics adds its cookie-free page-view beacon to every page, but the Content-Security-Policy in `_headers` let browsers run scripts from this site only, so they refused the beacon and no visits were counted since Web Analytics was switched on (2026-09-05). The policy now also allows the beacon script (`https://static.cloudflareinsights.com`, `script-src`) and the address it reports to (`https://cloudflareinsights.com`, `connect-src`). No other source is added.
 
@@ -36,4 +37,4 @@ All notable changes to the RoasterDB dataset snapshots.
 - Per-record provenance: `source_url`, `retrieved_at`, `dataset_version`.
 - Prices sanitized to a plausible retail band.
 
-Full dataset & updates: [roasterdb.net](https://roasterdb.dataengineered.io)
+Full dataset & updates: [roasterdb.dataengineered.io](https://roasterdb.dataengineered.io)

@@ -457,7 +457,7 @@ def generate_roaster_page(roaster_name: str, coffees: list, ctx: dict):
   <div class="container">
     <div class="header-bar">
       <div>
-        <a href="/" translate="no" style="font-weight: 700; letter-spacing: -0.02em; color: var(--text-ink);">ROASTERDB.NET</a>
+        <a href="/" translate="no" style="font-weight: 700; letter-spacing: -0.02em; color: var(--text-ink);">ROASTERDB</a>
         <span style="opacity: 0.6; font-size: 0.75rem; margin-left: 12px;">| Roaster Catalog Snapshot</span>
       </div>
       <a href="/" style="font-size: 0.85rem;">← Back to Main Explorer</a>
@@ -584,7 +584,7 @@ def generate_origin_page(origin_name: str, coffees: list, ctx: dict):
   <div class="container">
     <div class="header-bar">
       <div>
-        <a href="/" translate="no" style="font-weight: 700; letter-spacing: -0.02em; color: var(--text-ink);">ROASTERDB.NET</a>
+        <a href="/" translate="no" style="font-weight: 700; letter-spacing: -0.02em; color: var(--text-ink);">ROASTERDB</a>
         <span style="opacity: 0.6; font-size: 0.75rem; margin-left: 12px;">| Origin Catalog Snapshot</span>
       </div>
       <a href="/" style="font-size: 0.85rem;">← Back to Main Explorer</a>
