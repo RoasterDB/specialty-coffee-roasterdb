@@ -8,6 +8,7 @@ All notable changes to the RoasterDB dataset snapshots.
 
 ## Site update — 2026-09-29
 
+- **Security policy link**: `SECURITY.md` showed the site link as `roasterdb.net`; it now shows `roasterdb.dataengineered.io`, the address the link already pointed to (2026-09-29).
 - **Visit counts**: Cloudflare Web Analytics adds its cookie-free page-view beacon to every page, but the Content-Security-Policy in `_headers` let browsers run scripts from this site only, so they refused the beacon and no visits were counted since Web Analytics was switched on (2026-09-05). The policy now also allows the beacon script (`https://static.cloudflareinsights.com`, `script-src`) and the address it reports to (`https://cloudflareinsights.com`, `connect-src`). No other source is added.
 
 ## Site update — 2026-09-28
