@@ -6,9 +6,15 @@ All notable changes to the RoasterDB dataset snapshots.
 > on a recurring schedule, so the live figures only grow — the numbers below
 > stay accurate between snapshots.
 
+## Site update — 2026-09-29
+
+- **Visit counts**: Cloudflare Web Analytics adds its cookie-free page-view beacon to every page, but the Content-Security-Policy in `_headers` let browsers run scripts from this site only, so they refused the beacon and no visits were counted since Web Analytics was switched on (2026-09-05). The policy now also allows the beacon script (`https://static.cloudflareinsights.com`, `script-src`) and the address it reports to (`https://cloudflareinsights.com`, `connect-src`). No other source is added.
+
 ## Site update — 2026-09-28
 
 - **Chart titles on `/stats/`**: every chart's built-in title and description (what a screen reader announces for the chart) used the same two ids, `t` and `d`, repeated once per chart, so the page had duplicate ids and every chart was announced with the first chart's title. The ids now carry the chart's name (`t-origins` / `d-origins`, and so on) on the page and in the downloadable SVGs under `/stats/charts/`. `scripts/generate_stats.py` writes them on the next regeneration; the committed page and SVGs were patched to exactly what it writes, without regenerating (no figure, date or `data.json` changes).
+- **Edition label**: the homepage (pricing card, license note, Dataset and breadcrumb structured data) and the README badge said "Snapshot 2026.07"; buyers have downloaded edition 2026.09 since 2026-09-04. All now say 2026.09, on the Spanish, German, French and Portuguese homepages too; homepage sitemap `lastmod` set to 2026-09-28. The free sample (`samples/roasterdb_sample.csv`) and the field-coverage figures are still the 2026.07 measurement; every figure is at or below the 2026.09 value, so the stated minimums hold.
+- **Repository files off the website**: the translation catalogs (`/locales/`), the build scripts (`/scripts/`), `i18n.config.json`, `README.md`, `vercel.json` and the dotfiles belong to this repository, not to the website, but the site served them as plain files. They now answer the site's normal 404 page (also when requested as `/locales%2Fes.json` or `//locales/es.json`) and stay available here on GitHub. Pages, data files, samples, `llms.txt` and the sitemap are unchanged (2026-09-28).
 
 ## Site update — 2026-09-27
 
