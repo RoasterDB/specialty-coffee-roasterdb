@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 462" width="720" height="462" role="img" aria-labelledby="t d" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
-<title id="t">The most listed varietals</title><desc id="d">Share of 3,188 listings that name a varietal</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 462" width="720" height="462" role="img" aria-labelledby="t-varietals d-varietals" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
+<title id="t-varietals">The most listed varietals</title><desc id="d-varietals">Share of 3,188 listings that name a varietal</desc>
 <rect width="720" height="462" fill="#181715"/>
 <text x="20" y="26" font-size="15" font-weight="600" fill="#f8f7f4">The most listed varietals</text>
 <text x="20" y="44" font-size="12" fill="#9c9891">Share of 3,188 listings that name a varietal</text>

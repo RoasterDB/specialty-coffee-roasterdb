@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 252" width="720" height="252" role="img" aria-labelledby="t d" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
-<title id="t">Roast levels in specialty coffee</title><desc id="d">Share of 3,185 listings that state a roast level</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 252" width="720" height="252" role="img" aria-labelledby="t-roast d-roast" font-family="'Outfit', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12">
+<title id="t-roast">Roast levels in specialty coffee</title><desc id="d-roast">Share of 3,185 listings that state a roast level</desc>
 <rect width="720" height="252" fill="#181715"/>
 <text x="20" y="26" font-size="15" font-weight="600" fill="#f8f7f4">Roast levels in specialty coffee</text>
 <text x="20" y="44" font-size="12" fill="#9c9891">Share of 3,185 listings that state a roast level</text>
