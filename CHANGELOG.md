@@ -6,6 +6,10 @@ All notable changes to the RoasterDB dataset snapshots.
 > on a recurring schedule, so the live figures only grow — the numbers below
 > stay accurate between snapshots.
 
+## Site update — 2026-09-30
+
+- **Kaggle update frequency**: the free sample on Kaggle is a fixed snapshot, so its expected update frequency now reads `never` instead of `weekly`, on Kaggle and in `kaggle/dataset/dataset-metadata.json` (2026-09-30).
+
 ## Site update — 2026-09-29
 
 - **Kaggle metadata file**: `kaggle/dataset/dataset-metadata.json` now carries the live Kaggle description (with the `/stats/` link), keyword order, sources list and update frequency, so a push from this file no longer rolls the Kaggle page back (2026-09-29).
