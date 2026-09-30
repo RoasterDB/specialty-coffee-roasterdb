@@ -6,6 +6,10 @@ All notable changes to the RoasterDB dataset snapshots.
 > on a recurring schedule, so the live figures only grow — the numbers below
 > stay accurate between snapshots.
 
+## Site update — 2026-10-01
+
+- **Sitemap dates follow page content**: `scripts/seo_common.py` (shared by the DataEngineered sites) dates each sitemap entry by the last commit that changed the page itself. It compares pages without line-ending differences and without the markup the translation build owns (language alternates and the header and footer language menus), and skips commits that only moved that markup, so regenerating an unchanged page keeps its date instead of taking the day of the run. No page or sitemap change in this update (2026-10-01).
+
 ## Site update — 2026-09-30
 
 - **Kaggle update frequency**: the free sample on Kaggle is a fixed snapshot, so its expected update frequency now reads `never` instead of `weekly`, on Kaggle and in `kaggle/dataset/dataset-metadata.json` (2026-09-30).
