@@ -1247,6 +1247,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "d21c9540121a5f6c": {
+  "src": "Listed retail prices, by store currency: {0}.",
+  "t": "Preços de varejo anunciados, por moeda da loja: {0}.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-02"
+ },
  "d2a764e3da78b405": {
   "src": "Structured specialty coffee dataset: {0} products from {1} artisan roasters across {2} countries, tasting notes mapped to the SCA Flavor Wheel.",
   "t": "Conjunto de dados estruturado de cafés especiais: {0} produtos de {1} torrefações artesanais em {2} países, com notas sensoriais segundo a Roda de Sabores da SCA.",

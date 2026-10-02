@@ -33,7 +33,7 @@ def main() -> None:
     r = next((x for x in rows if x["tasting_notes_sca_nodes"]), None)
     if r:
         print(f"  {r['source_roaster']} — {r['title']}")
-        print(f"    origin : {r['origin_country'] or 'n/a'} · {r['process_method']} · ${r['price_value']}")
+        print(f"    origin : {r['origin_country'] or 'n/a'} · {r['process_method']} · {r['price_value']} {r['price_currency']}")
         print(f"    flavors: {r['tasting_notes_sca_nodes']}")
         print(f"    source : {r['source_url']}")
     else:

@@ -6,6 +6,12 @@ All notable changes to the RoasterDB dataset snapshots.
 > on a recurring schedule, so the live figures only grow — the numbers below
 > stay accurate between snapshots.
 
+## Data correction — 2026-10-02
+
+- **Prices carry their store's own currency**: every record, the free sample included, labelled its price `USD`, although roughly half come from stores that sell in GBP, EUR, AUD, CAD, ZAR and other currencies (a South African roaster's ZAR 140 bag read "USD 140"). Each store's currency is now read from the store itself (its Shopify `/meta.json`), never inferred from the roaster's country. The free sample (`samples/roasterdb_sample.csv` and the Kaggle copy) was relabelled: 46 of its 100 rows now carry GBP (18), EUR (9), AUD (8), CAD (6), SGD (2), ZAR (2) or SEK (1); prices and every other value are unchanged. `DATA_DICTIONARY.md`, the README coverage table, the Kaggle metadata file, the starter notebook (its price chart now plots USD-priced listings only; the cells that showed prices were cleared until Kaggle re-runs it) and `examples/load_sample.py` say so (2026-10-02).
+- **Roaster and origin pages**: the price sentence on the 33 roaster pages and 14 origin pages that list a store selling in another currency than USD (English, Spanish, German, French and Portuguese; 235 pages) named USD for every price. Roaster pages now name the store's currency; origin pages that span several currencies list a range per currency instead of one mixed range ("Listed retail prices, by store currency: AUD 22-25, CAD 19, …", translated in all four languages). The sitemap dates those 235 pages 2026-10-02.
+- **Weights**: until 2026-10 a listing without a stated weight was recorded as 250 g, so a 250 in the sample may be a default; the data dictionary says so. From the 2026-10 crawl on, a missing weight is left empty (2026-10-02).
+
 ## Site update — 2026-10-01
 
 - **Sitemap dates follow page content**: `scripts/seo_common.py` (shared by the DataEngineered sites) dates each sitemap entry by the last commit that changed the page itself. It compares pages without line-ending differences and without the markup the translation build owns (language alternates and the header and footer language menus), and skips commits that only moved that markup, so regenerating an unchanged page keeps its date instead of taking the day of the run. No page or sitemap change in this update (2026-10-01).

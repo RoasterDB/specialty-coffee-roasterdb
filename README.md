@@ -46,10 +46,13 @@ Measured across all 8,000+ records. Published up front so you can decide if the 
 | Field | Coverage | | Field | Coverage |
 | :--- | ---: | --- | :--- | ---: |
 | Title / product ID | 100% | | Process method | 45% |
-| Weight | 100% | | Roast level | 32% |
-| Price (USD, sanitized) | 88% | | Varietals | 30% |
+| Weight² | 100% | | Roast level | 32% |
+| Price (store currency, sanitized)¹ | 88% | | Varietals | 30% |
 | ≥1 SCA flavor node | 55% | | Origin region | 20% |
 | Origin country | 58% | | Altitude (masl) | 17% |
+
+¹ Each price is in its store's own currency (`price_currency`: USD, GBP, EUR, AUD, CAD, ZAR, …), read from the store. Until 2026-10 every price was labelled USD, including the roughly half sold by non-US stores. With the currencies read, 92.7% of the 10,168 records carry a sanitized price (2026-10-02). See [DATA_DICTIONARY.md](DATA_DICTIONARY.md).
+² Until 2026-10 a listing without a stated weight was recorded as 250 g, so a 250 may be a default; from the 2026-10 crawl on it is left empty.
 
 **Two quality tiers** (both in the full dataset):
 - **Full catalog** — all **8,000+** records (maximum breadth).
