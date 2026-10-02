@@ -135,12 +135,17 @@ def build_profile(name, coffees, kind):
                         if (p := (c.get('process_method') or '').strip()) and p != 'Unknown')
     roasts = Counter(r for c in coffees
                      if (r := (c.get('roast_level') or '').strip()) and r != 'Unknown')
-    prices = []
+    # A price counts only with its store's currency, and currencies are never mixed in one
+    # range (an origin page spans stores that sell in USD, GBP, EUR, ZAR, ...).
+    prices = {}
     for c in coffees:
+        cur = (c.get('price_currency') or '').strip()
         try:
-            prices.append(float(c.get('price_value')))
+            value = float(c.get('price_value'))
         except (TypeError, ValueError):
-            pass
+            continue
+        if cur:
+            prices.setdefault(cur, []).append(value)
     fams = _families(coffees)
 
     # Paragraph 1 -- who / where / elevation
@@ -169,12 +174,17 @@ def build_profile(name, coffees, kind):
     if roasts:
         bits.append("roast levels span " + _oxford([esc(r) for r, _ in roasts.most_common()]))
     p2 = [("Across these lots, " + "; ".join(bits) + ".")] if bits else []
-    if prices:
-        cur = esc(next((c.get('price_currency') for c in coffees if c.get('price_currency')), ""))
-        lo, hi = min(prices), max(prices)
-        p2.append(f"Listed retail price is {cur} {lo:.0f}."
+    if len(prices) == 1:
+        (cur, values), = prices.items()
+        lo, hi = min(values), max(values)
+        p2.append(f"Listed retail price is {esc(cur)} {lo:.0f}."
                   if lo == hi else
-                  f"Listed retail prices range {cur} {lo:.0f}-{hi:.0f}.")
+                  f"Listed retail prices range {esc(cur)} {lo:.0f}-{hi:.0f}.")
+    elif prices:
+        # one translate="no" value for the whole list keeps this a single i18n segment
+        ranges = ", ".join(f"{cur} {min(v):.0f}" if min(v) == max(v) else f"{cur} {min(v):.0f}-{max(v):.0f}"
+                           for cur, v in sorted(prices.items()))
+        p2.append(f"Listed retail prices, by store currency: {esc(ranges)}.")
 
     # one <span> per sentence: each optional sentence is its own translation segment
     # instead of every combination of sentences being a different paragraph
