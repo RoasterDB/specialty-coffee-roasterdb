@@ -1082,7 +1082,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/roasters/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/"/>
@@ -1094,7 +1094,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/es/roasters/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/"/>
@@ -1106,7 +1106,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/de/roasters/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/"/>
@@ -1118,7 +1118,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/fr/roasters/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/"/>
@@ -1130,7 +1130,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/pt-br/roasters/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/"/>
@@ -1139,6 +1139,66 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/"/>
+  </url>
+  <url>
+    <loc>https://roasterdb.dataengineered.io/roasters/19grams</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
+  </url>
+  <url>
+    <loc>https://roasterdb.dataengineered.io/es/roasters/19grams</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
+  </url>
+  <url>
+    <loc>https://roasterdb.dataengineered.io/de/roasters/19grams</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
+  </url>
+  <url>
+    <loc>https://roasterdb.dataengineered.io/fr/roasters/19grams</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
+  </url>
+  <url>
+    <loc>https://roasterdb.dataengineered.io/pt-br/roasters/19grams</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/19grams"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/19grams"/>
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/roasters/3fe-coffee</loc>
@@ -2222,7 +2282,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/roasters/fulcrum-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/fulcrum-coffee"/>
@@ -2234,7 +2294,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/es/roasters/fulcrum-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/fulcrum-coffee"/>
@@ -2246,7 +2306,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/de/roasters/fulcrum-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/fulcrum-coffee"/>
@@ -2258,7 +2318,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/fr/roasters/fulcrum-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/fulcrum-coffee"/>
@@ -2270,7 +2330,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/pt-br/roasters/fulcrum-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/fulcrum-coffee"/>
@@ -4981,66 +5041,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/transcend-coffee"/>
   </url>
   <url>
-    <loc>https://roasterdb.dataengineered.io/roasters/tres-cabezas</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-  </url>
-  <url>
-    <loc>https://roasterdb.dataengineered.io/es/roasters/tres-cabezas</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-  </url>
-  <url>
-    <loc>https://roasterdb.dataengineered.io/de/roasters/tres-cabezas</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-  </url>
-  <url>
-    <loc>https://roasterdb.dataengineered.io/fr/roasters/tres-cabezas</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-  </url>
-  <url>
-    <loc>https://roasterdb.dataengineered.io/pt-br/roasters/tres-cabezas</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://roasterdb.dataengineered.io/es/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://roasterdb.dataengineered.io/de/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://roasterdb.dataengineered.io/fr/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://roasterdb.dataengineered.io/pt-br/roasters/tres-cabezas"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://roasterdb.dataengineered.io/roasters/tres-cabezas"/>
-  </url>
-  <url>
     <loc>https://roasterdb.dataengineered.io/roasters/union-hand-roasted-coffee</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -5342,7 +5342,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/roasters/yellow-brick-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/yellow-brick-coffee"/>
@@ -5354,7 +5354,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/es/roasters/yellow-brick-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/yellow-brick-coffee"/>
@@ -5366,7 +5366,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/de/roasters/yellow-brick-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/yellow-brick-coffee"/>
@@ -5378,7 +5378,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/fr/roasters/yellow-brick-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/yellow-brick-coffee"/>
@@ -5390,7 +5390,7 @@
   </url>
   <url>
     <loc>https://roasterdb.dataengineered.io/pt-br/roasters/yellow-brick-coffee</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://roasterdb.dataengineered.io/roasters/yellow-brick-coffee"/>
