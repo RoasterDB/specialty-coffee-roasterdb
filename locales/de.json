@@ -1451,6 +1451,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "f6cf7754b4b0bb5a": {
+  "src": "{0} appears in {1} specialty coffee releases on RoasterDB. Processing methods seen include {2}, {3}, and {4}; top SCA descriptors are {5}…",
+  "t": "{0} ist auf RoasterDB mit {1} Spezialitätenkaffees vertreten. Aufbereitungsmethoden: {2}, {3} und {4}; häufigste SCA-Deskriptoren: {5}…",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-03"
+ },
  "f79d00e0ed765a23": {
   "src": "RoasterDB catalogues {0} specialty coffee releases grown in {1}, offered by {2}, {3}, and {4}.",
   "t": "RoasterDB verzeichnet {0} in {1} angebaute Spezialitätenkaffees, angeboten von {2}, {3} und {4}.",
