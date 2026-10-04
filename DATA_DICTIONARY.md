@@ -29,7 +29,7 @@ dataset ships the same fields in CSV and JSON, plus a relational SQLite build.
 | `retrieved_at` | datetime | Crawl timestamp (when the fact was true) | 100% |
 | `dataset_version` | string | Snapshot id, e.g. `2026.07` | 100% |
 
-\* Share of the full dataset (8,000+ records) with a non-empty value.
+\* Share of the full dataset with a non-empty value, measured when it held 8,000+ records, before the 2026.10 edition (12,000+ records; not yet re-measured).
 † `process_method` is present on 100% of rows but is `Other` when not stated; 45% carry a specific method.
 ‡ Measured on 2026-10-02 on all 10,168 records, after the store currencies were read (279 of 284 stores answered).
 § Until 2026-10 a listing without a stated weight was recorded as 250 g, so a 250 on a record retrieved before then may be a default rather than a stated weight. From the 2026-10 crawl on, a missing weight is left empty, so this coverage will fall.

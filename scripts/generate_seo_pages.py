@@ -498,8 +498,8 @@ def generate_roaster_page(roaster_name: str, coffees: list, ctx: dict):
     {related_html}
 
     <div style="margin-top: 60px; padding: 32px; background: var(--bg-paper-2); border: 1px solid var(--rule-color); text-align: center;">
-      <h3 class="font-display" style="font-size: 1.4rem;">Need Full SQL / CSV Access to All 8,000+ Releases?</h3>
-      <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.85rem;">Download our normalized relational SQLite snapshot covering 280+ roasters worldwide.</p>
+      <h3 class="font-display" style="font-size: 1.4rem;">Need Full SQL / CSV Access to All 12,000+ Releases?</h3>
+      <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.85rem;">Download our normalized relational SQLite snapshot covering 270+ roasters worldwide.</p>
       <a href="/#pricing" style="display: inline-block; background: var(--accent); color: #ffffff; font-weight: bold; padding: 14px 28px; border-radius: 4px; margin-top: 16px; text-decoration: none;">Get Full Snapshot Dataset ($49) →</a>
     </div>
   </div>
@@ -625,8 +625,8 @@ def generate_origin_page(origin_name: str, coffees: list, ctx: dict):
     {related_html}
 
     <div style="margin-top: 60px; padding: 32px; background: var(--bg-paper-2); border: 1px solid var(--rule-color); text-align: center;">
-      <h3 class="font-display" style="font-size: 1.4rem;">Need Full SQL / CSV Access to All 8,000+ Releases?</h3>
-      <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.85rem;">Download our normalized relational SQLite snapshot covering 280+ roasters worldwide.</p>
+      <h3 class="font-display" style="font-size: 1.4rem;">Need Full SQL / CSV Access to All 12,000+ Releases?</h3>
+      <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.85rem;">Download our normalized relational SQLite snapshot covering 270+ roasters worldwide.</p>
       <a href="/#pricing" style="display: inline-block; background: var(--accent); color: #ffffff; font-weight: bold; padding: 14px 28px; border-radius: 4px; margin-top: 16px; text-decoration: none;">Get Full Snapshot Dataset ($49) →</a>
     </div>
   </div>

@@ -4,13 +4,13 @@
 
 # ☕ RoasterDB — Specialty Coffee Dataset
 
-**8,000+ specialty-coffee products · 280+ artisan roasters · 20+ countries · mapped to the SCA Flavor Wheel**
+**12,000+ specialty-coffee products · 270+ artisan roasters · 20+ countries · mapped to the SCA Flavor Wheel**
 
 [![Sample: 100 rows](https://img.shields.io/badge/Free%20Sample-100%20rows-brightgreen.svg)](samples/roasterdb_sample.csv)
 [![🤗 Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-sample%20dataset-ffd21e.svg)](https://huggingface.co/datasets/Ichlibitiche/roasterdb-specialty-coffee-sample)
 [![🤗 Explorer](https://img.shields.io/badge/%F0%9F%A4%97%20Spaces-sample%20explorer-ffd21e.svg)](https://huggingface.co/spaces/Ichlibitiche/dataset-sample-explorers)
-[![Roasters: 280+](https://img.shields.io/badge/Roasters-280%2B-8a5a44.svg)](#whats-inside)
-[![Snapshot: 2026.09](https://img.shields.io/badge/Snapshot-2026.09-blue.svg)](CHANGELOG.md)
+[![Roasters: 270+](https://img.shields.io/badge/Roasters-270%2B-8a5a44.svg)](#whats-inside)
+[![Snapshot: 2026.10](https://img.shields.io/badge/Snapshot-2026.10-blue.svg)](CHANGELOG.md)
 [![Get the data](https://img.shields.io/badge/Get%20the%20data-roasterdb.dataengineered.io-ff6b4a.svg)](https://roasterdb.dataengineered.io)
 
 **[→ Get the full dataset at roasterdb.dataengineered.io](https://roasterdb.dataengineered.io)**
@@ -31,8 +31,8 @@ This is a **storefront catalog + flavor-mapping** dataset — strong on roaster 
 
 | | Full dataset | Free sample |
 | :--- | ---: | ---: |
-| Coffee products | **8,000+** | 100 |
-| Artisan roasters | **280+** | 72 |
+| Coffee products | **12,000+** | 100 |
+| Artisan roasters | **270+** | 72 |
 | Countries (roaster HQ) | **20+** | — |
 | SCA flavor mappings | **11,000+** | ~250 |
 | Formats | SQLite · CSV · JSON | CSV |
@@ -41,7 +41,7 @@ The free [`samples/roasterdb_sample.csv`](samples/roasterdb_sample.csv) is 100 v
 
 ## Field coverage (the honest numbers)
 
-Measured across all 8,000+ records. Published up front so you can decide if the fields you need are covered — not every coffee lists every attribute on its storefront.
+Measured when the dataset held 8,000+ records, before the 2026.10 edition (12,000+ records; not yet re-measured). Published up front so you can decide if the fields you need are covered — not every coffee lists every attribute on its storefront.
 
 | Field | Coverage | | Field | Coverage |
 | :--- | ---: | --- | :--- | ---: |
@@ -55,7 +55,7 @@ Measured across all 8,000+ records. Published up front so you can decide if the 
 ² Until 2026-10 a listing without a stated weight was recorded as 250 g, so a 250 may be a default; from the 2026-10 crawl on it is left empty.
 
 **Two quality tiers** (both in the full dataset):
-- **Full catalog** — all **8,000+** records (maximum breadth).
+- **Full catalog** — all **12,000+** records (maximum breadth).
 - **Verified tier** — **3,400+** records flagged `good`: origin + sanitized price + SCA flavor mapping, QA-passed.
 
 ### SCA flavor mapping — the differentiated part
@@ -87,7 +87,7 @@ See [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) for every field.
 | Tier | What | Price |
 | :--- | :--- | :--- |
 | **Sample** | 100 verified rows (this repo) | Free |
-| **Snapshot** | Full 8,000+ records · SQLite + CSV + JSON | **$49** one-time |
+| **Snapshot** | Full 12,000+ records · SQLite + CSV + JSON | **$49** one-time |
 | **Custom work** | Subsets, recurring feeds, schema mapping — quoted per engagement | from $99, via the [contact form](https://roasterdb.dataengineered.io/#support) |
 | **Live scrape** | On-demand, self-serve via Apify | pay-per-result |
 

@@ -1,7 +1,7 @@
 {
   "name": "RoasterDB Specialty Coffee Dataset",
   "short_name": "RoasterDB",
-  "description": "Structured specialty coffee dataset: 8,000+ coffees from 280+ roasters across 20+ countries, mapped to the SCA Flavor Wheel.",
+  "description": "Structured specialty coffee dataset: 12,000+ coffees from 270+ roasters across 20+ countries, mapped to the SCA Flavor Wheel.",
   "start_url": "/?source=pwa",
   "display": "standalone",
   "background_color": "#181715",
