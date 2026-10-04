@@ -17,11 +17,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "02c523e1bb270d43": {
+  "src": "{0} is the fruitiest origin in the catalogue: <1>{2}</1> of its mapped descriptors are Fruity, against {3} for {4}. {5} leads the Nutty/Cocoa family at {6}.",
+  "t": "{0} es el origen más frutal del catálogo: el <1>{2}</1> de sus descriptores asignados son Fruity, frente al {3} de {4}. {5} encabeza la familia Nutty/Cocoa con un {6}.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "03688ba6aa340b87": {
   "src": "FAQ",
   "t": "Preguntas frecuentes",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "0371c38334482e56": {
+  "src": "Flavor profile by origin",
+  "t": "Perfil de sabor por origen",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "03ae7995488f66ba": {
   "src": "Prefer live, self-serve data? <0>Run our scraper on Apify →</0>",
@@ -95,6 +107,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "08e41dfe0e84e7b4": {
+  "src": "How high specialty coffee grows",
+  "t": "A qué altitud crece el café de especialidad",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "09ca55ca52d207f2": {
+  "src": "Share",
+  "t": "Proporción",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "0b6ff3036f217d01": {
   "src": "RoasterDB is a structured, factual database containing over {0} specialty coffee releases from {1} artisan roasters across {2} countries. Every entry includes standardized attributes like origin country, altitude (masl), process method, varietals, and tasting notes mapped directly to the SCA Flavor Wheel.",
   "t": "RoasterDB es una base de datos estructurada y factual con más de {0} cafés de especialidad de {1} tostadores artesanales de {2} países. Cada registro incluye atributos estandarizados como país de origen, altitud (msnm), método de procesado, variedades y notas de cata asignadas directamente a la Rueda de Sabores de la SCA.",
@@ -137,11 +161,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "10112e4d715007f7": {
+  "src": "{0} alone accounts for <1>{2}</1> of listings that name an origin, and {3} plus {4} together for <5>{6}</5>. The top five origins cover {7} of the catalogue; {8} producing countries appear in total.",
+  "t": "{0} representa por sí solo el <1>{2}</1> de las entradas que nombran un origen, y {3} junto con {4} el <5>{6}</5>. Los cinco primeros orígenes cubren el {7} del catálogo; en total aparecen {8} países productores.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "109dbd0c3665b8ee": {
   "src": "<0>Snapshot {1}</0> · one-time purchase, no recurring fees. Distributed as derived factual attributes with attribution.",
   "t": "<0>Snapshot {1}</0> · pago único, sin cuotas recurrentes. Se distribuye como atributos factuales derivados, con atribución.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "115c118b7201fc8a": {
+  "src": "Coffees",
+  "t": "Cafés",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "11760e1aac4396e1": {
   "src": "Guatemala",
@@ -167,11 +203,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "13331ccbcd36d96b": {
+  "src": "SCA flavor mappings",
+  "t": "Asignaciones de sabor SCA",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "137b881c17cdb668": {
   "src": "{0} appears in {1} specialty coffee releases on RoasterDB. Processing methods seen include {2}, {3}, and {4}; top SCA descriptors are…",
   "t": "{0} aparece en {1} cafés de especialidad en RoasterDB. Procesados observados: {2}, {3} y {4}; principales descriptores SCA…",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "1743bac6b2c79db9": {
+  "src": "Specialty Coffee Statistics {0} — Origins, Flavor, Prices | RoasterDB",
+  "t": "Estadísticas del café de especialidad {0} — orígenes, sabor, precios | RoasterDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "178e464dba22e340": {
   "src": "{0} producing origins",
@@ -233,6 +281,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "2086b21f8f492741": {
+  "src": "Statistics",
+  "t": "Estadísticas",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "2086d8819cc600ca": {
   "src": "Every coffee-producing origin in RoasterDB, each with its specialty releases, SCA tasting notes and growing elevations.",
   "t": "Todos los orígenes productores de café de RoasterDB, cada uno con sus cafés de especialidad, notas de cata SCA y altitudes de cultivo.",
@@ -251,6 +305,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "2308c7370d81ccb4": {
+  "src": "Aggregate statistics computed from every listing in the RoasterDB catalogue: {0} specialty coffees crawled from the storefronts of {1} artisan roasters, with tasting notes normalized to the SCA Flavor Wheel. Snapshot of {2}, refreshed monthly. Every figure is free to cite, quote and embed with a link to this page.",
+  "t": "Estadísticas agregadas calculadas a partir de todas las entradas del catálogo de RoasterDB: {0} cafés de especialidad rastreados en las tiendas online de {1} tostadores artesanales, con notas de cata normalizadas a la Rueda de Sabores de la SCA. Snapshot de {2}, actualizado cada mes. Cada cifra es libre de citar, reproducir e insertar con un enlace a esta página.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "230b7757ef81efcd": {
+  "src": "Paste the snippet into your post. It links the chart back to this page, which is the only attribution we ask for.",
+  "t": "Pega el fragmento en tu publicación. Enlaza el gráfico a esta página, que es la única atribución que pedimos.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "2329a484a94cb1aa": {
   "src": "Get Full Snapshot Dataset ({0}) →",
   "t": "Obtén el dataset Snapshot completo ({0}) →",
@@ -263,11 +329,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "2387616c1ba34b0c": {
+  "src": "<0>{1}</0> of all mapped descriptors fall in the SCA {2} family, {3} in {4} and {5} in {6}. The single most common note is {7}, on <8>{9}</8> of mapped coffees, followed by {10} ({11}) and {12} ({13}). A mapped coffee carries {14} descriptors on average.",
+  "t": "El <0>{1}</0> de todos los descriptores asignados pertenece a la familia SCA {2}, el {3} a {4} y el {5} a {6}. La nota más frecuente es {7}, en el <8>{9}</8> de los cafés asignados, seguida de {10} ({11}) y {12} ({13}). Un café asignado lleva {14} descriptores de media.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "294388fae194f1ac": {
   "src": "{0} — {1} specialty release | RoasterDB",
   "t": "{0} — {1} café de especialidad | RoasterDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "2a8075ad8aed3f42": {
+  "src": "<0>Refresh.</0> The catalogue is re-crawled monthly; this page and its charts are regenerated after each refresh, so figures move. Cite the snapshot date.",
+  "t": "<0>Actualización.</0> El catálogo se vuelve a rastrear cada mes; esta página y sus gráficos se regeneran tras cada actualización, así que las cifras cambian. Cita la fecha del snapshot.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "2afa50ce4a1b6f11": {
   "src": "specialty coffee database",
@@ -281,6 +359,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "2c85b517c51c8463": {
+  "src": "<0>Coverage is uneven by design.</0> Storefronts do not all publish origin, process, roast level, varietal, elevation or price. Every figure above names its denominator, so a percentage is always a share of the listings that state that attribute, never of the whole catalogue. Blank fields are never guessed.",
+  "t": "<0>La cobertura es desigual por diseño.</0> No todas las tiendas online publican origen, proceso, nivel de tueste, variedad, altitud o precio. Cada cifra anterior indica su denominador, de modo que un porcentaje es siempre una proporción de las entradas que declaran ese atributo, nunca del catálogo entero. Los campos vacíos nunca se rellenan por suposición.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "2ce80e9e93ea21b4": {
   "src": "§ {0} · Cross-Source Pipeline &amp; Flavor Mapping",
   "t": "§ {0} · Pipeline multifuente y mapeo de sabores",
@@ -292,6 +376,12 @@
   "t": "¿Qué formatos de base de datos incluye la descarga?",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "2df9fea9edcff469": {
+  "src": "Median USD per {0} g",
+  "t": "Mediana en USD por {0} g",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "2f73739960648665": {
   "src": "Colombia",
@@ -317,6 +407,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "33949ec8de6411e5": {
+  "src": "Among listings that state a method, <0>{1}</0> are {2} and {3} {4}. Experimental fermentation is no longer niche: {5} lots are <6>{7}</6> of stated methods.",
+  "t": "Entre las entradas que declaran un método, el <0>{1}</0> son {2} y el {3} {4}. La fermentación experimental ya no es un nicho: los lotes {5} son el <6>{7}</6> de los métodos declarados.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "3425b833fba0d1d2": {
   "src": "Multi-layer keyword and product-type boundaries filter out mugs, grinders, apparel, gift cards, subscriptions, and merchandise.",
   "t": "Filtros multicapa por palabras clave y tipo de producto excluyen tazas, molinillos, ropa, tarjetas regalo, suscripciones y merchandising.",
@@ -328,6 +424,18 @@
   "t": "Volver al inicio",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "38ea209baf46e9b3": {
+  "src": "Coffee listings",
+  "t": "Entradas de café",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "3a0f2017915cc793": {
+  "src": "Varietals",
+  "t": "Variedades",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "3aad1071e19c8ed5": {
   "src": "Specialty coffee dataset and SCA flavor taxonomy provider.",
@@ -346,6 +454,12 @@
   "t": "En estos lotes, los métodos de procesado registrados incluyen {0} ({1}) y {2} ({3}); los descriptores de cata remiten con mayor frecuencia a las familias {4} ({5}) y {6} ({7}) de la Rueda de Sabores de la SCA; niveles de tueste: {8}.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "3cb0f13d3d264dbd": {
+  "src": "{0} lots are grown highest, at a mean <1>{2} m</1> above sea level, {3} m above {4} ({5} m).",
+  "t": "Los lotes de {0} son los que crecen más alto, a una media de <1>{2} m</1> sobre el nivel del mar, {3} m por encima de {4} ({5} m).",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "3ce9fe8c82c13534": {
   "src": "This RoasterDB snapshot of {0} catalogues {1} specialty coffee release sourced from {2}.",
@@ -395,6 +509,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "40a7a4a0a60611c1": {
+  "src": "Need the row-level data behind these numbers?",
+  "t": "¿Necesitas los datos fila a fila detrás de estas cifras?",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "422ffc6064e1b406": {
   "src": "Every specialty coffee roaster in RoasterDB, each with its current releases, origins and roast profiles.",
   "t": "Todos los tostadores de café de especialidad de RoasterDB, cada uno con sus cafés actuales, orígenes y perfiles de tueste.",
@@ -407,11 +527,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "44986cef8a397dae": {
+  "src": "Segment",
+  "t": "Segmento",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "44ab85a252adb7ad": {
   "src": "Origin",
   "t": "Origen",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "455e07538ac119a1": {
+  "src": "<0>Reuse.</0> The figures and charts on this page are published under <1>CC BY {2}</1>: use them in articles, slides and posts with a link to {3}. The machine-readable version is <4>data.json</4>. The underlying row-level dataset is a separate <5>commercial product</5>.",
+  "t": "<0>Reutilización.</0> Las cifras y gráficos de esta página se publican bajo <1>CC BY {2}</1>: úsalos en artículos, diapositivas y publicaciones con un enlace a {3}. La versión legible por máquina es <4>data.json</4>. El conjunto de datos fila a fila subyacente es un <5>producto comercial</5> aparte.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "47bfd7086883b0c2": {
   "src": "Whether you need custom schema formats, API access, or enterprise invoicing, reach out directly to our desk at {0}.",
@@ -424,6 +556,12 @@
   "t": "Puntuación",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "4969d33303371f9a": {
+  "src": "{0} coffees with mapped notes",
+  "t": "{0} cafés con notas asignadas",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "496fa61c0e7b86a2": {
   "src": "Related origins and roasters",
@@ -449,6 +587,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "4b52e2ccdf7625b9": {
+  "src": "Descriptors",
+  "t": "Descriptores",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "4b7812aa71ddbbfb": {
+  "src": "Per origin, the share of its mapped descriptors in each SCA family (rows sum to {0}). Only the eight origins with the most mapped descriptors are shown.",
+  "t": "Para cada origen, la proporción de sus descriptores asignados en cada familia SCA (cada fila suma {0}). Solo se muestran los ocho orígenes con más descriptores asignados.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "4ba8f1b236486a8f": {
   "src": "§ {0} · Live Catalog Explorer Preview",
   "t": "§ {0} · Vista previa del explorador del catálogo en vivo",
@@ -460,6 +610,12 @@
   "t": "{0} reúne {1} café de especialidad en RoasterDB, procedente de {2}. Procesado: {3}.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "4c18b04e287aaf60": {
+  "src": "{0} listings naming a varietal",
+  "t": "{0} entradas que nombran una variedad",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "4c37be6112836df9": {
   "src": "RoasterDB Specialty Coffee Dataset — Full Snapshot {0}",
@@ -473,11 +629,41 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "4d148394067acb29": {
+  "src": "{0} listings with a stated roast level",
+  "t": "{0} entradas con nivel de tueste declarado",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "4e6d52a9a0b5fd8d": {
+  "src": "Varietal",
+  "t": "Variedad",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "4ed96b5d4f61c537": {
+  "src": "Priced listings",
+  "t": "Entradas con precio",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "52490d97adaa6711": {
   "src": "{0} appears in {1} specialty coffee release on RoasterDB. Processing methods seen include {2}; top SCA descriptors are {3}.",
   "t": "{0} aparece en {1} café de especialidad en RoasterDB. Procesados observados: {2}; principales descriptores SCA: {3}.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "5469d0538e576090": {
+  "src": "Roast levels",
+  "t": "Niveles de tueste",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "55ffa798bc045ba0": {
+  "src": "Specialty coffee in numbers — RoasterDB statistics {0}",
+  "t": "El café de especialidad en cifras — estadísticas RoasterDB {0}",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "573bee0f64ef8504": {
   "src": "Verified-Tier Records (origin + price + SCA flavor, QA-passed)",
@@ -497,11 +683,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "5a5c31142df3262b": {
+  "src": "SCA family",
+  "t": "Familia SCA",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "5aa588714ab4cbfd": {
   "src": "Honduras",
   "t": "Honduras",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "5ab8cc9a6466249d": {
+  "src": "Elevation is stated on {0} listings; where a range is given its midpoint is used. Origins with fewer than {1} stated elevations are omitted.",
+  "t": "La altitud se declara en {0} entradas; cuando se da un rango, se usa su punto medio. Se omiten los orígenes con menos de {1} altitudes declaradas.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "5b4ce8668787ceff": {
   "src": "RoasterDB Specialty Coffee Dataset — Full Snapshot",
@@ -569,11 +767,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "6477bff4d5c4e012": {
+  "src": "{0} roasters",
+  "t": "{0} tostadores",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "64b686bc54101fce": {
   "src": "Elevation (masl)",
   "t": "Altitud (msnm)",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "64e42bf569b87714": {
+  "src": "Growing elevation",
+  "t": "Altitud de cultivo",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "65f529e5b6209307": {
   "src": "Across these lots, processing methods recorded include {0} ({1}); tasting descriptors resolve most often to the {2} ({3}) and {4} ({5}) families of the SCA Flavor Wheel; roast levels span {6} and {7}.",
@@ -587,6 +797,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "68cfa3ff47416db1": {
+  "src": "Mean elevation (masl)",
+  "t": "Altitud media (msnm)",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "6ac77ad9a6c2a460": {
+  "src": "{0} origins with the most mapped descriptors",
+  "t": "{0} orígenes con más descriptores asignados",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "6b0cb5f66c08eba2": {
   "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}), {6} ({7}), and {8} ({9}) families of the SCA Flavor Wheel.",
   "t": "En estos lotes, los métodos de procesado registrados incluyen {0} ({1}) y {2} ({3}); los descriptores de cata remiten con mayor frecuencia a las familias {4} ({5}), {6} ({7}) y {8} ({9}) de la Rueda de Sabores de la SCA.",
@@ -598,6 +820,12 @@
   "t": "Acerca de",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "6bd3b5288eacecef": {
+  "src": "Specialty coffee in numbers",
+  "t": "El café de especialidad en cifras",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "6c67a4a27244bbbe": {
   "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Processing includes {3}.",
@@ -617,11 +845,35 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "6d806d27d5d66fad": {
+  "src": "Denominator: the {0} of {1} listings whose storefront states one of Washed, Natural, Honey or Anaerobic. Listings whose process is unstated or non-standard are excluded.",
+  "t": "Denominador: las {0} de {1} entradas cuya tienda online declara Washed, Natural, Honey o Anaerobic. Se excluyen las entradas con un proceso no declarado o no estándar.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "6dafb35a43c66d04": {
+  "src": "Prices are the storefront list price at crawl time, normalized to {0} g. Filters: USD listings only; unit weight {1} to {2} g (excludes sample sachets and bulk units); {3} to {4} per {5} g (excludes subscriptions, gift sets and mis-parsed prices). {6} of {7} USD-priced listings pass. Medians, not means, so a few very expensive lots do not move the figures. Gesha premium: {8} lots naming Gesha or Geisha against {9} lots naming another varietal.",
+  "t": "Los precios son el precio de lista de la tienda online en el momento del rastreo, normalizado a {0} g. Filtros: solo entradas en USD; peso unitario de {1} a {2} g (excluye sobres de muestra y unidades a granel); de {3} a {4} por {5} g (excluye suscripciones, packs de regalo y precios mal interpretados). Pasan {6} de {7} entradas con precio en USD. Medianas, no medias, para que unos pocos lotes muy caros no muevan las cifras. Prima Gesha: {8} lotes que nombran Gesha o Geisha frente a {9} lotes que nombran otra variedad.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "6e4bf5684629830e": {
   "src": "Send Message to roasterdb@dataengineered.io ➔",
   "t": "Enviar mensaje a roasterdb@dataengineered.io ➔",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "6e7f3870b06a9e37": {
+  "src": "By processing method and roast level",
+  "t": "Por método de procesado y nivel de tueste",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "700b2e68b7390006": {
+  "src": "Denominator: the {0} listings that state a roast level. Most storefronts do not, so this is a sample of the catalogue, not the whole.",
+  "t": "Denominador: las {0} entradas que declaran un nivel de tueste. La mayoría de las tiendas online no lo hacen, así que es una muestra del catálogo, no el total.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "7077e5d7c5460476": {
   "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3}; processing includes {4}…",
@@ -652,6 +904,12 @@
   "t": "{0} reúne {1} cafés de especialidad en RoasterDB, procedentes de {2}. Niveles de tueste: {3}; procesado: {4} y {5}.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "762a0cf5cc038d8d": {
+  "src": "Roasted",
+  "t": "Roasted",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "7770167075cbe146": {
   "src": "Roasters sourcing {0}:",
@@ -689,6 +947,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "7bd250cbf0b0d5c6": {
+  "src": "Specialty coffee in numbers: {0} listings from {1} roasters. Origin shares, SCA flavor families, processing, roast levels, median prices per {2} g, the Gesha premium. Free to cite and embed.",
+  "t": "El café de especialidad en cifras: {0} entradas de {1} tostadores. Orígenes, familias de sabor SCA, procesado, tueste, precios medianos por {2} g y la prima Gesha. Libre de citar e insertar.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "7cfa37cdc6f35e14": {
+  "src": "<0>{1}</0> of the roasters in the catalogue are headquartered in {2}, {3} in {4}; {5} countries are represented.",
+  "t": "El <0>{1}</0> de los tostadores del catálogo tiene su sede en {2} y el {3} en {4}; hay {5} países representados.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "7d1d295e65994f51": {
   "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3} and {4}; processing includes {5}.",
   "t": "{0} reúne {1} cafés de especialidad en RoasterDB, de {2} países de origen. Niveles de tueste: {3} y {4}; procesado: {5}.",
@@ -700,6 +970,12 @@
   "t": "Directorio de tostadores",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "7e439c353ec807e1": {
+  "src": "On this page",
+  "t": "En esta página",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "7f472c6243059abd": {
   "src": "Origins in this collection:",
@@ -718,6 +994,12 @@
   "t": "Rango de precios de venta publicados: {0} {1}.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "81f5deeb08264fb2": {
+  "src": "Get the full dataset ({0}) →",
+  "t": "Obtener el conjunto de datos completo ({0}) →",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "832fc72cfb4fb3f4": {
   "src": "Full Snapshot Dataset",
@@ -748,6 +1030,18 @@
   "t": "Descarga datos estructurados de café de especialidad asignados a la Rueda de Sabores de la SCA.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "87e48a2e40b0d07c": {
+  "src": "Denominator: the {0} of {1} listings whose storefront states a producing country (blends and unstated origins are excluded). When a listing names several countries, the first is counted.",
+  "t": "Denominador: las {0} de {1} entradas cuya tienda online declara un país productor (se excluyen los blends y los orígenes no declarados). Cuando una entrada nombra varios países, se cuenta el primero.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "88d32d6431131579": {
+  "src": "{0} listings with a stated method",
+  "t": "{0} entradas con método declarado",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "88dfbfc29bf4b22e": {
   "src": "Get the dataset",
@@ -803,6 +1097,24 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "8f7286aaf7e6ea66": {
+  "src": "<0>Source.</0> The full RoasterDB snapshot of {1} product listings collected from the public online storefronts of {2} specialty roasters in {3} countries, each with its source URL and crawl timestamp. {4} listings form the verified tier (origin, sanitized price and SCA mapping all present).",
+  "t": "<0>Fuente.</0> El snapshot completo de RoasterDB con {1} entradas de producto recogidas de las tiendas online públicas de {2} tostadores de especialidad en {3} países, cada una con su URL de origen y la marca de tiempo del rastreo. {4} entradas forman el nivel verificado (origen, precio depurado y asignación SCA presentes).",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "8fbe100325f00df8": {
+  "src": "{0} listings with a stated origin",
+  "t": "{0} entradas con origen declarado",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "8fcfd54441de4ad4": {
+  "src": "Roaster countries",
+  "t": "Países de los tostadores",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "8fd6756022cac95a": {
   "src": "Tier {0} · Self-Serve Snapshot",
   "t": "Nivel {0} · Snapshot de autoservicio",
@@ -845,6 +1157,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "9297913eea881537": {
+  "src": "Copy snippet",
+  "t": "Copiar fragmento",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "93766d064f226266": {
+  "src": "Denominator: the {0} listings that name at least one varietal. A listing naming several counts once for each. Gesha and Geisha are spellings of the same cultivar and are merged.",
+  "t": "Denominador: las {0} entradas que nombran al menos una variedad. Una entrada que nombra varias cuenta una vez por cada una. Gesha y Geisha son grafías del mismo cultivar y se fusionan.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "9424852a213818ad": {
   "src": "Direct Roaster {0}Storefronts, {1} <2>normalized</2><3>.</3>",
   "t": "Tiendas de {0}tostadores, {1} <2>normalizadas</2><3>.</3>",
@@ -863,11 +1187,23 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "95a5f71f7f66ba09": {
+  "src": "<0>Questions or corrections:</0> <1>contact form</1> or roasterdb@dataengineered.io.",
+  "t": "<0>Preguntas o correcciones:</0> <1>formulario de contacto</1> o roasterdb@dataengineered.io.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "95b5b3759fe1763d": {
   "src": "Across these lots, processing methods recorded include {0} ({1}), {2} ({3}), {4} ({5}), and {6} ({7}); tasting descriptors resolve most often to the {8} ({9}), {10} ({11}), {12} ({13}), and {14} ({15}) families of the SCA Flavor Wheel; roast levels span {16}, {17}, {18}, and {19}.",
   "t": "En estos lotes, los métodos de procesado registrados incluyen {0} ({1}), {2} ({3}), {4} ({5}) y {6} ({7}); los descriptores de cata remiten con mayor frecuencia a las familias {8} ({9}), {10} ({11}), {12} ({13}) y {14} ({15}) de la Rueda de Sabores de la SCA; niveles de tueste: {16}, {17}, {18} y {19}.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "968f01b4e1e8b2b0": {
+  "src": "Nutty/Cocoa",
+  "t": "Nutty/Cocoa",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "96e16354a53ea2bd": {
   "src": "RoasterDB converts poetic or unstructured roaster descriptions (such as {0} or {1}) into strict {2}-tier hierarchical SCA Flavor Wheel paths (for example: {3}). This enables precise semantic filtering and machine learning feature extraction.",
@@ -880,6 +1216,18 @@
   "t": "Datos estructurados de café de especialidad: {0} cafés de {1} tostadores de {2} países, asignados a la Rueda de Sabores de la SCA, con procedencia completa.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "97c7cdc9f177a40c": {
+  "src": "What specialty coffee tastes like",
+  "t": "A qué sabe el café de especialidad",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "981d7edd97a1b3d3": {
+  "src": "How specialty coffee is processed",
+  "t": "Cómo se procesa el café de especialidad",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "99b90d2fa0bf4db2": {
   "src": "<0>Home</0> › Coffee origin directory",
@@ -929,6 +1277,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "a03c9a7e5f7ea1b9": {
+  "src": "Roaster locations",
+  "t": "Ubicación de los tostadores",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "a0d9bbad5f932ea5": {
   "src": "Pricing",
   "t": "Precios",
@@ -940,6 +1294,18 @@
   "t": "{0} aparece en {1} cafés de especialidad en RoasterDB cultivados entre {2} msnm. Procesados observados: {3}, {4} y {5}…",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "a1f9271ffc73ce06": {
+  "src": "The most listed varietals",
+  "t": "Las variedades más presentes",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "a40dda115de8de78": {
+  "src": "{0} descriptor mappings",
+  "t": "{0} asignaciones de descriptores",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "a4a75cd5665596ad": {
   "src": "Describe your question or custom requirement...",
@@ -965,11 +1331,29 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "a62411377620ab33": {
+  "src": "| Market statistics",
+  "t": "| Estadísticas de mercado",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "a71f2a097220d96e": {
+  "src": "Where the roasters are",
+  "t": "Dónde están los tostadores",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "a7cae26651786b49": {
   "src": "RoasterDB Snapshot {0}",
   "t": "RoasterDB Snapshot {0}",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "a7d9ee2e06166e29": {
+  "src": "{0} listings with a stated elevation",
+  "t": "{0} entradas con altitud declarada",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "a84f56f2e6a77ecb": {
   "src": "Kenya",
@@ -995,6 +1379,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "aaf1ddd4ff769bf3": {
+  "src": "Share of mapped coffees",
+  "t": "Proporción de cafés asignados",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "ab5e4a6e03613667": {
   "src": "Have Questions or Need Custom Data?",
   "t": "¿Tienes preguntas o necesitas datos a medida?",
@@ -1012,6 +1402,18 @@
   "t": "En estos lotes, los métodos de procesado registrados incluyen {0} ({1}); los descriptores de cata remiten con mayor frecuencia a las familias {2} ({3}) de la Rueda de Sabores de la SCA.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "ae06df0e2003bafd": {
+  "src": "Specialty coffee in numbers: statistics from the RoasterDB catalogue",
+  "t": "El café de especialidad en cifras: estadísticas del catálogo RoasterDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "ae1899ecfd177d1f": {
+  "src": "Subcategory",
+  "t": "Subcategoría",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "ae1e30fa33906100": {
   "src": "Custom work (subsets, recurring feeds, schema mapping): from {0} — <1>contact the desk</1>",
@@ -1042,6 +1444,12 @@
   "t": "Un catálogo estructurado de {0} productos de café de especialidad de {1} tostadores artesanales seleccionados de {2} países. RoasterDB lee la tienda online en vivo de cada tostador y asigna sus notas de cata de forma determinista a los nodos jerárquicos estándar de la Rueda de Sabores de la SCA, con una URL de origen en cada registro para que cualquier dato pueda volver a verificarse.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "b08ae37ed0218a85": {
+  "src": "Snapshot",
+  "t": "Snapshot",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "b1c19264838b1c9c": {
   "src": "Structured specialty coffee dataset: {0} products from {1} roasters across {2} countries, mapped to SCA flavor nodes with source provenance.",
@@ -1079,6 +1487,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "b409d2f978417749": {
+  "src": "Descriptor",
+  "t": "Descriptor",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "b4f154c588b4ff16": {
   "src": "Coffee Title",
   "t": "Nombre del café",
@@ -1090,6 +1504,12 @@
   "t": "§ {0} · Soporte técnico directo y del dataset",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "b59a93ecd0c0eedd": {
+  "src": "Roasters' free-text tasting notes are normalized to the SCA Coffee Taster's Flavor Wheel (Category &gt; Subcategory &gt; Descriptor). {0} of {1} listings have at least one mapped descriptor; family shares use all {2} coffee-to-descriptor links, descriptor shares count coffees.",
+  "t": "Las notas de cata en texto libre de los tostadores se normalizan a la SCA Coffee Taster's Flavor Wheel (Category &gt; Subcategory &gt; Descriptor). {0} de {1} entradas tienen al menos un descriptor asignado; las proporciones por familia usan los {2} vínculos café-descriptor, y las proporciones por descriptor cuentan cafés.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "b6d9926948a837e9": {
   "src": "💬 Open Support Contact Form",
@@ -1121,6 +1541,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "b95444bb9d392451": {
+  "src": "Flavor families and top notes",
+  "t": "Familias de sabor y notas principales",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "bae0908ec958848d": {
+  "src": "Prices and the Gesha premium",
+  "t": "Precios y la prima Gesha",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "bc3023b36063a768": {
   "src": "Page not found",
   "t": "Página no encontrada",
@@ -1138,6 +1570,12 @@
   "t": "¿Quieres profundizar? <0>Prueba el Sample Explorer interactivo en 🤗 Hugging Face →</0> o <1>descarga la muestra gratuita de {2} filas</1>.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "c34e1af2fef9bc56": {
+  "src": "Download SVG",
+  "t": "Descargar SVG",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "c43d1a9f9279a119": {
   "src": "{0} — coffee roaster | RoasterDB",
@@ -1169,6 +1607,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "c7263f6c86577f4e": {
+  "src": "Every listing with its origin, process, roast, varietals, price and SCA flavor nodes, as SQLite, CSV and JSON.",
+  "t": "Cada entrada con su origen, proceso, tueste, variedades, precio y nodos de sabor SCA, en SQLite, CSV y JSON.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "c74bff12cb405f26": {
   "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3}; processing includes {4}.",
   "t": "{0} reúne {1} cafés de especialidad en RoasterDB, de {2} países de origen. Niveles de tueste: {3}; procesado: {4}.",
@@ -1199,17 +1643,47 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "cb5f60895d9a9a82": {
+  "src": "What specialty coffee costs",
+  "t": "Cuánto cuesta el café de especialidad",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "cc43343cc4c6c6f2": {
   "src": "{0} lists {1} specialty coffee releases on RoasterDB across {2} origin countries. Roast levels span {3}; processing includes {4} and {5}.",
   "t": "{0} reúne {1} cafés de especialidad en RoasterDB, de {2} países de origen. Niveles de tueste: {3}; procesado: {4} y {5}.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "cd008b597b75efac": {
+  "src": "Where specialty coffee comes from",
+  "t": "De dónde viene el café de especialidad",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "cd8731dffcfb78ee": {
+  "src": "Listings with elevation",
+  "t": "Entradas con altitud",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "cea85fd2af630e20": {
   "src": "SCA Flavor Wheel Nodes",
   "t": "Nodos de la Rueda de Sabores SCA",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "cec3e9678ff0a30c": {
+  "src": "Embed this chart",
+  "t": "Insertar este gráfico",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "cecd9ef83e213689": {
+  "src": "Floral",
+  "t": "Floral",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "cf01481f626d5127": {
   "src": "Privacy",
@@ -1259,6 +1733,18 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "d4dcbb3f4af5cfc8": {
+  "src": "Spices",
+  "t": "Spices",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "d523ebbd10146cdf": {
+  "src": "Country",
+  "t": "País",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "d5d16f7e7232dda4": {
   "src": "Origin Profile — {0}",
   "t": "Perfil de origen — {0}",
@@ -1283,11 +1769,41 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "d96fbed934876133": {
+  "src": "Suggested citation.",
+  "t": "Cita sugerida.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "d9cc6bcc5a20171f": {
+  "src": "RoasterDB is a curated crawl of artisan roasters' own storefronts, so this describes the catalogue's coverage rather than the world's roaster population.",
+  "t": "RoasterDB es un rastreo curado de las propias tiendas online de tostadores artesanales, así que esto describe la cobertura del catálogo, no la población mundial de tostadores.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "dd3072c7aadf94b5": {
   "src": "{0} appears in {1} specialty coffee releases on RoasterDB. Processing methods seen include {2} and {3}; top SCA descriptors are {4}…",
   "t": "{0} aparece en {1} cafés de especialidad en RoasterDB. Procesados observados: {2} y {3}; principales descriptores SCA: {4}…",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "ddd31cac1ce42b0b": {
+  "src": "Specialty roasters roast light: <0>{1}</0> of listings with a stated roast level are Light or Light-Medium, against {2} Dark or Medium-Dark.",
+  "t": "Los tostadores de especialidad tuestan claro: el <0>{1}</0> de las entradas con nivel de tueste declarado son Light o Light-Medium, frente al {2} Dark o Medium-Dark.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "de39f4653e0c7009": {
+  "src": "Method, reuse and citation",
+  "t": "Método, reutilización y cita",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "df65725fda02661d": {
+  "src": "Fruity",
+  "t": "Fruity",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "e1c79e32af1a011a": {
   "src": "Across these lots, processing methods recorded include {0} ({1}) and {2} ({3}); tasting descriptors resolve most often to the {4} ({5}), {6} ({7}), {8} ({9}), and {10} ({11}) families of the SCA Flavor Wheel; roast levels span {12}.",
@@ -1295,17 +1811,35 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "e1d3a6501a518246": {
+  "src": "{0} is the most frequently named cultivar, on <1>{2}</1> of listings that state a varietal, with {3} second at {4}.",
+  "t": "{0} es el cultivar nombrado con más frecuencia, en el <1>{2}</1> de las entradas que declaran una variedad, con {3} en segundo lugar con un {4}.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "e251bade74738bac": {
   "src": "Indexed <0>{1} specialty coffee releases</0> from {2} with elevation (masl) and SCA Flavor Wheel descriptors.",
   "t": "<0>{1} cafés de especialidad</0> indexados de {2}, con altitud (msnm) y descriptores de la Rueda de Sabores de la SCA.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "e539f597db1f90ad": {
+  "src": "Listings",
+  "t": "Entradas",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "e5531adae3c84603": {
   "src": "GitHub Repository",
   "t": "Repositorio de GitHub",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "e55a19fc3bc3d033": {
+  "src": "Roast level",
+  "t": "Nivel de tueste",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "e5901f9aa9e7247e": {
   "src": "{0} — Monarch (Cafes Only)",
@@ -1348,6 +1882,12 @@
   "t": "Países de origen",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "ea7c9c676f3889cc": {
+  "src": "Sweet",
+  "t": "Sweet",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  },
  "eaebf487fb536ac9": {
   "src": "— roaster sourcing this origin",
@@ -1451,6 +1991,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "f5cbdf6bfb51439b": {
+  "src": "Contents",
+  "t": "Contenido",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "f6cf7754b4b0bb5a": {
   "src": "{0} appears in {1} specialty coffee releases on RoasterDB. Processing methods seen include {2}, {3}, and {4}; top SCA descriptors are {5}…",
   "t": "{0} aparece en {1} cafés de especialidad en RoasterDB. Procesados observados: {2}, {3} y {4}; principales descriptores SCA: {5}…",
@@ -1481,10 +2027,28 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "fb64db3e33f864c0": {
+  "src": "The median specialty coffee lists at <0>{1} per {2} g</0> (interquartile range {3} to {4}). {5} is the most expensive origin at a median {6} times the catalogue median; {7} is the cheapest at {8}. Lots naming the Gesha varietal carry a <9>{10}</9> premium: median {11} against {12} for other named varietals.",
+  "t": "La mediana del café de especialidad es de <0>{1} por {2} g</0> (rango intercuartílico de {3} a {4}). {5} es el origen más caro, con una mediana de {6} veces la mediana del catálogo; {7} es el más barato, con {8}. Los lotes que nombran la variedad Gesha tienen una prima de <9>{10}</9>: mediana de {11} frente a {12} para otras variedades nombradas.",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
  "fda519e54144bc55": {
   "src": "RoasterDB Specialty Coffee Dataset",
   "t": "Dataset de café de especialidad RoasterDB",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "fdb9f41ee9a6e639": {
+  "src": "{0} priced listings",
+  "t": "{0} entradas con precio",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
+ },
+ "ff21138bcc2235f0": {
+  "src": "Producing origins",
+  "t": "Orígenes productores",
+  "by": "claude-opus-5-5",
+  "at": "2026-10-04"
  }
 }

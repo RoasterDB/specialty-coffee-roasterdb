@@ -1,414 +1,414 @@
 {
  "dataset": "RoasterDB",
  "page": "https://roasterdb.dataengineered.io/stats/",
- "generated": "2026-09-17",
- "snapshot": "2026-09-14",
+ "generated": "2026-10-04",
+ "snapshot": "2026-10-04",
  "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) - attribute with a link to the page",
  "totals": {
-  "listings": 9863,
-  "roasters": 280,
+  "listings": 12680,
+  "roasters": 278,
   "roaster_countries": 23,
   "origin_countries": 19,
-  "flavor_links": 15063,
-  "flavor_coffees": 5649,
-  "descriptors_per_coffee": 2.67,
-  "verified": 4348
+  "flavor_links": 20670,
+  "flavor_coffees": 8091,
+  "descriptors_per_coffee": 2.55,
+  "verified": 6358
  },
  "origins": {
-  "denominator": 6031,
+  "denominator": 9178,
   "rows": [
    {
     "origin": "Colombia",
-    "listings": 1583,
-    "share_pct": 26.2
+    "listings": 2362,
+    "share_pct": 25.7
    },
    {
     "origin": "Ethiopia",
-    "listings": 1154,
-    "share_pct": 19.1
-   },
-   {
-    "origin": "Guatemala",
-    "listings": 392,
-    "share_pct": 6.5
+    "listings": 1712,
+    "share_pct": 18.7
    },
    {
     "origin": "Kenya",
-    "listings": 387,
-    "share_pct": 6.4
+    "listings": 610,
+    "share_pct": 6.6
+   },
+   {
+    "origin": "Guatemala",
+    "listings": 595,
+    "share_pct": 6.5
    },
    {
     "origin": "Brazil",
-    "listings": 374,
-    "share_pct": 6.2
+    "listings": 556,
+    "share_pct": 6.1
    },
    {
     "origin": "Honduras",
-    "listings": 331,
-    "share_pct": 5.5
-   },
-   {
-    "origin": "Peru",
-    "listings": 328,
-    "share_pct": 5.4
+    "listings": 552,
+    "share_pct": 6.0
    },
    {
     "origin": "Costa Rica",
-    "listings": 303,
-    "share_pct": 5.0
+    "listings": 485,
+    "share_pct": 5.3
    },
    {
-    "origin": "Mexico",
-    "listings": 170,
-    "share_pct": 2.8
+    "origin": "Peru",
+    "listings": 423,
+    "share_pct": 4.6
    },
    {
     "origin": "Panama",
-    "listings": 161,
-    "share_pct": 2.7
+    "listings": 351,
+    "share_pct": 3.8
    },
    {
     "origin": "El Salvador",
-    "listings": 158,
-    "share_pct": 2.6
+    "listings": 302,
+    "share_pct": 3.3
    },
    {
-    "origin": "Rwanda",
-    "listings": 158,
+    "origin": "Mexico",
+    "listings": 241,
     "share_pct": 2.6
    },
    {
     "origin": "Burundi",
-    "listings": 156,
-    "share_pct": 2.6
+    "listings": 229,
+    "share_pct": 2.5
+   },
+   {
+    "origin": "Rwanda",
+    "listings": 220,
+    "share_pct": 2.4
    },
    {
     "origin": "Ecuador",
-    "listings": 132,
-    "share_pct": 2.2
+    "listings": 179,
+    "share_pct": 2.0
    },
    {
     "origin": "Bolivia",
-    "listings": 71,
+    "listings": 113,
     "share_pct": 1.2
    },
    {
     "origin": "Indonesia",
-    "listings": 70,
-    "share_pct": 1.2
+    "listings": 100,
+    "share_pct": 1.1
    },
    {
     "origin": "Uganda",
-    "listings": 48,
+    "listings": 70,
     "share_pct": 0.8
    },
    {
     "origin": "Papua New Guinea",
-    "listings": 37,
+    "listings": 52,
     "share_pct": 0.6
    },
    {
     "origin": "Yemen",
-    "listings": 18,
+    "listings": 26,
     "share_pct": 0.3
    }
   ]
  },
  "flavor_families": {
-  "denominator": 15063,
+  "denominator": 20670,
   "rows": [
    {
     "family": "Fruity",
-    "links": 6928,
-    "share_pct": 46.0
+    "links": 9710,
+    "share_pct": 47.0
    },
    {
     "family": "Nutty/Cocoa",
-    "links": 3908,
-    "share_pct": 25.9
+    "links": 5252,
+    "share_pct": 25.4
    },
    {
     "family": "Sweet",
-    "links": 2798,
-    "share_pct": 18.6
+    "links": 3738,
+    "share_pct": 18.1
    },
    {
     "family": "Floral",
-    "links": 799,
+    "links": 1099,
     "share_pct": 5.3
    },
    {
     "family": "Spices",
-    "links": 511,
+    "links": 707,
     "share_pct": 3.4
    },
    {
     "family": "Roasted",
-    "links": 119,
+    "links": 164,
     "share_pct": 0.8
    }
   ]
  },
  "descriptors": {
-  "denominator": 5649,
+  "denominator": 8091,
   "rows": [
    {
     "descriptor": "Chocolate",
     "family": "Nutty/Cocoa",
     "subcategory": "Cocoa",
-    "coffees": 1922,
-    "share_pct": 34.0
+    "coffees": 2604,
+    "share_pct": 32.2
    },
    {
     "descriptor": "Peach",
     "family": "Fruity",
     "subcategory": "Other Fruit",
-    "coffees": 1196,
-    "share_pct": 21.2
+    "coffees": 1690,
+    "share_pct": 20.9
    },
    {
     "descriptor": "Cherry",
     "family": "Fruity",
     "subcategory": "Other Fruit",
-    "coffees": 1089,
-    "share_pct": 19.3
+    "coffees": 1627,
+    "share_pct": 20.1
    },
    {
     "descriptor": "Honey",
     "family": "Sweet",
     "subcategory": "Honey",
-    "coffees": 937,
-    "share_pct": 16.6
-   },
-   {
-    "descriptor": "Caramel",
-    "family": "Sweet",
-    "subcategory": "Brown Sugar",
-    "coffees": 721,
-    "share_pct": 12.8
+    "coffees": 1289,
+    "share_pct": 15.9
    },
    {
     "descriptor": "Orange",
     "family": "Fruity",
     "subcategory": "Citrus Fruit",
-    "coffees": 708,
-    "share_pct": 12.5
+    "coffees": 943,
+    "share_pct": 11.7
+   },
+   {
+    "descriptor": "Caramel",
+    "family": "Sweet",
+    "subcategory": "Brown Sugar",
+    "coffees": 922,
+    "share_pct": 11.4
    },
    {
     "descriptor": "Dark Chocolate",
     "family": "Nutty/Cocoa",
     "subcategory": "Cocoa",
-    "coffees": 682,
-    "share_pct": 12.1
+    "coffees": 894,
+    "share_pct": 11.0
    },
    {
     "descriptor": "Milk Chocolate",
     "family": "Nutty/Cocoa",
     "subcategory": "Cocoa",
-    "coffees": 553,
-    "share_pct": 9.8
+    "coffees": 797,
+    "share_pct": 9.9
    },
    {
     "descriptor": "Apple",
     "family": "Fruity",
     "subcategory": "Other Fruit",
-    "coffees": 452,
-    "share_pct": 8.0
-   },
-   {
-    "descriptor": "Lemon",
-    "family": "Fruity",
-    "subcategory": "Citrus Fruit",
-    "coffees": 407,
-    "share_pct": 7.2
+    "coffees": 655,
+    "share_pct": 8.1
    },
    {
     "descriptor": "Jasmine",
     "family": "Floral",
     "subcategory": "Floral",
-    "coffees": 385,
+    "coffees": 551,
     "share_pct": 6.8
+   },
+   {
+    "descriptor": "Lemon",
+    "family": "Fruity",
+    "subcategory": "Citrus Fruit",
+    "coffees": 524,
+    "share_pct": 6.5
    },
    {
     "descriptor": "Brown Sugar",
     "family": "Sweet",
     "subcategory": "Brown Sugar",
-    "coffees": 384,
-    "share_pct": 6.8
+    "coffees": 523,
+    "share_pct": 6.5
    },
    {
     "descriptor": "Strawberry",
     "family": "Fruity",
     "subcategory": "Berry",
-    "coffees": 367,
-    "share_pct": 6.5
+    "coffees": 499,
+    "share_pct": 6.2
    },
    {
     "descriptor": "Raspberry",
     "family": "Fruity",
     "subcategory": "Berry",
-    "coffees": 344,
-    "share_pct": 6.1
+    "coffees": 455,
+    "share_pct": 5.6
    },
    {
     "descriptor": "Grape",
     "family": "Fruity",
     "subcategory": "Other Fruit",
-    "coffees": 300,
-    "share_pct": 5.3
+    "coffees": 422,
+    "share_pct": 5.2
    }
   ]
  },
  "flavor_by_origin": [
   {
    "origin": "Colombia",
-   "descriptors": 3139,
+   "descriptors": 4207,
    "family_share_pct": {
-    "Fruity": 52.0,
-    "Nutty/Cocoa": 20.7,
-    "Sweet": 18.6,
-    "Floral": 6.0,
+    "Fruity": 52.9,
+    "Nutty/Cocoa": 20.1,
+    "Sweet": 17.9,
+    "Floral": 6.3,
     "Spices": 2.1,
     "Roasted": 0.7
    }
   },
   {
    "origin": "Ethiopia",
-   "descriptors": 2400,
+   "descriptors": 3324,
    "family_share_pct": {
-    "Fruity": 55.3,
-    "Nutty/Cocoa": 19.0,
-    "Sweet": 12.9,
-    "Floral": 7.9,
-    "Spices": 4.0,
-    "Roasted": 0.9
+    "Fruity": 56.5,
+    "Nutty/Cocoa": 18.6,
+    "Sweet": 12.7,
+    "Floral": 7.4,
+    "Spices": 4.1,
+    "Roasted": 0.8
    }
   },
   {
    "origin": "Guatemala",
-   "descriptors": 860,
+   "descriptors": 1169,
    "family_share_pct": {
-    "Fruity": 40.2,
-    "Nutty/Cocoa": 33.5,
-    "Sweet": 19.5,
+    "Fruity": 39.3,
+    "Nutty/Cocoa": 32.8,
+    "Sweet": 20.5,
     "Floral": 2.8,
-    "Spices": 2.8,
-    "Roasted": 1.2
+    "Spices": 3.1,
+    "Roasted": 1.4
    }
   },
   {
    "origin": "Brazil",
-   "descriptors": 779,
+   "descriptors": 1019,
    "family_share_pct": {
-    "Fruity": 24.6,
-    "Nutty/Cocoa": 51.7,
-    "Sweet": 20.3,
-    "Floral": 1.2,
-    "Spices": 1.8,
-    "Roasted": 0.4
+    "Fruity": 25.6,
+    "Nutty/Cocoa": 51.2,
+    "Sweet": 19.8,
+    "Floral": 1.4,
+    "Spices": 1.5,
+    "Roasted": 0.5
    }
   },
   {
    "origin": "Costa Rica",
-   "descriptors": 663,
+   "descriptors": 1011,
    "family_share_pct": {
-    "Fruity": 46.3,
-    "Nutty/Cocoa": 18.6,
-    "Sweet": 28.4,
-    "Floral": 4.1,
-    "Spices": 2.6,
+    "Fruity": 45.3,
+    "Nutty/Cocoa": 18.8,
+    "Sweet": 27.7,
+    "Floral": 3.9,
+    "Spices": 4.2,
     "Roasted": 0.2
    }
   },
   {
    "origin": "Kenya",
-   "descriptors": 661,
+   "descriptors": 966,
    "family_share_pct": {
-    "Fruity": 60.4,
-    "Nutty/Cocoa": 9.2,
-    "Sweet": 15.9,
-    "Floral": 10.3,
-    "Spices": 3.9,
-    "Roasted": 0.3
+    "Fruity": 62.1,
+    "Nutty/Cocoa": 9.4,
+    "Sweet": 14.8,
+    "Floral": 9.3,
+    "Spices": 4.2,
+    "Roasted": 0.1
    }
   },
   {
    "origin": "Honduras",
-   "descriptors": 627,
+   "descriptors": 880,
    "family_share_pct": {
-    "Fruity": 48.3,
-    "Nutty/Cocoa": 23.1,
-    "Sweet": 18.8,
-    "Floral": 5.3,
-    "Spices": 3.5,
-    "Roasted": 1.0
+    "Fruity": 49.5,
+    "Nutty/Cocoa": 21.9,
+    "Sweet": 19.8,
+    "Floral": 4.8,
+    "Spices": 3.2,
+    "Roasted": 0.8
    }
   },
   {
    "origin": "Peru",
-   "descriptors": 608,
+   "descriptors": 763,
    "family_share_pct": {
-    "Fruity": 48.5,
-    "Nutty/Cocoa": 24.3,
-    "Sweet": 18.1,
+    "Fruity": 48.0,
+    "Nutty/Cocoa": 25.7,
+    "Sweet": 17.8,
     "Floral": 5.4,
-    "Spices": 3.1,
-    "Roasted": 0.5
+    "Spices": 2.8,
+    "Roasted": 0.4
    }
   }
  ],
  "process": {
-  "denominator": 4701,
+  "denominator": 7511,
   "rows": [
    {
     "process": "Natural",
-    "listings": 1722,
-    "share_pct": 36.6
+    "listings": 2638,
+    "share_pct": 35.1
    },
    {
     "process": "Washed",
-    "listings": 1530,
-    "share_pct": 32.5
+    "listings": 2590,
+    "share_pct": 34.5
    },
    {
     "process": "Honey",
-    "listings": 891,
-    "share_pct": 19.0
+    "listings": 1306,
+    "share_pct": 17.4
    },
    {
     "process": "Anaerobic",
-    "listings": 558,
-    "share_pct": 11.9
+    "listings": 977,
+    "share_pct": 13.0
    }
   ]
  },
  "roast": {
-  "denominator": 3185,
+  "denominator": 4369,
   "rows": [
    {
     "roast": "Light",
-    "listings": 1690,
-    "share_pct": 53.1
+    "listings": 2286,
+    "share_pct": 52.3
    },
    {
     "roast": "Dark",
-    "listings": 845,
-    "share_pct": 26.5
+    "listings": 1132,
+    "share_pct": 25.9
    },
    {
     "roast": "Medium",
-    "listings": 490,
-    "share_pct": 15.4
-   },
-   {
-    "roast": "Light-Medium",
-    "listings": 82,
-    "share_pct": 2.6
+    "listings": 742,
+    "share_pct": 17.0
    },
    {
     "roast": "Medium-Dark",
-    "listings": 78,
-    "share_pct": 2.4
+    "listings": 115,
+    "share_pct": 2.6
+   },
+   {
+    "roast": "Light-Medium",
+    "listings": 94,
+    "share_pct": 2.2
    }
   ]
  },
@@ -424,226 +424,226 @@
     150.0
    ]
   },
-  "n": 8306,
-  "median": 17.34,
-  "p25": 13.12,
-  "p75": 22.0,
+  "n": 6223,
+  "median": 17.91,
+  "p25": 14.62,
+  "p75": 21.46,
   "by_origin": [
    {
     "origin": "Panama",
-    "n": 129,
-    "median": 57.5
+    "n": 195,
+    "median": 60.29
    },
    {
     "origin": "Ecuador",
     "n": 123,
-    "median": 23.39
+    "median": 23.98
    },
    {
     "origin": "Colombia",
-    "n": 1448,
-    "median": 18.47
+    "n": 1286,
+    "median": 19.06
    },
    {
     "origin": "Kenya",
-    "n": 346,
-    "median": 18.47
-   },
-   {
-    "origin": "Bolivia",
-    "n": 65,
-    "median": 18.36
-   },
-   {
-    "origin": "Burundi",
-    "n": 146,
-    "median": 18.28
-   },
-   {
-    "origin": "Honduras",
-    "n": 316,
-    "median": 17.89
-   },
-   {
-    "origin": "Peru",
-    "n": 307,
-    "median": 17.69
-   },
-   {
-    "origin": "Ethiopia",
-    "n": 1041,
-    "median": 17.69
-   },
-   {
-    "origin": "Rwanda",
-    "n": 147,
-    "median": 17.5
+    "n": 295,
+    "median": 19.06
    },
    {
     "origin": "Costa Rica",
-    "n": 286,
-    "median": 16.91
+    "n": 203,
+    "median": 18.75
    },
    {
-    "origin": "Mexico",
-    "n": 165,
-    "median": 16.91
+    "origin": "Honduras",
+    "n": 381,
+    "median": 18.47
+   },
+   {
+    "origin": "Burundi",
+    "n": 129,
+    "median": 18.43
+   },
+   {
+    "origin": "Peru",
+    "n": 201,
+    "median": 18.39
+   },
+   {
+    "origin": "Ethiopia",
+    "n": 900,
+    "median": 18.18
    },
    {
     "origin": "El Salvador",
-    "n": 140,
-    "median": 16.0
+    "n": 139,
+    "median": 17.72
+   },
+   {
+    "origin": "Rwanda",
+    "n": 79,
+    "median": 17.71
+   },
+   {
+    "origin": "Mexico",
+    "n": 160,
+    "median": 17.65
    },
    {
     "origin": "Guatemala",
-    "n": 366,
-    "median": 15.89
+    "n": 296,
+    "median": 16.91
    },
    {
     "origin": "Brazil",
-    "n": 324,
-    "median": 15.0
-   },
-   {
-    "origin": "Indonesia",
-    "n": 60,
-    "median": 13.67
+    "n": 217,
+    "median": 15.86
    }
   ],
   "by_process": [
    {
     "process": "Anaerobic",
-    "n": 505,
-    "median": 18.52
+    "n": 477,
+    "median": 22.01
    },
    {
     "process": "Honey",
-    "n": 826,
-    "median": 18.0
-   },
-   {
-    "process": "Washed",
-    "n": 1362,
-    "median": 17.65
+    "n": 668,
+    "median": 18.67
    },
    {
     "process": "Natural",
-    "n": 1524,
-    "median": 16.25
+    "n": 1083,
+    "median": 18.18
+   },
+   {
+    "process": "Washed",
+    "n": 1298,
+    "median": 18.05
    }
   ],
   "by_roast": [
    {
     "roast": "Light-Medium",
-    "n": 80,
-    "median": 17.58
+    "n": 84,
+    "median": 17.1
    },
    {
     "roast": "Light",
-    "n": 1408,
-    "median": 16.76
+    "n": 1273,
+    "median": 16.91
    },
    {
     "roast": "Dark",
-    "n": 748,
-    "median": 15.0
+    "n": 606,
+    "median": 14.71
    },
    {
     "roast": "Medium",
-    "n": 422,
-    "median": 14.71
+    "n": 446,
+    "median": 14.62
    },
    {
     "roast": "Medium-Dark",
-    "n": 73,
-    "median": 14.71
+    "n": 68,
+    "median": 12.84
    }
   ],
   "gesha": {
-   "n": 619,
-   "median": 25.09,
-   "other_n": 2240,
-   "other_median": 17.17,
-   "premium": 1.46
+   "n": 670,
+   "median": 33.56,
+   "other_n": 1593,
+   "other_median": 18.38,
+   "premium": 1.83
   }
  },
  "elevation_masl": {
-  "denominator": 1713,
+  "denominator": 2437,
   "rows": [
    {
     "origin": "Ethiopia",
-    "n": 281,
-    "mean": 1842
+    "n": 404,
+    "mean": 1870
    },
    {
     "origin": "Peru",
-    "n": 109,
-    "mean": 1601
+    "n": 142,
+    "mean": 1619
    },
    {
     "origin": "Rwanda",
-    "n": 56,
-    "mean": 1555
+    "n": 70,
+    "mean": 1582
    },
    {
     "origin": "Colombia",
-    "n": 463,
-    "mean": 1507
+    "n": 678,
+    "mean": 1532
    },
    {
     "origin": "Kenya",
-    "n": 121,
-    "mean": 1396
-   },
-   {
-    "origin": "Costa Rica",
-    "n": 110,
-    "mean": 1374
-   },
-   {
-    "origin": "Honduras",
-    "n": 92,
-    "mean": 1349
-   },
-   {
-    "origin": "Ecuador",
-    "n": 20,
-    "mean": 1318
+    "n": 178,
+    "mean": 1381
    },
    {
     "origin": "Guatemala",
-    "n": 116,
-    "mean": 1317
+    "n": 164,
+    "mean": 1347
+   },
+   {
+    "origin": "Honduras",
+    "n": 117,
+    "mean": 1342
    },
    {
     "origin": "Burundi",
-    "n": 32,
-    "mean": 1279
+    "n": 43,
+    "mean": 1333
    },
    {
-    "origin": "El Salvador",
-    "n": 56,
-    "mean": 1165
+    "origin": "Costa Rica",
+    "n": 169,
+    "mean": 1322
    },
    {
-    "origin": "Mexico",
-    "n": 30,
-    "mean": 1164
+    "origin": "Papua New Guinea",
+    "n": 20,
+    "mean": 1313
+   },
+   {
+    "origin": "Ecuador",
+    "n": 24,
+    "mean": 1292
    },
    {
     "origin": "Panama",
-    "n": 62,
-    "mean": 1162
+    "n": 93,
+    "mean": 1254
+   },
+   {
+    "origin": "Indonesia",
+    "n": 23,
+    "mean": 1249
+   },
+   {
+    "origin": "El Salvador",
+    "n": 87,
+    "mean": 1221
+   },
+   {
+    "origin": "Mexico",
+    "n": 39,
+    "mean": 1198
    },
    {
     "origin": "Brazil",
-    "n": 74,
-    "mean": 1140
+    "n": 101,
+    "mean": 1123
    },
    {
     "origin": "Bolivia",
-    "n": 36,
-    "mean": 1123
+    "n": 57,
+    "mean": 1103
    }
   ]
  },
@@ -651,12 +651,12 @@
   {
    "country": "United States",
    "roasters": 130,
-   "share_pct": 46.4
+   "share_pct": 46.8
   },
   {
    "country": "United Kingdom",
-   "roasters": 43,
-   "share_pct": 15.4
+   "roasters": 42,
+   "share_pct": 15.1
   },
   {
    "country": "Australia",
@@ -674,14 +674,9 @@
    "share_pct": 3.2
   },
   {
-   "country": "Germany",
-   "roasters": 6,
-   "share_pct": 2.1
-  },
-  {
    "country": "Denmark",
    "roasters": 6,
-   "share_pct": 2.1
+   "share_pct": 2.2
   },
   {
    "country": "Sweden",
@@ -700,6 +695,11 @@
   },
   {
    "country": "Ireland",
+   "roasters": 5,
+   "share_pct": 1.8
+  },
+  {
+   "country": "Germany",
    "roasters": 5,
    "share_pct": 1.8
   },
@@ -765,67 +765,67 @@
   }
  ],
  "varietals": {
-  "denominator": 3188,
+  "denominator": 5003,
   "rows": [
    {
     "varietal": "Bourbon",
-    "listings": 1146,
-    "share_pct": 35.9
-   },
-   {
-    "varietal": "Caturra",
-    "listings": 763,
-    "share_pct": 23.9
+    "listings": 1733,
+    "share_pct": 34.6
    },
    {
     "varietal": "Gesha (Geisha)",
-    "listings": 710,
-    "share_pct": 22.3
+    "listings": 1301,
+    "share_pct": 26.0
+   },
+   {
+    "varietal": "Caturra",
+    "listings": 1111,
+    "share_pct": 22.2
    },
    {
     "varietal": "Catuai",
-    "listings": 345,
-    "share_pct": 10.8
-   },
-   {
-    "varietal": "Typica",
-    "listings": 311,
-    "share_pct": 9.8
+    "listings": 526,
+    "share_pct": 10.5
    },
    {
     "varietal": "Heirloom",
-    "listings": 301,
-    "share_pct": 9.4
+    "listings": 465,
+    "share_pct": 9.3
    },
    {
-    "varietal": "Pink Bourbon",
-    "listings": 280,
-    "share_pct": 8.8
-   },
-   {
-    "varietal": "Castillo",
-    "listings": 276,
+    "varietal": "Typica",
+    "listings": 434,
     "share_pct": 8.7
    },
    {
     "varietal": "SL28",
-    "listings": 257,
-    "share_pct": 8.1
+    "listings": 411,
+    "share_pct": 8.2
+   },
+   {
+    "varietal": "Pink Bourbon",
+    "listings": 398,
+    "share_pct": 8.0
+   },
+   {
+    "varietal": "Castillo",
+    "listings": 398,
+    "share_pct": 8.0
    },
    {
     "varietal": "Pacamara",
-    "listings": 161,
-    "share_pct": 5.1
+    "listings": 298,
+    "share_pct": 6.0
    },
    {
     "varietal": "SL34",
-    "listings": 120,
-    "share_pct": 3.8
+    "listings": 206,
+    "share_pct": 4.1
    },
    {
     "varietal": "Sidra",
-    "listings": 109,
-    "share_pct": 3.4
+    "listings": 186,
+    "share_pct": 3.7
    }
   ]
  }
