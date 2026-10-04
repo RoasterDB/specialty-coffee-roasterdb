@@ -1,6 +1,6 @@
 # RoasterDB — Specialty Coffee Dataset
 
-> A structured dataset of 8,000+ specialty-coffee products from 280+ artisan roasters across 20+ countries, with free-text tasting notes normalized to the SCA (Specialty Coffee Association) Flavor Wheel and a source URL on every record.
+> A structured dataset of 12,000+ specialty-coffee products from 270+ artisan roasters across 20+ countries, with free-text tasting notes normalized to the SCA (Specialty Coffee Association) Flavor Wheel and a source URL on every record.
 
 ## What it is
 - One row per coffee product listing, collected from roasters' public online storefronts.
