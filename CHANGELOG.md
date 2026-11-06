@@ -6,6 +6,11 @@ All notable changes to the RoasterDB dataset snapshots.
 > on a recurring schedule, so the live figures only grow — the numbers below
 > stay accurate between snapshots.
 
+## Site update — 2026-11-06
+
+- **Pricing card no longer names an edition**: the homepage pricing card and licence note said "Snapshot 2026.10", but buyers get the newest monthly build, so the label fell behind with every refresh. They now read "Monthly snapshot" and "Latest monthly snapshot" (English and the four translations); the Dataset and breadcrumb structured data, the README badge and the data dictionary's heading no longer name an edition either.
+- **"One-time download" became "One-time purchase"**: the download page stays valid for re-downloads, so the download is not one-time; the payment is.
+
 ## Site update — 2026-10-04
 
 - **Counts and edition label from the 2026.10 edition**: the 2026.10 edition (crawled 2026-10-04) holds 12,680 coffees from 278 roasters. The homepage, README, `llms.txt`, `site.webmanifest`, the Kaggle metadata file and the 88 roaster and origin pages (all five languages) now say 12,000+ products (was 8,000+) and 270+ roasters (was 280+, which no longer held: 278 roasters have coffees in this edition), and the homepage offer, its structured data and the README badge say Snapshot 2026.10 (was 2026.09). The README and data dictionary coverage figures were measured when the dataset held 8,000+ records and now say so; they are not yet re-measured on 2026.10. The sitemap dates those 445 pages 2026-10-04 (2026-10-04).
