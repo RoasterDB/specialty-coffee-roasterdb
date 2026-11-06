@@ -1,6 +1,6 @@
 # RoasterDB — Data Dictionary
 
-Field reference for the RoasterDB specialty coffee dataset (snapshot `2026.07`).
+Field reference for the RoasterDB specialty coffee dataset.
 The free sample (`samples/roasterdb_sample.csv`) uses the columns below. The full
 dataset ships the same fields in CSV and JSON, plus a relational SQLite build.
 

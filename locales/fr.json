@@ -215,6 +215,12 @@
   "by": "claude-opus-5",
   "at": "2026-09-17"
  },
+ "165df7d50a70823a": {
+  "src": "RoasterDB Full Snapshot",
+  "t": "Snapshot complet RoasterDB",
+  "by": "claude-opus-5-5",
+  "at": "2026-11-06"
+ },
  "1743bac6b2c79db9": {
   "src": "Specialty Coffee Statistics {0} — Origins, Flavor, Prices | RoasterDB",
   "t": "Statistiques du café de spécialité {0} — origines, arômes, prix | RoasterDB",
@@ -1301,6 +1307,12 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-04"
  },
+ "a22603d9c48d2f7b": {
+  "src": "One-time purchase · {0} records · Monthly snapshot",
+  "t": "Paiement unique · {0} enregistrements · Snapshot mensuel",
+  "by": "claude-opus-5-5",
+  "at": "2026-11-06"
+ },
  "a40dda115de8de78": {
   "src": "{0} descriptor mappings",
   "t": "{0} associations de descripteurs",
@@ -1852,6 +1864,12 @@
   "t": "Téléchargez notre snapshot SQLite relationnel normalisé couvrant {0} torréfacteurs dans le monde.",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "e63dfdf057cbe0bd": {
+  "src": "<0>Latest monthly snapshot</0> · one-time purchase, no recurring fees. Distributed as derived factual attributes with attribution.",
+  "t": "<0>Snapshot mensuel le plus récent</0> · paiement unique, sans frais récurrents. Distribué sous forme d'attributs factuels dérivés, avec attribution.",
+  "by": "claude-opus-5-5",
+  "at": "2026-11-06"
  },
  "e6947d798064438a": {
   "src": "<0>Relational SQLite + CSV + JSON:</0> normalized tables (`roasters`, `coffee_beans`, `sca_flavor_nodes`, `bean_flavors`), ready for ML, recommendation engines, and {1} apps.",
