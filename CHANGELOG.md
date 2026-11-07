@@ -6,6 +6,10 @@ All notable changes to the RoasterDB dataset snapshots.
 > on a recurring schedule, so the live figures only grow — the numbers below
 > stay accurate between snapshots.
 
+## Site update — 2026-11-07
+
+- **Kaggle update instructions** (`kaggle/README.md`, section 3): the `datasets version` command no longer ends in `-d`. In the Kaggle CLI that flag is `--delete-old-versions`: it deletes the dataset's older versions, not "remote files not present in the staging folder" as the README said. The command now runs from a one-word staging folder that holds the CSV and `dataset-metadata.json`, because `-p kaggle/dataset` stops with `Errno 2` on Windows (seen on the FloraDB sample's upload on 2026-11-07): the CLI names its resume-cache file after the path of each uploaded file, and a `/` in it points into a cache folder that does not exist. The section also says what a version upload changes (the data file and the card's description, subtitle and keywords) and what it leaves alone (title, licence, column notes), and has the live card compared with `kaggle/dataset/dataset-metadata.json` before uploading, since the upload overwrites it. No data or page change.
+
 ## Site update — 2026-11-06
 
 - **Pricing card no longer names an edition**: the homepage pricing card and licence note said "Snapshot 2026.10", but buyers get the newest monthly build, so the label fell behind with every refresh. They now read "Monthly snapshot" and "Latest monthly snapshot" (English and the four translations); the Dataset and breadcrumb structured data, the README badge and the data dictionary's heading no longer name an edition either.
