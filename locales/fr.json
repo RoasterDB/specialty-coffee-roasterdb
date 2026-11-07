@@ -119,6 +119,12 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-04"
  },
+ "0b397f19a33715be": {
+  "src": "{0} alone accounts for <1>{2}</1> of listings that name an origin, and {3} plus {4} together for <5>{6}</5>. The top five origins cover {7} of the {8} listings that name an origin; {9} producing countries appear in total.",
+  "t": "À elle seule, l'origine {0} représente <1>{2}</1> des entrées qui nomment une origine, et {3} avec {4} <5>{6}</5> à elles deux. Les cinq premières origines couvrent {7} des {8} entrées qui nomment une origine ; {9} pays producteurs apparaissent au total.",
+  "by": "claude-opus-5-5",
+  "at": "2026-11-07"
+ },
  "0b6ff3036f217d01": {
   "src": "RoasterDB is a structured, factual database containing over {0} specialty coffee releases from {1} artisan roasters across {2} countries. Every entry includes standardized attributes like origin country, altitude (masl), process method, varietals, and tasting notes mapped directly to the SCA Flavor Wheel.",
   "t": "RoasterDB est une base de données structurée et factuelle contenant plus de {0} cafés de spécialité issus de {1} torréfacteurs artisanaux dans {2} pays. Chaque entrée comprend des attributs standardisés tels que le pays d'origine, l'altitude (m), la méthode de traitement, les variétés et les notes de dégustation directement associées à la roue des arômes SCA.",
@@ -959,6 +965,12 @@
   "by": "claude-opus-5-5",
   "at": "2026-10-04"
  },
+ "7c535aa401a5a0d2": {
+  "src": "{0} listings with a stated elevation and origin",
+  "t": "{0} entrées avec une altitude et une origine déclarées",
+  "by": "claude-opus-5-5",
+  "at": "2026-11-07"
+ },
  "7cfa37cdc6f35e14": {
   "src": "<0>{1}</0> of the roasters in the catalogue are headquartered in {2}, {3} in {4}; {5} countries are represented.",
   "t": "<0>{1}</0> des torréfacteurs du catalogue ont leur siège en {2}, {3} en {4} ; {5} pays sont représentés.",
@@ -1030,6 +1042,12 @@
   "t": "Snapshot + sur mesure",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "8778c1378e7877d6": {
+  "src": "Elevation is stated on {0} listings; the {1} that also name an origin are used, taking the midpoint where a range is given. Origins with fewer than {2} stated elevations are omitted.",
+  "t": "L'altitude est déclarée sur {0} entrées ; les {1} qui nomment aussi une origine sont utilisées, en retenant le milieu lorsqu'une fourchette est donnée. Les origines comptant moins de {2} altitudes déclarées sont omises.",
+  "by": "claude-opus-5-5",
+  "at": "2026-11-07"
  },
  "879aa7446c521b39": {
   "src": "Download structured specialty coffee data mapped to the SCA Flavor Wheel.",
@@ -1570,6 +1588,12 @@
   "t": "Page introuvable",
   "by": "claude-opus-5",
   "at": "2026-09-17"
+ },
+ "bddbf4d669317643": {
+  "src": "Of the eight origins with the most mapped descriptors, the Fruity share is highest at <0>{1}</0> ({2}) and lowest at {3} ({4}); Nutty/Cocoa peaks at {5} ({6}).",
+  "t": "Parmi les huit origines qui comptent le plus de descripteurs associés, la part des descripteurs Fruity culmine à <0>{1}</0> ({2}) et descend jusqu'à {3} ({4}) ; celle de Nutty/Cocoa culmine à {5} ({6}).",
+  "by": "claude-opus-5-5",
+  "at": "2026-11-07"
  },
  "be763e9aba2af6b8": {
   "src": "Stats",

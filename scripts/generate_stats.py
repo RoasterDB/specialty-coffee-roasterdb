@@ -235,6 +235,8 @@ def compute(db_path):
     s["family_names"] = fam_names
     s["flavor_by_origin"] = [(o, sum(fbo[o].values()), {f: pct(fbo[o][f], sum(fbo[o].values())) for f in fam_names})
                              for o in top_o]
+    # the link counts behind those shares: rank on them, since two origins can show the same rounded share
+    s["flavor_by_origin_links"] = {o: dict(fbo[o]) for o in top_o}
 
     # process / roast among listings that state one
     proc = q("select process_method, count(*) from coffee_beans where process_method is not null "
@@ -291,6 +293,7 @@ def compute(db_path):
     for o, lo, hi in alt:
         by_a[o.split("/")[0].strip()].append((lo + hi) / 2.0)
     s["alt_n"] = len(alt)
+    s["alt_stated"] = q("select count(*) from coffee_beans where altitude_min_meters>0")[0][0]  # with or without an origin
     s["alt_by_origin"] = sorted(((o, len(v), int(round(statistics.mean(v)))) for o, v in by_a.items() if len(v) >= 20),
                                 key=lambda t: -t[2])
 
@@ -427,7 +430,7 @@ def build_page(s, charts):
         "origins", "Where specialty coffee comes from",
         f"{data(top[0][0])} alone accounts for <strong>{top[0][2]}%</strong> of listings that name an origin, and "
         f"{data(top[0][0])} plus {data(top[1][0])} together for <strong>{round(top[0][2] + top[1][2], 1)}%</strong>. "
-        f"The top five origins cover {round(sum(p for _, _, p in top[:5]), 1)}% of the catalogue; "
+        f"The top five origins cover {round(sum(p for _, _, p in top[:5]), 1)}% of the {n(s['origin_known'])} listings that name an origin; "
         f"{n(s['origin_countries'])} producing countries appear in total.",
         figure("origins", charts["origins"], "Where specialty coffee comes from", f"{n(s['origin_known'])} listings with a stated origin"),
         table(["Origin", "Listings", "Share"], [(o, n(v), f"{p}%") for o, v, p in s["origins"]], {1, 2}),
@@ -458,17 +461,26 @@ def build_page(s, charts):
         f"{n(s['flavor_coffees'])} of {n(s['listings'])} listings have at least one mapped descriptor; "
         f"family shares use all {n(s['flavor_links'])} coffee-to-descriptor links, descriptor shares count coffees."))
 
-    # 3. flavor by origin
+    # 3. flavor by origin -- ranked on the exact shares (two origins can show the same rounded share), and
+    # the finding names every origin tied with the first at display precision
     fbo = s["flavor_by_origin"]
-    fruity = sorted(((o, d.get("Fruity", 0.0)) for o, _, d in fbo), key=lambda t: -t[1])
+    links = s["flavor_by_origin_links"]
+
+    def by_share(family, low=False):
+        rows = [(o, d.get(family, 0.0)) for o, _, d in fbo]
+        return sorted(rows, key=lambda t: links[t[0]].get(family, 0) / sum(links[t[0]].values()), reverse=not low)
+
+    def tied(rows):
+        return data(", ".join(o for o, p in rows if p == rows[0][1]))
+    fruity = by_share("Fruity")
     charts["fruity-by-origin"] = svg_hbar("Which origins read as fruity",
                                           "Share of an origin's mapped descriptors in the SCA Fruity family",
                                           [(o, p, f"{p}%") for o, p in fruity], src_note)
-    nut = sorted(((o, d.get("Nutty/Cocoa", 0.0)) for o, _, d in fbo), key=lambda t: -t[1])
+    least, nut = by_share("Fruity", low=True), by_share("Nutty/Cocoa")
     sections.append(section(
         "flavor-by-origin", "Flavor profile by origin",
-        f"{data(fruity[0][0])} is the fruitiest origin in the catalogue: <strong>{fruity[0][1]}%</strong> of its mapped descriptors are Fruity, "
-        f"against {fruity[-1][1]}% for {data(fruity[-1][0])}. {data(nut[0][0])} leads the Nutty/Cocoa family at {nut[0][1]}%.",
+        f"Of the eight origins with the most mapped descriptors, the Fruity share is highest at <strong>{fruity[0][1]}%</strong> "
+        f"({tied(fruity)}) and lowest at {least[0][1]}% ({tied(least)}); Nutty/Cocoa peaks at {nut[0][1]}% ({tied(nut)}).",
         figure("fruity-by-origin", charts["fruity-by-origin"], "Which origins read as fruity", f"{len(fbo)} origins with the most mapped descriptors"),
         table(["Origin", "Descriptors"] + s["family_names"],
               [(o, n(t)) + tuple(f"{d.get(f, 0.0)}%" for f in s["family_names"]) for o, t, d in fbo],
@@ -538,9 +550,10 @@ def build_page(s, charts):
         "elevation", "How high specialty coffee grows",
         f"{data(alt[0][0])} lots are grown highest, at a mean <strong>{n(alt[0][2])} m</strong> above sea level, "
         f"{n(alt[0][2] - alt[-1][2])} m above {data(alt[-1][0])} ({n(alt[-1][2])} m).",
-        figure("elevation", charts["elevation"], "Growing elevation by origin", f"{n(s['alt_n'])} listings with a stated elevation"),
+        figure("elevation", charts["elevation"], "Growing elevation by origin", f"{n(s['alt_n'])} listings with a stated elevation and origin"),
         table(["Origin", "Listings with elevation", "Mean elevation (masl)"], [(o, n(c), n(m)) for o, c, m in alt], {1, 2}),
-        f"Elevation is stated on {n(s['alt_n'])} listings; where a range is given its midpoint is used. Origins with fewer than 20 stated elevations are omitted."))
+        f"Elevation is stated on {n(s['alt_stated'])} listings; the {n(s['alt_n'])} that also name an origin are used, taking the midpoint "
+        f"where a range is given. Origins with fewer than 20 stated elevations are omitted."))
 
     # 8. roasters by country
     rc = s["roasters_by_country"]
@@ -704,7 +717,8 @@ def build_data_json(s):
             "by_process": [dict(process=k, n=c, median=m) for k, c, m in s["price_by_process"]],
             "by_roast": [dict(roast=k, n=c, median=m) for k, c, m in s["price_by_roast"]],
             "gesha": s["gesha"]},
-        "elevation_masl": {"denominator": s["alt_n"], "rows": [dict(origin=o, n=c, mean=m) for o, c, m in s["alt_by_origin"]]},
+        "elevation_masl": {"denominator": s["alt_n"], "listings_with_elevation": s["alt_stated"],
+                           "rows": [dict(origin=o, n=c, mean=m) for o, c, m in s["alt_by_origin"]]},
         "roasters_by_country": [dict(country=k, roasters=v, share_pct=p) for k, v, p in s["roasters_by_country"]],
         "varietals": {"denominator": s["varietal_known"], "rows": [dict(varietal=k, listings=v, share_pct=p) for k, v, p in s["varietals"]]},
     }
