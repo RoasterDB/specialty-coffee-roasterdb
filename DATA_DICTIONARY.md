@@ -36,7 +36,7 @@ dataset ships the same fields in CSV and JSON, plus a relational SQLite build.
 
 ## Notes
 
-- **Coverage is honest and uneven.** Storefronts don't all publish farm-level data, so origin/altitude/process are partial. Use the `quality_flag = good` **verified tier** (3,400+ records) when you need complete rows.
+- **Coverage is honest and uneven.** Storefronts don't all publish farm-level data, so origin/altitude/process are partial. Use the `quality_flag = good` **verified tier** (6,500+ records) when you need complete rows.
 - **SCA flavor mapping** normalizes free-text tasting notes to the SCA 3-tier Flavor Wheel (`Category > Subcategory > Descriptor`). Multiple nodes per coffee are joined with `; `.
 - **Provenance.** `source_url` + `retrieved_at` let you trace and re-verify any record against the original listing.
 - **Currencies.** Each price is in its store's own currency, read from the store's Shopify `/meta.json`; it is never inferred from the roaster's country (a Japanese roaster can sell in USD). Compare prices within one currency, or convert them yourself. Editions up to 2026.09 labelled every price `USD`, including the roughly half sold by non-US stores; the free sample was relabelled with each store's currency on 2026-10-02 (its 100 rows now carry USD, GBP, EUR, AUD, CAD, SGD, ZAR and SEK). Its weights are unchanged, so the 250 g caveat (§) applies to it.

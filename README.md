@@ -4,7 +4,7 @@
 
 # ☕ RoasterDB — Specialty Coffee Dataset
 
-**12,000+ specialty-coffee products · 270+ artisan roasters · 20+ countries · mapped to the SCA Flavor Wheel**
+**13,000+ specialty-coffee products · 270+ artisan roasters · 20+ countries · mapped to the SCA Flavor Wheel**
 
 [![Sample: 100 rows](https://img.shields.io/badge/Free%20Sample-100%20rows-brightgreen.svg)](samples/roasterdb_sample.csv)
 [![🤗 Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-sample%20dataset-ffd21e.svg)](https://huggingface.co/datasets/Ichlibitiche/roasterdb-specialty-coffee-sample)
@@ -31,10 +31,10 @@ This is a **storefront catalog + flavor-mapping** dataset — strong on roaster 
 
 | | Full dataset | Free sample |
 | :--- | ---: | ---: |
-| Coffee products | **12,000+** | 100 |
+| Coffee products | **13,000+** | 100 |
 | Artisan roasters | **270+** | 72 |
 | Countries (roaster HQ) | **20+** | — |
-| SCA flavor mappings | **11,000+** | ~250 |
+| SCA flavor mappings | **22,000+** | ~250 |
 | Formats | SQLite · CSV · JSON | CSV |
 
 The free [`samples/roasterdb_sample.csv`](samples/roasterdb_sample.csv) is 100 verified-tier records across 72 roasters — a real taste of the schema and quality. Explore it interactively in the [🤗 Sample Explorer](https://huggingface.co/spaces/Ichlibitiche/dataset-sample-explorers), or load it straight from the [🤗 sample dataset](https://huggingface.co/datasets/Ichlibitiche/roasterdb-specialty-coffee-sample). The full dataset is available at **[roasterdb.dataengineered.io](https://roasterdb.dataengineered.io)**.
@@ -56,11 +56,11 @@ Measured on 2026-11-07 across all 13,670 records of the 2026.11 edition: the sha
 ³ Only a specific value counts: `process_method` is `Other` and `roast_level` is `Unknown` when the listing doesn't say.
 
 **Two quality tiers** (both in the full dataset):
-- **Full catalog** — all **12,000+** records (maximum breadth).
-- **Verified tier** — **3,400+** records flagged `good`: origin + sanitized price + SCA flavor mapping, QA-passed.
+- **Full catalog** — all **13,000+** records (maximum breadth).
+- **Verified tier** — **6,500+** records flagged `good`: origin + sanitized price + SCA flavor mapping, QA-passed.
 
 ### SCA flavor mapping — the differentiated part
-- **4,500+ coffees** mapped to the SCA wheel · **11,000+** bean→flavor links · avg **2.6** descriptors each.
+- **8,500+ coffees** mapped to the SCA wheel · **22,000+** bean→flavor links · avg **2.6** descriptors each.
 - All **51** taxonomy descriptors exercised; tasting notes become hierarchical paths, e.g. `Fruity > Other Fruit > Peach`.
 
 ## Statistics page (`/stats/`)
@@ -88,7 +88,7 @@ See [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) for every field.
 | Tier | What | Price |
 | :--- | :--- | :--- |
 | **Sample** | 100 verified rows (this repo) | Free |
-| **Snapshot** | Full 12,000+ records · SQLite + CSV + JSON | **$49** one-time |
+| **Snapshot** | Full 13,000+ records · SQLite + CSV + JSON | **$49** one-time |
 | **Custom work** | Subsets, recurring feeds, schema mapping — quoted per engagement | from $99, via the [contact form](https://roasterdb.dataengineered.io/#support) |
 | **Live scrape** | On-demand, self-serve via Apify | pay-per-result |
 
