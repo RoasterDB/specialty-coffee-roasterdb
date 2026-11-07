@@ -41,18 +41,19 @@ The free [`samples/roasterdb_sample.csv`](samples/roasterdb_sample.csv) is 100 v
 
 ## Field coverage (the honest numbers)
 
-Measured when the dataset held 8,000+ records, before the 2026.10 edition (12,000+ records; not yet re-measured). Published up front so you can decide if the fields you need are covered — not every coffee lists every attribute on its storefront.
+Measured on 2026-11-07 across all 13,670 records of the 2026.11 edition: the share of records with a non-empty value. Published up front so you can decide if the fields you need are covered — not every coffee lists every attribute on its storefront.
 
 | Field | Coverage | | Field | Coverage |
 | :--- | ---: | --- | :--- | ---: |
-| Title / product ID | 100% | | Process method | 45% |
-| Weight² | 100% | | Roast level | 32% |
-| Price (store currency, sanitized)¹ | 88% | | Varietals | 30% |
-| ≥1 SCA flavor node | 55% | | Origin region | 20% |
-| Origin country | 58% | | Altitude (masl) | 17% |
+| Title / product ID | 100% | | Process method³ | 60% |
+| Weight² | 96% | | Roast level³ | 34% |
+| Price (store currency, sanitized)¹ | 98% | | Varietals | 40% |
+| ≥1 SCA flavor node | 64% | | Origin region | 27% |
+| Origin country | 73% | | Altitude (masl) | 21% |
 
-¹ Each price is in its store's own currency (`price_currency`: USD, GBP, EUR, AUD, CAD, ZAR, …), read from the store. Until 2026-10 every price was labelled USD, including the roughly half sold by non-US stores. With the currencies read, 92.7% of the 10,168 records carry a sanitized price (2026-10-02). See [DATA_DICTIONARY.md](DATA_DICTIONARY.md).
-² Until 2026-10 a listing without a stated weight was recorded as 250 g, so a 250 may be a default; from the 2026-10 crawl on it is left empty.
+¹ Each price is in its store's own currency (`price_currency`: USD, GBP, EUR, AUD, CAD, ZAR, …), read from the store; the 4 records of the one store whose currency could not be read carry no price. Until 2026-10 every price was labelled USD, including the roughly half sold by non-US stores. See [DATA_DICTIONARY.md](DATA_DICTIONARY.md).
+² A listing that states no weight leaves it empty (539 records). Until 2026-10 such a listing was recorded as 250 g; 263 of the 1,999 records with 250 were last retrieved before that change (2026-10-02), so theirs may be a default.
+³ Only a specific value counts: `process_method` is `Other` and `roast_level` is `Unknown` when the listing doesn't say.
 
 **Two quality tiers** (both in the full dataset):
 - **Full catalog** — all **12,000+** records (maximum breadth).

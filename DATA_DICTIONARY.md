@@ -11,17 +11,17 @@ dataset ships the same fields in CSV and JSON, plus a relational SQLite build.
 | `product_id` | string | Roaster's Shopify product ID | 100% |
 | `source_roaster` | string | Roaster brand name | 100% |
 | `title` | string | Coffee / product name as listed | 100% |
-| `origin_country` | string | Producing country, where stated or inferred | 58% |
-| `origin_region` | string | Producing region, where stated | 20% |
-| `altitude_min_meters` | integer | Minimum growing elevation (masl), where stated | 17% |
-| `altitude_max_meters` | integer | Maximum growing elevation (masl), where stated | 17% |
-| `process_method` | enum | `Washed` · `Natural` · `Honey` · `Anaerobic` · `Other` | 45%† |
-| `roast_level` | enum | `Light` · `Medium` · `Dark` (+ split levels), where stated | 32% |
-| `varietals` | string | Comma-separated varietals (e.g. `Gesha, SL28`) | 30% |
-| `weight_grams` | integer | Net weight of the listed unit as the listing states it; empty when it states none§ | 100%§ |
-| `price_currency` | string | The store's own currency (ISO 4217: `USD`, `GBP`, `EUR`, `AUD`, `CAD`, `ZAR`, …), read from the store; empty when it could not be read | 99.8%‡ |
-| `price_value` | float | Listed price in `price_currency`, sanitized to a plausible single-bag band (3–150 USD, applied in each currency at fixed reference rates); empty when outside the band or when the currency is unknown | 92.7%‡ |
-| `tasting_notes_sca_nodes` | string | `; `-separated SCA paths, e.g. `Fruity > Berry > Blueberry` | 55% |
+| `origin_country` | string | Producing country, where stated or inferred | 73% |
+| `origin_region` | string | Producing region, where stated | 27% |
+| `altitude_min_meters` | integer | Minimum growing elevation (masl), where stated | 21% |
+| `altitude_max_meters` | integer | Maximum growing elevation (masl), where stated | 21% |
+| `process_method` | enum | `Washed` · `Natural` · `Honey` · `Anaerobic` · `Other` | 60%† |
+| `roast_level` | enum | `Light` · `Medium` · `Dark` (+ split levels) · `Unknown` | 34%† |
+| `varietals` | string | Comma-separated varietals (e.g. `Gesha, SL28`) | 40% |
+| `weight_grams` | integer | Net weight of the listed unit as the listing states it; empty when it states none§ | 96%§ |
+| `price_currency` | string | The store's own currency (ISO 4217: `USD`, `GBP`, `EUR`, `AUD`, `CAD`, `ZAR`, …), read from the store; empty when it could not be read | 99.9%‡ |
+| `price_value` | float | Listed price in `price_currency`, sanitized to a plausible single-bag band (3–150 USD, applied in each currency at fixed reference rates); empty when outside the band or when the currency is unknown | 98%‡ |
+| `tasting_notes_sca_nodes` | string | `; `-separated SCA paths, e.g. `Fruity > Berry > Blueberry` | 64% |
 | `tasting_notes_confidence` | float | 0–1 confidence of the flavor normalization | — |
 | `quality_flag` | enum | `good` (verified tier) or `questionable` | 100% |
 | `source_platform` | string | Source channel — `shopify` | 100% |
@@ -29,10 +29,10 @@ dataset ships the same fields in CSV and JSON, plus a relational SQLite build.
 | `retrieved_at` | datetime | Crawl timestamp (when the fact was true) | 100% |
 | `dataset_version` | string | Snapshot id, e.g. `2026.07` | 100% |
 
-\* Share of the full dataset with a non-empty value, measured when it held 8,000+ records, before the 2026.10 edition (12,000+ records; not yet re-measured).
-† `process_method` is present on 100% of rows but is `Other` when not stated; 45% carry a specific method.
-‡ Measured on 2026-10-02 on all 10,168 records, after the store currencies were read (279 of 284 stores answered).
-§ Until 2026-10 a listing without a stated weight was recorded as 250 g, so a 250 on a record retrieved before then may be a default rather than a stated weight. From the 2026-10 crawl on, a missing weight is left empty, so this coverage will fall.
+\* Share of the full dataset with a non-empty value, measured on 2026-11-07 across all 13,670 records of the 2026.11 edition.
+† `process_method` and `roast_level` are present on 100% of rows but are `Other` and `Unknown` when not stated; only a specific value counts (60% carry a specific method, 34% a specific roast level).
+‡ One store's currency could not be read, so its 4 records have no `price_currency` and no `price_value`.
+§ Until 2026-10 a listing without a stated weight was recorded as 250 g, so a 250 on a record retrieved before then may be a default rather than a stated weight: 263 of the 1,999 records with 250 were last retrieved before that change (2026-10-02). From the 2026-10 crawl on, a missing weight is left empty (539 records).
 
 ## Notes
 
