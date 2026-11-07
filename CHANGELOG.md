@@ -6,6 +6,10 @@ All notable changes to the RoasterDB dataset snapshots.
 > on a recurring schedule, so the live figures only grow — the numbers below
 > stay accurate between snapshots.
 
+## Site update — 2026-11-07
+
+- **More repository files off the website**: the site still served the Kaggle upload folder (`/kaggle/`), `examples/load_sample.py`, `assets/README.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `DATA_DICTIONARY.md` (no page on this site links it) and the i18n tool's marker file in each language folder (`/es/_i18n-generated.txt` and its `de`, `fr`, `pt-br` copies). They now answer the site's normal 404 page and stay available here on GitHub. The list also refuses `/notebooks/` and `/tests/` should this repository add them. Files the site links stay served: `LICENSE`, the free sample, `/stats/` and its `data.json`, `llms.txt` and the sitemap. No page or data changes (2026-11-07).
+
 ## Site update — 2026-11-06
 
 - **Pricing card no longer names an edition**: the homepage pricing card and licence note said "Snapshot 2026.10", but buyers get the newest monthly build, so the label fell behind with every refresh. They now read "Monthly snapshot" and "Latest monthly snapshot" (English and the four translations); the Dataset and breadcrumb structured data, the README badge and the data dictionary's heading no longer name an edition either.
