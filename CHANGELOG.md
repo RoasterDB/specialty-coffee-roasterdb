@@ -7,6 +7,10 @@ All notable changes to the RoasterDB dataset snapshots.
 > from 280 to 278, and the stated minimum went from `280+` to `270+`. Each
 > entry's numbers describe the snapshot it was written for.
 
+## Site update — 2026-11-09
+
+- **Kaggle publish instructions** (`kaggle/README.md`, section 1): the first-publish command uploaded from `-p kaggle/dataset`, which section 3 already says fails on Windows: the CLI's resume-cache file name keeps the `/`, and the command stops with `Errno 2` before the dataset is created. Section 1 now stages the files in a one-word folder, as section 3 does. No site or data change.
+
 ## Site update — 2026-11-07
 
 - **Kaggle update instructions** (`kaggle/README.md`, section 3): the `datasets version` command no longer ends in `-d`. In the Kaggle CLI that flag is `--delete-old-versions`: it deletes the dataset's older versions, not "remote files not present in the staging folder" as the README said. The command now runs from a one-word staging folder that holds the CSV and `dataset-metadata.json`, because `-p kaggle/dataset` stops with `Errno 2` on Windows (seen on the FloraDB sample's upload on 2026-11-07): the CLI names its resume-cache file after the path of each uploaded file, and a `/` in it points into a cache folder that does not exist. The section also says what a version upload changes (the data file and the card's description, subtitle and keywords) and what it leaves alone (title, licence, column notes), and has the live card compared with `kaggle/dataset/dataset-metadata.json` before uploading, since the upload overwrites it. No data or page change.

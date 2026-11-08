@@ -10,8 +10,16 @@ On Windows, always prefix with `$env:PYTHONUTF8=1;` so the CLI reads UTF-8 (avoi
 
 ## 1. Publish the dataset (first time)
 
+Upload from a **one-word staging folder**, made the same way as in section 3: new and empty, in a
+scratch folder outside the repo, holding only the CSV and the metadata file. On Windows a `-p` path
+with a `/` stops with `Errno 2` before the dataset is created (first note under section 3). `$repo`
+is this checkout:
+
 ```powershell
-$env:PYTHONUTF8=1; python -m kaggle datasets create -p kaggle/dataset --dir-mode zip
+$repo = "C:\path\to\RoasterDB-public"
+mkdir kaggle_upload
+cp "$repo\kaggle\dataset\roasterdb_sample.csv", "$repo\kaggle\dataset\dataset-metadata.json" kaggle_upload
+$env:PYTHONUTF8=1; python -m kaggle datasets create -p kaggle_upload --dir-mode zip
 ```
 
 Check ingestion status until it reads `ready`:
